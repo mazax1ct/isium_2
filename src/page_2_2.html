@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Мои новости. Лента глазами клиента</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--fixed_header">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="articles articles--no_filter">
+      <div class="js-content-with-sticky articles__list">
+        <div class="articles-list">
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Презентация ценностей компании</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Happy Partner</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Наша цель – развивать бизнес под потребности клиентов. Мы подготовили презентацию ценностей нашей компании. Нам важны ваши оценки, комментарии и отзывыВ благодарность за участие в опросах, оценкивать качество товаров и услуг.</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_6.jpg" alt="Альт картинки"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/bodyScrollLock.min.js"></script>
+</body>
+
+</html>

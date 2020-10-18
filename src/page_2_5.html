@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Состояния публикации с комментариями</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--no_header page--articles_list">
+  //= template/sprite.html
+
+  <div class="head">
+    <div class="head__inner">
+      <button class="js-sidebar-toggler head__logo-block" type="button">
+        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
+      </button>
+      <div class="head__right">
+        <div class="head__partner-info">
+          <p class="head__partner-name">Самое длинное название которое я смогла придумать</p>
+          <p class="head__partner-id">Ваш ID: 26656559</p>
+        </div>
+        <div class="head__buttons">
+          <button class="js-filter-toggler head__button head__button--filter" type="button">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#filter" />
+            </svg>
+            <span class="head__button-text">Фильтр</span>
+          </button>
+          <a class="head__button" href="page_7.html">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#profile_edit" />
+            </svg>
+            <span class="head__button-text">Профиль</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="articles">
+      <div class="js-content-with-sticky articles__list">
+        <div class="articles-list">
+          <div class="articles-list__add-block">
+            <div class="articles-list__add-block-inner">
+              <button class="button button--wide button--add_article" type="button" data-fancybox="add_article" data-src="#add_article">Добавить публикацию</button>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__type-label tag-color-1">фотоопрос</p>
+              <div class="article__manage-block">
+                <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                  <svg class="article__manage-button-icon" aria-hidden="true">
+                    <use xlink:href="#kebab" />
+                  </svg>
+                </button>
+                <div class="article__manage-dropdown manage-popover">
+                  <ul class="manage-popover__list">
+                    <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                    <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                    <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article__title-block">
+              <h2 class="article__title">Праздник каждый день</h2>
+            </div>
+            <p class="article__date">23 дек 2019</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <label class="form-label" for="comment_1">
+              <span class="form-label__text">Какой ваш профессиональный праздник?</span>
+              <span class="form-label__container">
+                <div class="stretchy-input" placeholder="Напишите комментарий..." contenteditable="true"></div>
+                <button class="submit" type="submit" title="Отправить">
+                  <svg class="submit__icon" aria-hidden="true">
+                    <use xlink:href="#submit"></use>
+                  </svg>
+                </button>
+              </span>
+            </label>
+          </div>
+
+          <div class="article">
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__type-label tag-color-1">фотоопрос</p>
+              <div class="article__manage-block">
+                <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                  <svg class="article__manage-button-icon" aria-hidden="true">
+                    <use xlink:href="#kebab" />
+                  </svg>
+                </button>
+                <div class="article__manage-dropdown manage-popover">
+                  <ul class="manage-popover__list">
+                    <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                    <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                    <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article__title-block">
+              <h2 class="article__title">Праздник каждый день</h2>
+            </div>
+            <p class="article__date">23 дек 2019</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <p class="question-title">
+              <span class="secondary-color">Какой ваш профессиональный праздник?</span>
+              <span>Ответов: 150</span>
+            </p>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Анима</span>
+                  <span class="comment__date">24 дек 2020</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Лучший праздник - день психолога</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Трактор</span>
+                  <span class="comment__date">9 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Мы отмечаем День тракториста. Его отмечают в 300-й день года.</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Гигант</span>
+                  <span class="comment__date">10 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Наша компания придумала свой праздник микрочипов</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Друг</span>
+                  <span class="comment__date">11 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">
+                В нашей компании основное правило - позитивный настрой. В рабочем чате каждый день публикуется информация о том, какие праздники сегодня отмечают в мире. И мы коллективно...
+                <button class="js-read-more read-more" type="button">Читать дальше</button>
+                <span style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, sint repellat deleniti assumenda veniam ipsum illo iure laboriosam, officia amet cumque rem consectetur ducimus ratione, quidem consequuntur, numquam maxime eos?</span>
+              </p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <p><button class="show-comments" type="button">Показать следующие комментарии</button></p>
+          </div>
+
+          <div class="article">
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__type-label tag-color-1">фотоопрос</p>
+              <div class="article__manage-block">
+                <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                  <svg class="article__manage-button-icon" aria-hidden="true">
+                    <use xlink:href="#kebab" />
+                  </svg>
+                </button>
+                <div class="article__manage-dropdown manage-popover">
+                  <ul class="manage-popover__list">
+                    <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                    <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                    <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article__title-block">
+              <h2 class="article__title">Праздник каждый день</h2>
+            </div>
+            <p class="article__date">23 дек 2019</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <p class="question-title">
+              <span class="secondary-color">Какой ваш профессиональный праздник?</span>
+              <span>Ответов: 150</span>
+            </p>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Анима</span>
+                  <span class="comment__date">24 дек 2020</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Лучший праздник - день психолога</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Трактор</span>
+                  <span class="comment__date">9 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Мы отмечаем День тракториста. Его отмечают в 300-й день года.</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Гигант</span>
+                  <span class="comment__date">10 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Наша компания придумала свой праздник микрочипов</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Друг</span>
+                  <span class="comment__date">11 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">
+                В нашей компании основное правило - позитивный настрой. В рабочем чате каждый день публикуется информация о том, какие праздники сегодня отмечают в мире. И мы коллективно...
+                <button class="js-read-more read-more" type="button">Читать дальше</button>
+                <span style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, sint repellat deleniti assumenda veniam ipsum illo iure laboriosam, officia amet cumque rem consectetur ducimus ratione, quidem consequuntur, numquam maxime eos?</span>
+              </p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment-answer">
+              <p class="comment-answer__top">
+                <span class="comment-answer__author"><span class="comment-answer__logo"><img src="images/logo.png" alt="Happy Partner"></span>Happy Partner</span>
+              </p>
+              <div class="form-label answer-form">
+                <span class="form-label__container">
+                  <div class="stretchy-input" contenteditable="true" placeholder="Напишите ответ...">
+                    <span class="secondary-color">Друг,</span><br>
+                    Мы будем очень признательны, если вы расскажете подробнее, как зародилась эта традиция и почему праздник называется именно так. Нам очень интересно, как вы его отмечаете, дарите ли подарки друг другу и если да, то какие.
+                  </div>
+                  <button class="submit" type="submit" title="Отправить">
+                    <svg class="submit__icon" aria-hidden="true">
+                      <use xlink:href="#submit" />
+                    </svg>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <p><button class="show-comments" type="button">Показать следующие комментарии</button></p>
+          </div>
+
+          <div class="article">
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__type-label tag-color-1">фотоопрос</p>
+              <div class="article__manage-block">
+                <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                  <svg class="article__manage-button-icon" aria-hidden="true">
+                    <use xlink:href="#kebab" />
+                  </svg>
+                </button>
+                <div class="article__manage-dropdown manage-popover">
+                  <ul class="manage-popover__list">
+                    <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                    <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                    <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article__title-block">
+              <h2 class="article__title">Праздник каждый день</h2>
+            </div>
+            <p class="article__date">23 дек 2019</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <p class="question-title">
+              <span class="secondary-color">Какой ваш профессиональный праздник?</span>
+              <span>Ответов: 150</span>
+            </p>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Анима</span>
+                  <span class="comment__date">24 дек 2020</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Лучший праздник - день психолога</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Трактор</span>
+                  <span class="comment__date">9 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Мы отмечаем День тракториста. Его отмечают в 300-й день года.</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Гигант</span>
+                  <span class="comment__date">10 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Наша компания придумала свой праздник микрочипов</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Друг</span>
+                  <span class="comment__date">11 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">
+                В нашей компании основное правило - позитивный настрой. В рабочем чате каждый день публикуется информация о том, какие праздники сегодня отмечают в мире. И мы коллективно...
+                <button class="js-read-more read-more" type="button">Читать дальше</button>
+                <span style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, sint repellat deleniti assumenda veniam ipsum illo iure laboriosam, officia amet cumque rem consectetur ducimus ratione, quidem consequuntur, numquam maxime eos?</span>
+              </p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment-answer">
+              <p class="comment-answer__top">
+                <span class="comment-answer__author"><span class="comment-answer__logo"><img src="images/logo.png" alt="Happy Partner"></span>Happy Partner</span>
+                <span class="comment-answer__date">25 апреля 2020</span>
+                <span class="comment-answer__top-buttons">
+                  <button class="comment-answer__top-button" type="button" title="Изменить"><svg class="comment-answer__top-button-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="comment-answer__top-button" type="button" title="Удалить"><svg class="comment-answer__top-button-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </span>
+              </p>
+              <p class="comment-answer__text"><span class="secondary-color">Друг,</span> Мы будем очень признательны, если вы расскажете подробнее, как зародилась эта традиция и почему праздник называется именно так. Нам очень интересно, как вы его отмечаете, дарите ли подарки друг другу и если да, то какие.  </p>
+              <div class="comment-answer__button-block">
+                <button class="comment-answer__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <p><button class="show-comments" type="button">Показать следующие комментарии</button></p>
+          </div>
+
+          <div class="article">
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__type-label tag-color-1">фотоопрос</p>
+              <div class="article__manage-block">
+                <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                  <svg class="article__manage-button-icon" aria-hidden="true">
+                    <use xlink:href="#kebab" />
+                  </svg>
+                </button>
+                <div class="article__manage-dropdown manage-popover">
+                  <ul class="manage-popover__list">
+                    <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                    <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                    <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article__title-block">
+              <h2 class="article__title">Праздник каждый день</h2>
+            </div>
+            <p class="article__date">23 дек 2019</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <p class="question-title">
+              <span class="secondary-color">Какой ваш профессиональный праздник?</span>
+              <span>Ответов: 150</span>
+            </p>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Анима</span>
+                  <span class="comment__date">24 дек 2020</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Лучший праздник - день психолога</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Трактор</span>
+                  <span class="comment__date">9 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Мы отмечаем День тракториста. Его отмечают в 300-й день года.</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Гигант</span>
+                  <span class="comment__date">10 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Наша компания придумала свой праздник микрочипов</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Друг</span>
+                  <span class="comment__date">11 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">
+                В нашей компании основное правило - позитивный настрой. В рабочем чате каждый день публикуется информация о том, какие праздники сегодня отмечают в мире. И мы коллективно...
+                <button class="js-read-more read-more" type="button">Читать дальше</button>
+                <span style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, sint repellat deleniti assumenda veniam ipsum illo iure laboriosam, officia amet cumque rem consectetur ducimus ratione, quidem consequuntur, numquam maxime eos?</span>
+              </p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment-answer">
+              <p class="comment-answer__top">
+                <span class="comment-answer__author"><span class="comment-answer__logo"><img src="images/logo.png" alt="Happy Partner"></span>Happy Partner</span>
+                <span class="comment-answer__date">редактирование</span>
+                <span class="comment-answer__top-buttons">
+                  <button class="comment-answer__top-button" type="button" title="Удалить"><svg class="comment-answer__top-button-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </span>
+              </p>
+              <div class="form-label answer-form">
+                <span class="form-label__container">
+                  <div class="stretchy-input" contenteditable="true" placeholder="Напишите ответ...">
+                    <span class="secondary-color">Друг,</span><br>
+                    Мы будем очень признательны, если вы расскажете подробнее, как зародилась эта традиция и почему праздник называется именно так. Нам очень интересно, как вы его отмечаете, дарите ли подарки друг другу и если да, то какие.
+                  </div>
+                  <button class="submit" type="submit" title="Отправить">
+                    <svg class="submit__icon" aria-hidden="true">
+                      <use xlink:href="#submit" />
+                    </svg>
+                  </button>
+                </span>
+              </div>
+              <div class="comment-answer__buttons">
+                <button class="button button--transparent" type="button">Отмена</button>
+                <button class="button" type="button">Сохранить</button>
+              </div>
+            </div>
+            <p><button class="show-comments" type="button">Показать следующие комментарии</button></p>
+          </div>
+
+          <div class="article">
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__type-label tag-color-1">фотоопрос</p>
+              <div class="article__manage-block">
+                <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                  <svg class="article__manage-button-icon" aria-hidden="true">
+                    <use xlink:href="#kebab" />
+                  </svg>
+                </button>
+                <div class="article__manage-dropdown manage-popover">
+                  <ul class="manage-popover__list">
+                    <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                    <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                    <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article__title-block">
+              <h2 class="article__title">Праздник каждый день</h2>
+            </div>
+            <p class="article__date">23 дек 2019</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <p class="question-title">
+              <span class="secondary-color">Какой ваш профессиональный праздник?</span>
+              <span>Ответов: 150</span>
+            </p>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Анима</span>
+                  <span class="comment__date">24 дек 2020</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Лучший праздник - день психолога</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Трактор</span>
+                  <span class="comment__date">9 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Мы отмечаем День тракториста. Его отмечают в 300-й день года.</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Гигант</span>
+                  <span class="comment__date">10 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Наша компания придумала свой праздник микрочипов</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Друг</span>
+                  <span class="comment__date">11 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">
+                В нашей компании основное правило - позитивный настрой. В рабочем чате каждый день публикуется информация о том, какие праздники сегодня отмечают в мире. И мы коллективно...
+                <button class="js-read-more read-more" type="button">Читать дальше</button>
+                <span style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, sint repellat deleniti assumenda veniam ipsum illo iure laboriosam, officia amet cumque rem consectetur ducimus ratione, quidem consequuntur, numquam maxime eos?</span>
+              </p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <p class="answer-delete">Ответ удалён</p>
+            <p><button class="show-comments" type="button">Показать следующие комментарии</button></p>
+          </div>
+
+          <div class="article">
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__type-label tag-color-1">фотоопрос</p>
+              <div class="article__manage-block">
+                <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                  <svg class="article__manage-button-icon" aria-hidden="true">
+                    <use xlink:href="#kebab" />
+                  </svg>
+                </button>
+                <div class="article__manage-dropdown manage-popover">
+                  <ul class="manage-popover__list">
+                    <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                    <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                    <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article__title-block">
+              <h2 class="article__title">Праздник каждый день</h2>
+            </div>
+            <p class="article__date">23 дек 2019</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <p class="question-title">
+              <span class="secondary-color">Какой ваш профессиональный праздник?</span>
+              <span>Ответов: 150</span>
+            </p>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Анима</span>
+                  <span class="comment__date">24 дек 2020</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Лучший праздник - день психолога</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Трактор</span>
+                  <span class="comment__date">9 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Мы отмечаем День тракториста. Его отмечают в 300-й день года.</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Гигант</span>
+                  <span class="comment__date">10 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Наша компания придумала свой праздник микрочипов</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Друг</span>
+                  <span class="comment__date">11 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">
+                В нашей компании основное правило - позитивный настрой. В рабочем чате каждый день публикуется информация о том, какие праздники сегодня отмечают в мире. И мы коллективно...
+                <button class="js-read-more read-more" type="button">Читать дальше</button>
+                <span style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, sint repellat deleniti assumenda veniam ipsum illo iure laboriosam, officia amet cumque rem consectetur ducimus ratione, quidem consequuntur, numquam maxime eos?</span>
+              </p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment-answer">
+              <p class="comment-answer__top">
+                <span class="comment-answer__author"><span class="comment-answer__logo"><img src="images/logo.png" alt="Happy Partner"></span>Happy Partner</span>
+                <span class="comment-answer__date">25 апреля 2020</span>
+                <span class="comment-answer__top-buttons">
+                  <button class="comment-answer__top-button" type="button" title="Изменить"><svg class="comment-answer__top-button-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="comment-answer__top-button" type="button" title="Удалить"><svg class="comment-answer__top-button-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </span>
+              </p>
+              <p class="comment-answer__text"><span class="secondary-color">Друг,</span> Мы будем очень признательны, если вы расскажете подробнее, как зародилась эта традиция и почему праздник называется именно так. Нам очень интересно, как вы его отмечаете, дарите ли подарки друг другу и если да, то какие.  </p>
+              <div class="comment-answer__button-block">
+                <button class="comment-answer__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment comment--to_comment">
+              <p class="comment__top">
+                <span class="comment__author">Друг</span>
+                <span class="comment__date">13 янв в 18:34</span>
+              </p>
+              <p class="comment__text"><span class="secondary-color">Happy Partner,</span> нет!</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment-answer">
+              <p class="comment-answer__top">
+                <span class="comment-answer__author"><span class="comment-answer__logo"><img src="images/logo.png" alt="Happy Partner"></span>Happy Partner</span>
+              </p>
+              <div class="form-label answer-form">
+                <span class="form-label__container">
+                  <div class="stretchy-input" contenteditable="true" placeholder="Напишите ответ...">
+                    <span class="secondary-color">Друг,</span><br>
+                    Мы будем очень признательны, если вы расскажете подробнее, как зародилась эта традиция и почему праздник называется именно так. Нам очень интересно, как вы его отмечаете, дарите ли подарки друг другу и если да, то какие.
+                  </div>
+                  <button class="submit" type="submit" title="Отправить">
+                    <svg class="submit__icon" aria-hidden="true">
+                      <use xlink:href="#submit" />
+                    </svg>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <p><button class="show-comments" type="button">Показать следующие комментарии</button></p>
+          </div>
+
+          <div class="article">
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__type-label tag-color-1">фотоопрос</p>
+              <div class="article__manage-block">
+                <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                  <svg class="article__manage-button-icon" aria-hidden="true">
+                    <use xlink:href="#kebab" />
+                  </svg>
+                </button>
+                <div class="article__manage-dropdown manage-popover">
+                  <ul class="manage-popover__list">
+                    <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                    <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                    <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article__title-block">
+              <h2 class="article__title">Праздник каждый день</h2>
+            </div>
+            <p class="article__date">23 дек 2019</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <p class="question-title">
+              <span class="secondary-color">Какой ваш профессиональный праздник?</span>
+              <span>Ответов: 150</span>
+            </p>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Анима</span>
+                  <span class="comment__date">24 дек 2020</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Лучший праздник - день психолога</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Трактор</span>
+                  <span class="comment__date">9 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Мы отмечаем День тракториста. Его отмечают в 300-й день года.</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Гигант</span>
+                  <span class="comment__date">10 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">Наша компания придумала свой праздник микрочипов</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span>
+                  <span class="comment__author">Друг</span>
+                  <span class="comment__date">11 янв в 18:34</span>
+                </span>
+                <button class="comment__delete" type="button" title="Удалить"><svg class="comment__delete-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+              </p>
+              <p class="comment__text">
+                В нашей компании основное правило - позитивный настрой. В рабочем чате каждый день публикуется информация о том, какие праздники сегодня отмечают в мире. И мы коллективно...
+                <button class="js-read-more read-more" type="button">Читать дальше</button>
+                <span style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, sint repellat deleniti assumenda veniam ipsum illo iure laboriosam, officia amet cumque rem consectetur ducimus ratione, quidem consequuntur, numquam maxime eos?</span>
+              </p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment-answer">
+              <p class="comment-answer__top">
+                <span class="comment-answer__author"><span class="comment-answer__logo"><img src="images/logo.png" alt="Happy Partner"></span>Happy Partner</span>
+                <span class="comment-answer__date">25 апреля 2020</span>
+                <span class="comment-answer__top-buttons">
+                  <button class="comment-answer__top-button" type="button" title="Изменить"><svg class="comment-answer__top-button-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="comment-answer__top-button" type="button" title="Удалить"><svg class="comment-answer__top-button-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </span>
+              </p>
+              <p class="comment-answer__text"><span class="secondary-color">Друг,</span> Мы будем очень признательны, если вы расскажете подробнее, как зародилась эта традиция и почему праздник называется именно так. Нам очень интересно, как вы его отмечаете, дарите ли подарки друг другу и если да, то какие.  </p>
+              <div class="comment-answer__button-block">
+                <button class="comment-answer__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment comment--to_comment">
+              <p class="comment__top">
+                <span class="comment__author">Друг</span>
+                <span class="comment__date">13 янв в 18:34</span>
+              </p>
+              <p class="comment__text"><span class="secondary-color">Happy Partner,</span> нет!</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment-answer">
+              <p class="comment-answer__top">
+                <span class="comment-answer__author"><span class="comment-answer__logo"><img src="images/logo.png" alt="Happy Partner"></span>Happy Partner</span>
+                <span class="comment-answer__date">14 янв в 18:34</span>
+                <span class="comment-answer__top-buttons">
+                  <button class="comment-answer__top-button" type="button" title="Изменить"><svg class="comment-answer__top-button-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="comment-answer__top-button" type="button" title="Удалить"><svg class="comment-answer__top-button-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </span>
+              </p>
+              <p class="comment-answer__text"><span class="secondary-color">Друг,</span> Как скажеете!</p>
+              <div class="comment-answer__button-block">
+                <button class="comment-answer__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <p><button class="show-comments" type="button">Показать следующие комментарии</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="articles__filter">
+        <div class="js-sticky-block2">
+          <div class="filter">
+            <form action="">
+              <p class="filter__title">Всего ценностей: 3</p>
+              <ol class="worth-list worth-list--decorated">
+                <li class="worth-list__item">
+                  <label class="checkbox-label checkbox-label--dark" for="w_1">
+                    <input id="w_1" name="w_1" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Качество доставки (8)</span>
+                  </label>
+                </li>
+                <li class="worth-list__item">
+                  <label class="checkbox-label checkbox-label--dark" for="w_2">
+                    <input id="w_2" name="w_2" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Ассортимент товарного каталога (3)</span>
+                  </label>
+                </li>
+                <li class="worth-list__item checkbox-label--dark">
+                  <label class="checkbox-label" for="w_3">
+                    <input id="w_3" name="w_3" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Удобство сайта (7)</span>
+                  </label>
+                </li>
+              </ol>
+              <ol class="tags-list">
+                <li class="tags-list__item">
+                  <label class="tag">
+                    <input type="checkbox" name="tag" value="tag_1">
+                    <span class="tag__text tag-color-1">ФОТООПРОС</span>
+                  </label>
+                </li>
+                <li class="tags-list__item">
+                  <label class="tag">
+                    <input type="checkbox" name="tag" value="tag_2">
+                    <span class="tag__text tag-color-2">Опрос</span>
+                  </label>
+                </li>
+                <li class="tags-list__item">
+                  <label class="tag">
+                    <input type="checkbox" name="tag" value="tag_3">
+                    <span class="tag__text tag-color-3">ОЦЕНКА</span>
+                  </label>
+                </li>
+                <li class="tags-list__item">
+                  <label class="tag">
+                    <input type="checkbox" name="tag" value="tag_4">
+                    <span class="tag__text tag-color-4">Отзыв</span>
+                  </label>
+                </li>
+                <li class="tags-list__item">
+                  <label class="tag">
+                    <input type="checkbox" name="tag" value="tag_5">
+                    <span class="tag__text tag-color-5">портрет</span>
+                  </label>
+                </li>
+              </ol>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/bodyScrollLock.min.js"></script>
+</body>
+
+</html>

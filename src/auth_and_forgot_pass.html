@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Авторизация</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--auth page--center_content">
+  //= template/sprite.html
+
+  <div class="page__inner">
+    <div class="popup popup--auth">
+      <p class="popup__title popup__title--big">Войти в систему</p>
+      <form action="/">
+        <label class="form-label" for="inp_1">
+          <input id="inp_1" class="input error" name="inp_1" type="text" value="" placeholder="Имя пользователя (логин)">
+        </label>
+        <label class="form-label" for="inp_2">
+          <input id="inp_2" class="input" name="inp_1" type="password" value="" placeholder="Пароль">
+        </label>
+        <p class="popup__remember-block">
+          <label class="checkbox-label checkbox-label--dark" for="remember">
+            <input id="remember" name="remember" type="checkbox" checked>
+            <span class="checkbox-label__icon"></span>
+            <span class="checkbox-label__text">Запомнить</span>
+          </label>
+          <a href="javascript:void(0)" data-fancybox="forgot" data-src="#forgot">Забыли пароль</a>
+        </p>
+        <div class="popup__button-block">
+          <button class="button button--wide" type="button">Войти</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+</body>
+
+</html>

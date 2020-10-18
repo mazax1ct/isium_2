@@ -1,0 +1,30 @@
+.tabs-nav
+  display: flex
+  margin-top: 30px
+  margin-bottom: 30px
+  overflow-x: auto
+
+  &:last-child
+    margin-bottom: 0
+
+  &__button
+    background-color: transparent
+    border: 1px solid $text-color
+    color: $text-color
+    cursor: pointer
+    height: 44px
+    min-width: 120px
+
+    @media(min-width: 1200px)
+      min-width: 240px
+
+    &.is-active
+      background-color: $main-color
+      border-color: $main-color
+      color: #fff
+
+    &:first-child
+      border-radius: 8px 0 0 8px
+
+    &:last-child
+      border-radius: 0 8px 8px 0

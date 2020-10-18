@@ -1,0 +1,1059 @@
+.form-row
+  display: flex
+  flex-wrap: wrap
+  margin-left: -7px
+  margin-right: -7px
+  margin-bottom: 10px
+
+  &--cols_3
+    .form-row__item
+      @media(min-width: 768px)
+        width: 33.33333%
+
+  &__item
+    padding-left: 7px
+    padding-right: 7px
+    width: 50%
+
+    &--2_3
+      width: 66.66666%
+
+    &--1_3
+      width: 33.33333%
+
+    &--type_2
+      flex-grow: 1
+      margin-bottom: 0
+      padding-left: 7px
+      padding-right: 7px
+      width: auto
+
+      @media(min-width: 768px)
+        flex-grow: 1
+        width: auto
+
+      .textarea--small
+        height: 64px
+
+    &--type_3
+      margin-bottom: 0
+      padding-left: 7px
+      padding-right: 7px
+      width: 78px
+
+      @media(min-width: 768px)
+        width: 78px
+
+      .foto-upload
+        height: 64px
+
+    &--type_4
+      align-items: flex-end
+      display: flex
+      margin-top: 10px
+      padding-left: 7px
+      padding-right: 7px
+      min-width: 224px
+
+      @media(min-width: 768px)
+        margin-top: 0
+        width: 224px
+
+.form-label
+  display: block
+  line-height: 21px
+  margin-bottom: 10px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__text
+    color: $secondary-color
+    display: block
+    margin-bottom: 5px
+    padding-left: 4px
+    padding-right: 4px
+
+  &__container
+    display: block
+    position: relative
+
+    .input,
+    .stretchy-input
+      padding-right: 41px
+
+    .submit,
+    .clear
+      left: auto
+      position: absolute
+      right: 0
+      top: 0
+      z-index: 1
+
+.photo-container
+  position: relative
+
+  input[type="file"]
+    position: absolute
+    width: 1px
+    height: 1px
+    padding: 0
+    margin: -1px
+    overflow: hidden
+    clip: rect(0,0,0,0)
+    white-space: nowrap
+    border: 0
+
+.submit,
+.clear
+  align-items: center
+  background-color: transparent
+  border: none
+  cursor: pointer
+  display: flex
+  height: 36px
+  justify-content: center
+  padding: 0
+  width: 41px
+
+  &:hover,
+  &:focus
+    .submit__icon,
+    .clear__icon
+      fill: darken(#C4C4C4, 10%)
+
+  &__icon
+    fill: #C4C4C4
+    height: 18px
+    transition: fill 0.3s
+    width: 21
+
+  .clear__icon
+    height: 10px
+    width: 10px
+
+.add-field
+  background: none
+  border: none
+  color: $secondary-color
+  cursor: pointer
+  line-height: 18px
+  padding: 5px 0
+  text-decoration: underline
+
+.form-title
+  color: $secondary-color
+  line-height: 21px
+  margin-bottom: 12px
+
+.options
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 13px
+
+.option1
+  cursor: pointer
+  margin-right: 8px
+  margin-bottom: 8px
+  position: relative
+
+  &:last-child
+    margin-right: 0
+
+  input[type="checkbox"],
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .option1__text
+      color: #fff
+
+    &:checked + .option1__text--type_1
+      background-color: #AE7ABB
+      border-color: #AE7ABB
+
+    &:checked + .option1__text--type_2
+      background-color: #E36F72
+      border-color: #E36F72
+
+    &:checked + .option1__text--type_3
+      background-color: #39A8BB
+      border-color: #39A8BB
+
+    &:checked + .option1__text--type_4
+      background-color: #B4C25C
+      border-color: #B4C25C
+
+    &:checked + .option1__text--type_5
+      background-color: #F2C94C
+      border-color: #F2C94C
+
+  &__text
+    align-items: center
+    border: 1px solid $text-color
+    border-radius: 8px
+    color: $text-color
+    display: inline-flex
+    font-size: 9px
+    height: 24px
+    justify-content: center
+    line-height: 16px
+    min-width: 70px
+    padding: 4px 8px 3px
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s
+    text-transform: uppercase
+    text-align: center
+    vertical-align: top
+
+    @media(min-width: 1200px)
+      font-size: 11px
+      height: 36px
+
+    &:hover
+      color: #fff
+
+    &--type_1
+      &:hover
+        background-color: #AE7ABB
+        border-color: #AE7ABB
+
+    &--type_2
+      &:hover
+        background-color: #E36F72
+        border-color: #E36F72
+
+    &--type_3
+      &:hover
+        background-color: #39A8BB
+        border-color: #39A8BB
+
+    &--type_4
+      &:hover
+        background-color: #B4C25C
+        border-color: #B4C25C
+
+    &--type_5
+      &:hover
+        background-color: #F2C94C
+        border-color: #F2C94C
+
+.select-wrapper
+  position: relative
+  z-index: 1
+
+.info
+  margin-bottom: 30px
+  padding-bottom: 34px
+  position: relative
+
+  &::after
+    background-color: #D6D6D6
+    box-shadow: 0 1px 1px 0 #fff
+    bottom: 0
+    content: ''
+    height: 2px
+    display: block
+    left: 0
+    position: absolute
+    top: auto
+    width: 100%
+
+  &__inner
+    display: flex
+    flex-wrap: wrap
+    margin-left: -4px
+    margin-right: -4px
+
+  &__text,
+  &__photo
+    padding-left: 4px
+    padding-right: 4px
+
+  &__text
+    width: 67%
+
+  &__photo
+    width: 33%
+
+.foto-upload
+  background-color: #fff
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Ccircle cx='13' cy='13' r='12' stroke='%236F7075'/%3E%3Cline x1='7.40039' y1='12.9003' x2='18.6004' y2='12.9003' stroke='%236F7075'/%3E%3Cline x1='12.9004' y1='18.6002' x2='12.9004' y2='7.40022' stroke='%236F7075'/%3E%3C/g%3E%3C/svg%3E")
+  border-radius: 8px
+  border: none
+  cursor: pointer
+  height: 110px
+
+  &--small
+    background-size: 16px 16px
+    height: 72px
+
+  &.is-upload
+    background-size: cover
+
+  &.disabled
+    background-color: rgba(#fff, 0.5)
+    cursor: default
+
+.questions-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  &__item
+    margin-bottom: 23px
+
+    &:last-child
+      margin-bottom: 0
+
+.options2
+  margin-top: 20px
+
+  @media(min-width: 768px)
+    padding-left: 28px
+
+  &__title
+    color: $secondary-color
+    line-height: 18px
+    margin-bottom: 5px
+
+  &__item
+    margin-bottom: 8px
+
+.mosaic-types
+  margin-top: 20px
+  margin-bottom: 20px
+
+  @media(min-width: 768px)
+    padding-left: 28px
+
+  &__title
+    color: $secondary-color
+    line-height: 18px
+    margin-bottom: 9px
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+
+  &__item
+    max-width: 160px
+    width: 50%
+
+.mosaic-type
+  cursor: pointer
+  display: block
+  max-width: 116px
+  position: relative
+
+  &:hover
+    .mosaic-type__svg
+      opacity: 1
+
+    .mosaic-type__title
+      color: $secondary-color
+
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .mosaic-type__svg
+      opacity: 1
+      stroke: $main-color
+
+    &:checked ~ .mosaic-type__title
+      color: $secondary-color
+      opacity: 1
+
+  &__svg
+    fill: #fff
+    height: 72px
+    opacity: 0.5
+    stroke: #fff
+    stroke-width: 1px
+    transition: stroke 0.3s, opacity 0.3s
+    width: 116px
+
+  &__title
+    display: block
+    opacity: 0.5
+    transition: color 0.3s, opacity
+    text-align: center
+
+.photos
+  @media(min-width: 768px)
+    padding-left: 28px
+
+  &__title
+    color: $secondary-color
+    line-height: 18px
+    margin-bottom: 9px
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    margin-left: -4px
+    margin-right: -4px
+
+  &__item
+    max-width: 124px
+    padding-left: 4px
+    padding-right: 4px
+    width: 25%
+
+.options3
+  margin-bottom: 25px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__title-block
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+
+    .options3__title
+      @media(min-width: 768px)
+        margin-bottom: 0
+        padding-right: 20px
+
+  &__title
+    color: $secondary-color
+    line-height: 18px
+    margin-bottom: 10px
+
+  &__answers-qnt
+    color: #FB5B5B
+    line-height: 18px
+    margin-bottom: 10px
+    white-space: nowrap
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+
+    &--type_2
+      @media(min-width: 768px)
+        margin-left: -5px
+        margin-right: -5px
+
+    .option2
+      margin-right: 8px
+
+  &__list-item
+    width: 100%
+
+    @media(min-width: 768px)
+      padding-left: 5px
+      padding-right: 5px
+      width: 50%
+
+.option2
+  cursor: pointer
+  display: block
+  margin-bottom: 8px
+  position: relative
+
+  &:last-child
+    margin-right: 0
+
+  input[type="checkbox"],
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .option2__text,
+    &:checked:disabled + .option2__text
+      background-color: $main-color
+      border-color: $main-color
+      color: #fff
+
+    &:disabled + .option2__text
+      background-color: #EEEEEE
+      border-color: #EEEEEE
+      cursor: default
+
+  &__text
+    align-items: center
+    border: 1px solid #EEEEEE
+    background-color: #EEEEEE
+    border-radius: 4px
+    color: $text-color
+    display: inline-flex
+    font-size: 11px
+    height: 27px
+    justify-content: center
+    line-height: 13px
+    min-width: 27px
+    padding: 4px 0 3px
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s
+    text-align: center
+    vertical-align: top
+
+    @media(min-width: 1200px)
+      font-size: 14px
+      height: 32px
+      min-width: 32px
+
+    @media(min-width: 1400px)
+      height: 40px
+      min-width: 40px
+
+    &--type_2
+      min-width: 72px
+      padding: 4px 8px 3px
+
+    &--type_3
+      font-size: 11px
+      min-width: 60px
+      padding: 3px 8px 3px
+
+      @media(min-width: 1200px)
+        font-size: 13px
+
+    &--type_4
+      width: 100%
+
+.options4
+  &__list
+    display: flex
+    flex-wrap: wrap
+    margin-left: -4px
+    margin-right: -4px
+    margin-bottom: -8px
+
+    &--type_2
+      .options4__item
+        width: 33.33333%
+
+  &__item
+    margin-bottom: 8px
+    padding-left: 4px
+    padding-right: 4px
+    width: 50%
+
+  &__title
+    color: $secondary-color
+    line-height: 18px
+    margin-bottom: 10px
+
+.option3
+  cursor: pointer
+  display: block
+  position: relative
+
+  input[type="checkbox"],
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .option3__image img
+      box-shadow: 0 0 0 4px $main-color
+
+  &__image
+    border-radius: 4px
+    display: block
+    outline: 4px solid transparent
+
+    text-align: center
+    vertical-align: top
+
+    img
+      border-radius: 4px
+      box-shadow: 0 0 4px 0 transparent
+      transition: box-shadow 0.3s
+
+div.option3
+  cursor: default
+
+.stretchy-input
+  background-color: #fff
+  border: 1px solid rgba(#8E8C96, 0.4)
+  border-radius: 8px
+  color: #8E8C96
+  cursor: text
+  line-height: 21px
+  min-height: 36px
+  padding: 8px 9px 7px
+  transition: border-color 0.3s, height 0.3s
+  width: 100%
+
+  &:empty
+    &::before
+      content: attr(placeholder)
+      color: #8E8C96
+
+  &:focus
+    border-color: #8E8C96
+
+  &.error
+    border-color: #ff0000
+
+    &:focus
+      border-color: #ff0000
+
+  &:disabled
+    opacity: 0.5
+
+.stretchy-textarea
+  background-color: #fff
+  border: 1px solid #fff
+  border-radius: 8px
+  color: $text-color
+  line-height: 21px
+  min-height: 110px
+  padding: 9px 9px 7px
+  transition: border-color 0.3s, height 0.3s
+  width: 100%
+
+  &:empty
+    &::before
+      content: attr(placeholder)
+      color: #C4C4C4
+
+  &:focus
+    border-color: darken(#EFEEEE, 5%)
+
+  &.error
+    border-color: #ff0000
+
+    &:focus
+      border-color: #ff0000
+
+  &:disabled
+    opacity: 0.5
+
+.profile-section
+  margin-bottom: 27px
+  padding-bottom: 22px
+  position: relative
+
+  &::after
+    background-color: #D6D6D6
+    box-shadow: 0 1px 1px 0 #fff
+    bottom: 0
+    content: ''
+    height: 2px
+    display: block
+    left: 0
+    position: absolute
+    top: auto
+    width: 100%
+
+.profile-contact
+  padding-right: 30px
+  position: relative
+
+  &__delete
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 30px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 0
+    top: 29px
+    width: 30px
+
+    &:hover,
+    &:focus
+      outline: none
+
+      .profile-contact__delete-icon
+        fill: rgba(#6F7075, 1)
+
+  &__delete-icon
+    fill: rgba(#6F7075, 0.54)
+    height: 14px
+    transition: fill 0.3s
+    width: 14px
+
+.tag-block
+  position: relative
+  width: 100%
+
+  &__toggler
+    align-items: center
+    background-color: #fff
+    border: none
+    border-radius: 8px
+    color: $text-color
+    cursor: pointer
+    display: flex
+    font-family: 'Roboto', Arial, sans-serif
+    font-size: 14px
+    font-weight: 400
+    height: 36px
+    line-height: 16px
+    padding: 4px 30px 4px 6px
+    position: relative
+    text-decoration: none
+    text-align: left
+    transition: background-color 0.3s, border-color 0.3s
+    vertical-align: middle
+    width: 100%
+    z-index: 1
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.06667 0L4 3.06667L0.933333 0L0 0.933333L4 4.93333L8 0.933333L7.06667 0Z' fill='%2304405A'/%3E%3C/svg%3E%0A")
+      content: ''
+      height: 5px
+      left: auto
+      position: absolute
+      right: 15px
+      top: 50%
+      transform: translateY(-50%)
+      width: 8px
+      z-index: 1
+
+    &:hover
+      background-color: #fafafa
+
+    &.tag-color-1
+      border-color: $tag-color-1
+
+      &:hover
+        background-color: lighten($tag-color-1, 5%)
+        border-color: lighten($tag-color-1, 5%)
+
+    &.tag-color-2
+      border-color: $tag-color-2
+
+      &:hover
+        background-color: lighten($tag-color-2, 5%)
+        border-color: lighten($tag-color-2, 5%)
+
+    &.tag-color-3
+      border-color: $tag-color-3
+
+      &:hover
+        background-color: lighten($tag-color-3, 5%)
+        border-color: lighten($tag-color-3, 5%)
+
+    &.tag-color-4
+      border-color: $tag-color-4
+
+      &:hover
+        background-color: lighten($tag-color-4, 5%)
+        border-color: lighten($tag-color-4, 5%)
+
+    &.tag-color-5
+      border-color: $tag-color-5
+
+      &:hover
+        background-color: lighten($tag-color-5, 5%)
+        border-color: lighten($tag-color-5, 5%)
+
+    &.tag-color-6
+      border-color: $tag-color-6
+
+      &:hover
+        background-color: lighten($tag-color-6, 5%)
+        border-color: lighten($tag-color-5, 5%)
+
+    &.tag-color-7
+      border-color: $tag-color-7
+
+      &:hover
+        background-color: lighten($tag-color-7, 5%)
+        border-color: lighten($tag-color-7, 5%)
+
+      &::after
+        background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.06667 0L4 3.06667L0.933333 0L0 0.933333L4 4.93333L8 0.933333L7.06667 0Z' fill='%23FFFFFF'/%3E%3C/svg%3E%0A")
+
+    &.tag-color-8
+      border-color: $tag-color-8
+
+      &:hover
+        background-color: lighten($tag-color-8, 5%)
+        border-color: lighten($tag-color-8, 5%)
+
+    &.tag-color-9
+      border-color: $tag-color-9
+
+      &:hover
+        background-color: lighten($tag-color-9, 5%)
+        border-color: lighten($tag-color-9, 5%)
+
+    &.tag-color-10
+      border-color: $tag-color-10
+      &:hover
+        background-color: lighten($tag-color-10, 5%)
+        border-color: lighten($tag-color-10, 5%)
+
+      svg
+        fill: $text-color
+
+  &__toggler-icon
+    fill: #fff
+    height: 10px
+    margin-right: 5px
+    width: 10px
+
+  &__dropdown
+    background-color: #fff
+    border-radius: 8px
+    box-shadow: 0 0 4px 0 rgba(#000, 0.2)
+    display: none
+    left: 0
+    margin-top: 5px
+    position: absolute
+    padding: 12px
+    top: 100%
+    width: 100%
+    z-index: 2
+
+    &.is-open
+      display: block
+
+  &__add,
+  &__pick
+    background-color: #EFEEEE
+    border: none
+    border-radius: 4px
+    color: $text-color
+    cursor: pointer
+    display: inline-block
+    font-family: 'Roboto', Arial, sans-serif
+    font-size: 12px
+    font-weight: 400
+    height: 25px
+    line-height: 16px
+    padding: 4px 10px
+    text-decoration: none
+    text-align: center
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s
+    vertical-align: middle
+    width: 100%
+
+    &:hover
+      background-color: darken(#EFEEEE, 5%)
+
+  &__pick
+    background-color: #fff
+    border: 1px solid #6F7075
+
+  &__list
+    margin-top: 10px
+    margin-bottom: 10px
+    max-height: 140px
+    overflow-y: auto
+    overflow-x: hidden
+    scrollbar-width: thin
+    scrollbar-color: darken(#EEE, 10%) darken(#EEE, 2.5%)
+
+  &::-webkit-scrollbar
+    height: 4px
+    width: 5px
+
+  &::-webkit-scrollbar-track
+    background: darken(#EEE, 10%)
+
+  &::-webkit-scrollbar-thumb
+    background: darken(#EEE, 2.5%)
+
+  &::-webkit-scrollbar:horizontal
+    height: 4px
+
+  &::-webkit-scrollbar-track:horizontal
+    background: darken(#EEE, 10%)
+
+  &::-webkit-scrollbar-thumb:horizontal
+    background: darken(#EEE, 2.5%)
+
+  &__list-item
+    align-items: center
+    display: flex
+
+    &:not(:last-child)
+      margin-bottom: 6px
+
+  &__tag
+    align-items: center
+    border: 1px solid transparent
+    border-radius: 4px
+    color: #fff
+    cursor: pointer
+    display: flex
+    font-size: 9px
+    flex-grow: 1
+    height: 23px
+    justify-content: center
+    text-transform: uppercase
+
+    &.is-active
+      border-color: #04405A
+
+  &__manage
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    height: 23px
+    padding: 0
+    width: 23px
+
+  &__manage-icon
+    fill: rgba($text-color, 0.6)
+    height: 10px
+    width: 10px
+
+  &__input
+    border-radius: 4px
+    border: 1px solid rgba(#000, 0.2)
+    color: $text-color
+    font-size: 12px
+    height: 25px
+    margin-bottom: 6px
+    padding: 0 10px
+    width: 100%
+
+    &::-webkit-input-placeholder
+      color: $text-color
+      opacity: 1
+
+    &::-moz-placeholder
+      color: $text-color
+      opacity: 1
+
+    &:-ms-input-placeholder
+      color: $text-color
+      opacity: 1
+
+  &__colors
+    display: flex
+    flex-wrap: wrap
+    margin-left: -3px
+    margin-right: -3px
+
+  &__colors-item
+    margin-bottom: 6px
+    padding-left: 3px
+    padding-right: 3px
+    width: 50%
+
+  &__color-block
+    cursor: pointer
+    display: block
+    position: relative
+
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:checked + .tag-block__color
+        border-color: rgba(#000, 0.5)
+
+  &__color
+    border-radius: 4px
+    border: 1px solid transparent
+    display: block
+    height: 23px
+
+  &__finish
+    background-color: transparent
+    border: 1px solid $text-color
+    border-radius: 8px
+    color: $text-color
+    cursor: pointer
+    font-size: 12px
+    height: 25px
+    transition: background-color 0.3s
+    width: 100%
+
+    &:hover
+      background-color: darken(rgba(#fff, 0.5), 10%)
+
+.categories
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 12px
+
+.category
+  align-items: center
+  background-color: transparent
+  border: none
+  cursor: pointer
+  display: flex
+  margin-right: 16px
+  margin-bottom: 8px
+  padding: 0
+
+  &__title
+    border-radius: 8px
+    font-size: 9px
+    margin-right: 4px
+    padding: 6px 8px
+    text-transform: uppercase
+
+  &__manage-icon
+    fill: rgba($text-color, 0.6)
+    height: 10px
+    width: 10px
+
+.tag-color-1
+  background-color: $tag-color-1
+  color: #fff
+
+.tag-color-2
+  background-color: $tag-color-2
+  color: #fff
+
+.tag-color-3
+  background-color: $tag-color-3
+  color: #fff
+
+.tag-color-4
+  background-color: $tag-color-4
+  color: #fff
+
+.tag-color-5
+  background-color: $tag-color-5
+  color: #fff
+
+.tag-color-6
+  background-color: $tag-color-6
+  color: #fff
+
+.tag-color-7
+  background-color: $tag-color-7
+  color: #fff
+
+.tag-color-8
+  background-color: $tag-color-8
+  color: #fff
+
+.tag-color-9
+  background-color: $tag-color-9
+  color: #fff
+
+.tag-color-10
+  background-color: $tag-color-10
+  color: $text-color

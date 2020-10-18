@@ -1,0 +1,38 @@
+.go-top
+  align-items: center
+  background-color: $main-color
+  border: 1px solid $main-color
+  border-radius: 4px
+  bottom: 10px
+  color: #fff
+  cursor: pointer
+  display: none
+  height: 40px
+  justify-content: center
+  left: auto
+  padding: 0
+  position: fixed
+  right: 10px
+  top: auto
+  text-align: center
+  transition: background-color 0.3s, border-color 0.3s
+  width: 40px
+  z-index: 2
+
+  @media(min-width: 1200px)
+    bottom: 30px
+    right: 10px
+
+  @media(min-width: 1440px)
+    bottom: 60px
+
+  &.is-active
+    display: flex
+
+  &.hidden
+    z-index: -1
+
+  &__icon
+    fill: #fff
+    height: 8px
+    width: 19px

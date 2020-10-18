@@ -1,0 +1,263 @@
+.head
+  background-color: #fff
+  left: -750px
+  position: fixed
+  right: 0
+  top: 0
+  transition: left 0.3s
+  width: 750px
+  z-index: 4
+
+  @media(min-width: 1200px)
+    box-shadow: none
+    left: -840px
+    transition: left 0.3s
+    width: 840px
+
+  &.is-open
+    left: 0
+
+  &__inner
+    display: flex
+    padding-right: 20px
+
+  &__logo-block
+    align-items: center
+    background-color: #033A52
+    border: none
+    cursor: pointer
+    display: flex
+    height: 120px
+    justify-content: center
+    min-width: 136px
+    padding: 0
+    width: 136px
+
+  &__logo
+    background-color: #fff
+    border-radius: 50%
+    height: 48px
+    overflow: hidden
+    width: 48px
+
+  &__right
+    align-items: center
+    display: flex
+    flex-grow: 1
+
+  &__partner-info
+    padding-left: 20px
+
+  &__partner-name
+    color: $main-color
+    font-size: 18px
+    line-height: 28px
+    max-width: 570px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+    @media(min-width: 1200px)
+      font-size: 22px
+
+  &__partner-id
+    color: $secondary-color
+    line-height: 18px
+
+  &__buttons
+    align-items: center
+    display: flex
+    margin-left: auto
+
+  &__button
+    align-items: center
+    background-color: transparent
+    border: none
+    color: $text-color
+    cursor: pointer
+    display: flex
+    font-size: 12px
+    flex-direction: column
+    line-height: 18px
+    min-height: 40px
+    min-width: 40px
+    justify-content: center
+    padding: 0
+    text-decoration: none
+
+    &--filter
+      @media(min-width: 768px)
+        display: none
+
+    &:not(:last-child)
+      margin-right: 28px
+
+  &__button-icon
+    fill: $text-color
+    height: 24px
+    width: 24px
+
+  &__button-text
+    margin-top: 6px
+
+.header
+  padding-left: 10px
+  padding-right: 10px
+
+  @media(min-width: 1200px)
+    padding-left: 30px
+    padding-right: 30px
+
+  @media(min-width: 1400px)
+    padding-left: 60px
+    padding-right: 60px
+
+  &__inner
+    padding-left: 10px
+    padding-right: 10px
+    padding-top: 28px
+    padding-bottom: 28px
+    position: relative
+
+    &--two_columns
+      display: flex
+      justify-content: space-between
+
+    &::after
+      background-color: #D6D6D6
+      box-shadow: 0 4px 4px 0 rgba(#fff, 0.5)
+      bottom: 0
+      content: ''
+      height: 4px
+      display: block
+      left: 0
+      position: absolute
+      top: auto
+      width: 100%
+
+  &__left
+    margin-bottom: 15px
+
+    @media(min-width: 800px)
+      margin-bottom: 0
+
+  &__title
+    color: $main-color
+    font-size: 22px
+    font-weight: 400
+    line-height: 39px
+    margin-bottom: 4px
+
+  &__info
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+
+  &__info-title
+    color: $secondary-color
+    margin-bottom: 0
+    margin-right: 24px
+
+  &__right
+    align-items: center
+    align-self: flex-end
+    display: flex
+    flex-wrap: wrap
+
+  &__add-button
+    min-width: 115px
+
+    @media(min-width: 992px)
+      min-width: 130px
+
+  &__manage-button
+    &:not(:first-child)
+      margin-left: 10px
+
+      @media(min-width: 992px)
+        margin-left: 25px
+
+.manage-button
+  align-items: center
+  background-color: transparent
+  border: none
+  cursor: pointer
+  display: flex
+  height: 32px
+  justify-content: center
+  min-width: 32px
+  padding: 0
+  text-decoration: none
+
+  &--filter
+    @media(max-width: 767px)
+      display: none
+
+    @media(min-width: 1200px)
+      display: none
+
+    .manage-button__icon
+      height: 26px
+      width: 26px
+
+  &:hover,
+  &:focus,
+  &.is-active
+    .manage-button__icon
+      fill: $main-color
+
+  &__icon
+    fill: $text-color
+    height: 32px
+    transition: fill 0.3s
+    width: 32px
+
+.editable-title
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 15px
+
+  &__title
+    color: $secondary-color
+    display: inline-block
+    font-size: 22px
+    font-weight: 400
+    line-height: 1.2
+    margin-bottom: 8px
+    position: relative
+    padding-right: 30px
+
+  &__buttons
+    display: flex
+    flex-wrap: wrap
+
+    .button
+      min-width: 180px
+      margin-bottom: 8px
+
+      &:not(:last-child)
+        margin-right: 8px
+
+.stats_2
+  display: flex
+  flex-wrap: wrap
+
+  &__item
+    text-align: center
+
+    &:not(:last-child)
+      margin-right: 36px
+
+  &__item-title
+    color: $secondary-color
+    font-size: 9px
+    font-weight: 500
+    margin-bottom: 5px
+    text-transform: uppercase
+
+  &__item-value
+    color: $main-color
+    font-size: 36px
+    font-weight: 500

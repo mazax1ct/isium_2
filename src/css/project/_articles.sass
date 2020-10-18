@@ -1,0 +1,979 @@
+.articles
+  @media(min-width: 1200px)
+    display: flex
+
+  &--no_filter
+    .articles__list
+      @media(min-width: 1200px)
+        margin-right: auto
+
+      @media(min-width: 1440px)
+        transform: translateX(-45px)
+
+  &__list
+    @media(min-width: 1200px)
+      flex-grow: 1
+      max-width: 695px
+      margin-left: auto
+      position: relative
+      z-index: 2
+
+    @media(min-width: 1440px)
+      max-width: 785px
+      padding-left: 90px
+
+  &__filter
+    background-color: #EFEEEE
+    height: calc(100% - 60px)
+    left: auto
+    overflow-y: auto
+    padding-top: 15px
+    position: fixed
+    right: -100%
+    top: 60px
+    transition: right 0.5s
+    width: 100%
+    z-index: 1
+
+    @media(min-width: 768px)
+      padding-left: 136px
+      top: 150px
+
+    @media(min-width: 800px)
+      top: 120px
+
+    @media(min-width: 1200px)
+      background-color: transparent
+      display: block
+      height: auto
+      min-width: 286px
+      margin-right: auto
+      padding-left: 30px
+      padding-top: 0
+      position: static
+      top: auto
+      width: auto
+
+    &.is-open
+      right: 0
+
+    .js-sticky-block
+      z-index: 1
+
+.articles-list
+  &__add-block
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 2
+
+    @media(min-width: 768px)
+      padding-left: 136px
+
+  &__add-block-inner
+    background-color: #EFEEEE
+    margin-left: auto
+    margin-right: auto
+    max-width: 725px
+    padding: 75px 15px 15px
+
+    @media(min-width: 768px)
+      padding-top: 30px
+      padding-bottom: 30px
+
+    @media(min-width: 900px)
+      max-width: 755px
+      padding-left: 30px
+      padding-right: 30px
+
+    @media(min-width: 1200px)
+      transform: translateX(-145px)
+
+    @media(min-width: 1440px)
+      transform: translateX(-97px)
+
+.filter
+  max-width: 256px
+  margin-left: auto
+  margin-right: auto
+  padding-bottom: 5px
+
+  @media(min-width: 1200px)
+    min-width: 256px
+
+  &__title
+    color: $main-color
+    font-size: 14px
+    margin-bottom: 15px
+
+.filter-item
+  cursor: pointer
+  display: block
+
+  input[type="checkbox"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .filter-item__image
+      border-color: $main-color
+
+  &__image
+    background-color: #fff
+    border-radius: 8px
+    border: 2px solid #fff
+    display: block
+    height: 80px
+    margin-bottom: 8px
+    transition: border-color 0.3s
+    width: 80px
+
+    img
+      border-radius: 8px
+
+  &__text
+    color: $secondary-color
+    display: block
+    font-size: 10px
+    line-height: 18px
+    text-align: center
+
+.companies-list
+  margin-bottom: 30px
+  padding-bottom: 34px
+  position: relative
+
+  &::after
+    background-color: #D6D6D6
+    box-shadow: 0 1px 1px 0 #fff
+    bottom: 0
+    content: ''
+    height: 2px
+    display: block
+    left: 0
+    position: absolute
+    top: auto
+    width: 100%
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    margin-left: -4px
+    margin-right: -4px
+    margin-bottom: -8px
+
+  &__item
+    margin-bottom: 8px
+    padding-left: 4px
+    padding-right: 4px
+
+.add-company
+  align-items: center
+  background-color: #fff
+  border: none
+  border-radius: 8px
+  cursor: pointer
+  display: flex
+  height: 80px
+  justify-content: center
+  padding: 0
+  width: 80px
+
+  &:hover,
+  &:focus
+    .add-company__icon
+      fill: $main-color
+
+  &__icon
+    fill: #C4C4C4
+    height: 32px
+    transition: fill 0.3s
+    width: 32px
+
+.worth-list
+  font-size: 12px
+  list-style: none
+  margin: 0 0 25px
+  padding: 0
+
+  &--decorated
+    margin-bottom: 24px
+    padding-bottom: 28px
+    position: relative
+
+    &::after
+      background-color: #D6D6D6
+      box-shadow: 0 1px 1px 0 #fff
+      bottom: 0
+      content: ''
+      height: 2px
+      display: block
+      left: 0
+      position: absolute
+      top: auto
+      width: 100%
+
+  &__item
+    &:not(:last-child)
+      margin-bottom: 15px
+
+.client-card
+  border-radius: 8px
+  background-color: #fff
+  font-size: 12px
+  margin-bottom: 20px
+  padding: 25px 17px
+
+  &__title
+    color: $main-color
+    font-size: 14px
+
+  &__subtitle
+    color: $secondary-color
+    margin-bottom: 15px
+
+  &__address
+    margin-bottom: 15px
+
+.article
+  background-color: #fff
+  border: 1px solid rgba(#fff,0.2)
+  box-shadow: -6px -6px 16px 0 rgba(#fff, 0.5), 6px 6px 16px 0 rgba(#D1CDC7, 0.5)
+  border-radius: 16px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 30px
+  max-width: 695px
+  padding: 30px 15px
+  position: relative
+  width: 100%
+  z-index: 1
+
+  @media(min-width: 700px)
+    padding: 30px 40px 36px
+
+  @media(min-width: 1200px)
+    margin-bottom: 48px
+
+  &__company-logo
+    background-color: #fff
+    border-radius: 50%
+    display: none
+    height: 60px
+    left: -90px
+    position: absolute
+    top: 10px
+    width: 60px
+    z-index: 1
+
+    @media(min-width: 1440px)
+      display: block
+
+  &__top
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-right: 35px
+    position: relative
+    color: $secondary-color
+    line-height: 18px
+
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+      margin-bottom: 5px
+
+  &__company-name
+    margin-bottom: 10px
+
+  &__theme
+    @media(min-width: 768px)
+      max-width: calc(100% - 240px)
+
+  &__company-name
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+    @media(min-width: 768px)
+      max-width: 200px
+
+  &__title-block
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    .article__title
+      margin-bottom: 3px
+
+  &__draft
+    color: $secondary-color
+    font-size: 11px
+    padding-right: 35px
+
+  &__type-label
+    border-radius: 4px
+    font-size: 9px
+    line-height: 1
+    margin-top: 4px
+    margin-bottom: 5px
+    padding: 8px 10px
+    text-transform: uppercase
+    white-space: nowrap
+
+  &__manage-block
+    left: auto
+    position: absolute
+    top: 0
+    right: 0
+
+    .article__title
+      padding-right: 20px
+
+  &__manage-button
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 30px
+    justify-content: center
+    padding: 0
+    width: 30px
+
+    &:hover,
+    &:focus,
+    &.is-active
+      .article__manage-button-icon
+        fill: darken(#C4C4C4, 10%)
+
+  &__manage-button-icon
+    fill: #C4C4C4
+    height: 16px
+    transition: fill 0.3s
+    width: 4px
+
+  &__manage-dropdown
+    left: auto
+    right: 0
+    top: 50px
+
+    @media(min-width: 768px)
+      right: 40px
+      top: 0
+
+    @media(min-width: 1440px)
+      left: 100px
+      right: auto
+
+    &.manage-popover::after
+      left: auto
+      right: 6px
+
+      @media(min-width: 768px)
+        left: 100%
+        top: 12px
+        border-bottom-color: transparent
+        border-left-color: #fff
+
+      @media(min-width: 1440px)
+        left: auto
+        right: 100%
+        top: 12px
+        border-right-color: #fff
+        border-left-color: transparent
+
+  &__title
+    color: $main-color
+    font-size: 22px
+    font-weight: 400
+    line-height: 28px
+    margin-bottom: 5px
+
+  &__date
+    font-size: 12px
+    margin-bottom: 15px
+
+  &__preview-text
+    font-size: 13px
+    margin-bottom: 12px
+
+    @media(min-width: 1200px)
+      font-size: 14px
+
+    p
+      margin-bottom: 15px
+
+      &:last-child
+        margin-bottom: 0
+
+  &__image
+    margin-bottom: 19px
+    text-align: center
+
+    &:last-child
+      margin-bottom: 0
+
+    img
+      border-radius: 8px
+
+  .input,
+  .textarea
+    background-color: rgba(#EEEEEE, 0.5)
+
+  .form-label__text
+    line-height: 18px
+    margin-bottom: 5px
+
+.manage-popover
+  background-color: #fff
+  border-radius: 8px
+  display: none
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.2))
+  position: absolute
+  padding: 10px 20px
+  width: 275px
+
+  &.is-open
+    display: block
+
+  &::after
+    bottom: 100%
+    left: 0
+    border: solid transparent
+    content: ''
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+    border-color: rgba(255, 255, 255, 0)
+    border-bottom-color: #fff
+    border-width: 8px
+
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      &:not(:last-child)
+        margin-bottom: 5px
+
+  &__button
+    background-color: transparent
+    border: none
+    color: $secondary-color
+    cursor: pointer
+    padding: 5px
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+.stats
+  border-bottom: 4px solid #EFEEEE
+  margin-bottom: 28px
+  padding-bottom: 10px
+
+  &:last-child
+    margin-bottom: 0
+
+  @media(min-width: 768px)
+    display: flex
+
+  &__item
+    align-items: center
+    display: flex
+    flex-direction: row-reverse
+    justify-content: space-between
+
+    @media(min-width: 768px)
+      display: block
+      margin-right: 25px
+      text-align: center
+
+    &--comments
+      margin-right: 0
+      margin-left: auto
+
+      @media(min-width: 768px)
+        margin-right: 0
+
+      .stats__item-num
+        color: #FB5B5B
+
+  &__item-num
+    color: $main-color
+    display: block
+    font-size: 24px
+    font-weight: 600
+    line-height: 28px
+
+  &__item-label
+    display: block
+    font-size: 10px
+    line-height: 18px
+
+.comment
+  &:not(:last-child)
+    margin-bottom: 16px
+
+  &--to_comment
+    padding-left: 69px
+
+  &__top
+    align-items: center
+    display: flex
+    flex-flow: wrap
+    justify-content: space-between
+    padding-left: 9px
+    padding-right: 9px
+
+  &__author
+    color: $main-color
+    margin-right: 10px
+
+  &__date
+    font-size: 11px
+    font-weight: 300
+
+  &__delete
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 20px
+    justify-content: center
+    padding: 0
+    width: 20px
+
+  &__delete-icon
+    fill: $text-color
+    height: 8px
+    width: 8px
+
+  &__text
+    background-color: rgba(#EEEEEE,0.5)
+    border-radius: 8px
+    color: #8E8C96
+    font-size: 11px
+    font-weight: 300
+    line-height: 19px
+    min-height: 36px
+    padding: 8px 9px 7px
+
+    @media(min-width: 1200px)
+      font-size: 12px
+
+  &__button-block
+    padding-left: 9px
+    padding-right: 9px
+
+  &__answer-button
+    background-color: transparent
+    border: none
+    color: $text-color
+    cursor: pointer
+    font-size: 11px
+    font-weight: 300
+    padding: 5px
+    margin-left: -5px
+    text-decoration: underline
+
+    //@media(min-width: 1200px)
+      font-size: 13px
+
+.read-more
+  background-color: transparent
+  border: none
+  color: $text-color
+  cursor: pointer
+  font-size: 11px
+  font-weight: 300
+  padding: 5px
+  text-decoration: underline
+
+.comment-answer
+  @media(min-width: 1200px)
+    padding-left: 40px
+
+  &:not(:last-child)
+    margin-bottom: 16px
+
+  &__top
+    align-items: center
+    display: flex
+    flex-flow: wrap
+    padding-right: 9px
+
+  &__top-buttons
+    display: flex
+    margin-left: auto
+
+  &__top-button
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 20px
+    justify-content: center
+    padding: 0
+    width: 20px
+
+  &__top-button-icon
+    fill: $text-color
+    height: 8px
+    width: 8px
+
+  &__author
+    align-items: center
+    display: flex
+    color: $secondary-color
+    font-weight: 500
+    margin-right: 10px
+
+  &__logo
+    height: 32px
+    min-width: 32px
+    margin-right: 6px
+    width: 32px
+
+  &__answered
+    font-size: 12px
+    font-weight: 400
+    margin-left: 5px
+
+  &__date
+    font-size: 11px
+    font-weight: 300
+
+  &__text
+    color: #8E8C96
+    font-size: 11px
+    font-weight: 300
+
+    @media(min-width: 768px)
+      padding-left: 38px
+      padding-right: 38px
+
+    @media(min-width: 1200px)
+      font-size: 12px
+
+  &__button-block
+    @media(min-width: 768px)
+      padding-left: 38px
+
+  &__answer-button
+    background-color: transparent
+    border: none
+    color: $text-color
+    cursor: pointer
+    font-size: 11px
+    font-weight: 300
+    padding: 5px
+    margin-left: -5px
+    text-decoration: underline
+
+    //@media(min-width: 1200px)
+      font-size: 13px
+
+  .answer-form
+    &:not(:last-child)
+      margin-bottom: 10px
+
+  &__buttons
+    text-align: right
+
+    .button
+      font-size: 12px
+      min-width: 125px
+
+.answer-form
+  &:not(:last-child)
+    margin-bottom: 20px
+
+  @media(min-width: 768px)
+    padding-left: 38px
+
+.answer-delete
+  color: #8E8C96
+  font-size: 12px
+  text-align: center
+
+  &:not(:last-child)
+    margin-bottom: 16px
+
+.show-comments
+  background-color: transparent
+  border: none
+  color: $secondary-color
+  cursor: pointer
+  font-size: 12px
+  padding: 5px
+
+  @media(min-width: 1200px)
+    font-size: 13px
+
+.answers-quantity
+  background-color: $secondary-color
+  border-radius: 4px
+  color: #fff
+  font-size: 12px
+  min-height: 27px
+  margin-bottom: 10px
+  padding-top: 3px
+  text-align: center
+
+.stats-block
+  &:not(:last-child)
+    margin-bottom: 40px
+
+.stat-bar
+  align-items: flex-end
+  display: flex
+
+  &:not(:last-child)
+    margin-bottom: 18px
+
+  &--type_2
+    flex-direction: row-reverse
+
+    .stat-bar__title-block
+      justify-content: flex-end
+
+    .stat-bar__percents
+      padding-right: 10px
+      padding-left: 0
+
+  &__percents
+    color: $main-color
+    font-size: 14px
+    line-height: 1
+    min-width: 40px
+    margin-bottom: -3px
+    padding-left: 10px
+    text-align: right
+
+    &--red
+      color: #FB5B5B
+
+  &__bar-block
+    flex-grow: 1
+
+  &__title-block
+    align-items: center
+    display: flex
+    margin-bottom: 5px
+
+  &__title
+    color: $secondary-color
+    font-size: 11px
+    line-height: 1.2
+
+    @media(min-width: 1200px)
+      font-size: 13px
+
+  &__qnt
+    color: $main-color
+    font-size: 11px
+    line-height: 1
+    margin-left: 5px
+
+    &--red
+      color: #FF6666
+
+    &::before
+      content: '• '
+
+    @media(min-width: 1200px)
+      font-size: 13px
+
+.horizontal-bar
+  border-radius: 4px
+  background-color: rgba(#EEEEEE, 0.5)
+  height: 8px
+  overflow: hidden
+  position: relative
+
+  &__value
+    background-color: $main-color
+    height: 8px
+    left: 0
+    position: absolute
+    top: 0
+    z-index: 1
+
+    &--red
+      background-color: #FB5B5B
+
+.question-title
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 20px
+  margin-top: 30px
+
+.stat-bar2
+  align-items: center
+  display: flex
+
+  &:not(:last-child)
+    margin-bottom: 5px
+
+  &--small
+    .stat-bar2__bar-block,
+    .stat-bar2__bar
+      height: 14px
+
+    .stat-bar2__qnt
+      color: $secondary-color
+      font-size: 12px
+
+  &__num
+    color: $secondary-color
+    font-size: 11px
+    line-height: 10px
+    min-width: 25px
+    padding-right: 9px
+    text-align: right
+    width: 25px
+
+  &__bar-block
+    flex-grow: 1
+    height: 16px
+    max-width: calc(100% - 30px)
+    padding-right: 60px
+
+  &__bar
+    height: 16px
+    position: relative
+
+    &--type_10
+      background-color: #00BBD3
+
+    &--type_9
+      background-color: #1CB2C7
+
+    &--type_8
+      background-color: #39A8BB
+
+    &--type_7
+      background-color: #559FAF
+
+    &--type_6
+      background-color: #7195A6
+
+    &--type_5
+      background-color: #8E8C96
+
+    &--type_4
+      background-color: #AA828A
+
+    &--type_3
+      background-color: #C6797E
+
+    &--type_2
+      background-color: #E36F72
+
+    &--type_1
+      background-color: #FF6666
+
+  &__qnt
+    color: $main-color
+    font-size: 14px
+    min-width: 60px
+    left: auto
+    position: absolute
+    padding-left: 10px
+    right: -60px
+    top: 50%
+    transform: translateY(-50%)
+    width: 60px
+
+.tags-list
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  margin-left: -2px
+  margin-right: -2px
+  padding: 0
+
+  &__item
+    margin-bottom: 5px
+    padding-left: 2px
+    padding-right: 2px
+
+.tag
+  cursor: pointer
+  display: block
+  position: relative
+
+  input[type="checkbox"],
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .tag__text
+      background-color: transparent
+
+    &:checked + .tag__text.tag-color-1
+      border-color: $tag-color-1
+      color: $tag-color-1
+
+    &:checked + .tag__text.tag-color-2
+      border-color: $tag-color-2
+      color: $tag-color-2
+
+    &:checked + .tag__text.tag-color-3
+      border-color: $tag-color-3
+      color: $tag-color-3
+
+    &:checked + .tag__text.tag-color-4
+      border-color: $tag-color-4
+      color: $tag-color-4
+
+    &:checked + .tag__text.tag-color-5
+      border-color: $tag-color-5
+      color: $tag-color-5
+
+    &:checked + .tag__text.tag-color-6
+      border-color: $tag-color-6
+      color: $tag-color-6
+
+    &:checked + .tag__text.tag-color-7
+      border-color: $tag-color-7
+      color: $tag-color-7
+
+    &:checked + .tag__text.tag-color-8
+      border-color: $tag-color-8
+      color: $tag-color-8
+
+    &:checked + .tag__text.tag-color-9
+      border-color: $tag-color-9
+      color: $tag-color-9
+
+    &:checked + .tag__text.tag-color-10
+      border-color: $tag-color-10
+      color: $tag-color-10
+
+  &__text
+    border: 1px solid transparent
+    border-radius: 8px
+    display: block
+    font-size: 9px
+    line-height: 1
+    min-width: 70px
+    padding: 7px 5px
+    text-align: center
+    text-transform: uppercase

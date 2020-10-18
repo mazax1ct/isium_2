@@ -1,0 +1,56 @@
+.emoji-container
+  position: relative
+
+  .input
+    padding-left: 33px
+
+.emoji-caller
+  align-items: center
+  background-color: transparent
+  border: none
+  cursor: pointer
+  display: flex
+  height: 36px
+  left: 0
+  position: absolute
+  top: 0
+  width: 33px
+  z-index: 1
+
+  &:hover,
+  &:focus
+    .emoji-caller__icon
+      fill: #000
+
+  &__icon
+    fill: $text-color
+    height: 16px
+    width: 16px
+
+.wrapper
+  z-index: 99993 !important
+
+.emoji-picker__container
+  display: flex !important
+  flex-wrap: wrap
+
+.emoji-picker__emojis
+  padding: 0 !important
+
+.emoji-picker__emojis
+  @media(min-width: 1200px)
+    scrollbar-width: thin
+    scrollbar-color: #ccc #efeeee
+
+  &::-webkit-scrollbar
+    @media(min-width: 1200px)
+      height: 4px
+      width: 5px
+
+  &::-webkit-scrollbar-track
+    @media(min-width: 1200px)
+      background: #fafafa
+
+  &::-webkit-scrollbar-thumb
+    @media(min-width: 1200px)
+      background: #ccc

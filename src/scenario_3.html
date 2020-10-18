@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Добавление сценария</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--center_content">
+  //= template/sprite.html
+
+  <div class="head">
+    <div class="head__inner">
+      <button class="js-sidebar-toggler head__logo-block" type="button">
+        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
+      </button>
+      <div class="head__right">
+        <div class="head__partner-info">
+          <p class="head__partner-name">Самое длинное название которое я смогла придумать</p>
+          <p class="head__partner-id">Ваш ID: 26656559</p>
+        </div>
+        <div class="head__buttons">
+          <a class="head__button" href="page_7.html">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#profile_edit" />
+            </svg>
+            <span class="head__button-text">Профиль</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header__inner header__inner--two_columns">
+      <div class="header__left">
+        <h1 class="header__title">Мои сценарии</h1>
+        <div class="header__info">
+          <p class="header__info-title">У вас 1 сценарий</p>
+        </div>
+      </div>
+      <div class="header__right">
+        <a class="header__manage-button header__add-button button" href="scenario_1.html">Добавить сценарий</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="popup popup--form popup--small">
+      <form action="">
+        <p class="text-center">Сценарий “Качество доставки” создан!<br> Хотите сразу привязать к нему публикации?</p>
+        <br>
+        <div class="popup__save-block form-row">
+          <div class="form-row__item"><button class="button button--transparent" type="button">Остаться в разделе</button></div>
+          <div class="form-row__item"><button class="button" type="button">Да</button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+
+</body>
+
+</html>

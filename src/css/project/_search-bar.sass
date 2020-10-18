@@ -1,0 +1,56 @@
+.search-bar
+  position: relative
+  z-index: 3
+
+  &.focused
+    .search-bar__suggest-block
+      display: block
+
+  &__suggest-block
+    box-shadow: 0 4px 8px 0 rgba(#6F7075, 0.15)
+    background-color: #fff
+    border-radius: 8px
+    display: none
+    left: 0
+    max-height: 126px
+    overflow-y: auto
+    position: absolute
+    top: 35px
+    width: 310px
+    z-index: 1
+    scrollbar-width: thin
+    scrollbar-color: darken(#EEE, 10%) darken(#EEE, 2.5%)
+
+  &::-webkit-scrollbar
+    height: 4px
+    width: 5px
+
+  &::-webkit-scrollbar-track
+    background: darken(#EEE, 10%)
+
+  &::-webkit-scrollbar-thumb
+    background: darken(#EEE, 2.5%)
+
+  &::-webkit-scrollbar:horizontal
+    height: 4px
+
+  &::-webkit-scrollbar-track:horizontal
+    background: darken(#EEE, 10%)
+
+  &::-webkit-scrollbar-thumb:horizontal
+    background: darken(#EEE, 2.5%)
+
+  &__suggest
+    color: #6F7075
+    cursor: pointer
+    display: block
+    font-size: 14px
+    line-height: 18px
+    padding: 12px 25px
+    transition: background-color 0.3s
+
+    &:nth-child(even)
+      background-color: rgba(#EEE, 0.5)
+
+    &:hover
+      background-color: rgba(#EEE, 1)

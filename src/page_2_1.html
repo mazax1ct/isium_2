@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Мои новости. Лента глазами клиента</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--fixed_header">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="articles">
+      <div class="js-content-with-sticky articles__list">
+        <div class="articles-list">
+          <div class="article">
+            <p class="text-center">Публикаций нет</p>
+          </div>
+        </div>
+      </div>
+      <div class="articles__filter">
+        <div class="js-sticky-block">
+          <div class="filter">
+            <form action="">
+              <p class="filter__title">Компаний: 5</p>
+              <div class="companies-list">
+                <div class="companies-list__list">
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_1">
+                      <input id="f_1" name="f_1" type="checkbox" value="1">
+                      <span class="filter-item__image"><img src="images/content/img_9.jpg" alt="Happy Partner"></span>
+                      <span class="filter-item__text">Happy Partner</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_2">
+                      <input id="f_2" name="f_2" type="checkbox" value="2">
+                      <span class="filter-item__image"><img src="images/content/img_10.jpg" alt="LEROY MERLIN"></span>
+                      <span class="filter-item__text">LEROY MERLIN</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_3">
+                      <input id="f_3" name="f_3" type="checkbox" value="3">
+                      <span class="filter-item__image"><img src="images/content/img_11.jpg" alt="М.видео"></span>
+                      <span class="filter-item__text">М.видео</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_4">
+                      <input id="f_4" name="f_4" type="checkbox" value="4">
+                      <span class="filter-item__image"><img src="images/content/img_12.jpg" alt="ЯММПИЦЦА"></span>
+                      <span class="filter-item__text">ЯММПИЦЦА</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_5">
+                      <input id="f_5" name="f_5" type="checkbox" value="5">
+                      <span class="filter-item__image"><img src="images/content/img_13.jpg" alt="МИФ"></span>
+                      <span class="filter-item__text">МИФ</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <button class="add-company" type="button" title="Добавить">
+                      <svg class="add-company__icon" aria-hidden="true">
+                        <use xlink:href="#plus" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p class="filter__title">Happy Partner: 3 ценности</p>
+              <ol class="worth-list">
+                <li class="worth-list__item">
+                  <label class="checkbox-label" for="w_1">
+                    <input id="w_1" name="w_1" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Качество доставки</span>
+                  </label>
+                </li>
+                <li class="worth-list__item">
+                  <label class="checkbox-label" for="w_2">
+                    <input id="w_2" name="w_2" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Ассортимент товарного каталога</span>
+                  </label>
+                </li>
+                <li class="worth-list__item">
+                  <label class="checkbox-label" for="w_3">
+                    <input id="w_3" name="w_3" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Удобство сайта</span>
+                  </label>
+                </li>
+              </ol>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/bodyScrollLock.min.js"></script>
+</body>
+
+</html>

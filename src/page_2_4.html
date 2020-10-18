@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Мои новости. Лента глазами клиента</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--no_header">
+  //= template/sprite.html
+
+  <div class="head">
+    <div class="head__inner">
+      <button class="js-sidebar-toggler head__logo-block" type="button">
+        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
+      </button>
+      <div class="head__right">
+        <div class="head__partner-info">
+          <p class="head__partner-name">Happy partner</p>
+          <p class="head__partner-id">Ваш ID: 26656559</p>
+        </div>
+        <div class="head__buttons">
+          <button class="js-filter-toggler head__button head__button--filter" type="button">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#filter" />
+            </svg>
+            <span class="head__button-text">Фильтр</span>
+          </button>
+          <a class="head__button" href="page_7.html">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#profile_edit" />
+            </svg>
+            <span class="head__button-text">Профиль</span>
+          </a>
+          <a class="head__button" href="#">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#logout" />
+            </svg>
+            <span class="head__button-text">Выйти</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="articles">
+      <div class="js-content-with-sticky articles__list">
+        <div class="articles-list">
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Презентация ценностей компании</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Happy Partner</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Наша цель – развивать бизнес под потребности клиентов. Мы подготовили презентацию ценностей нашей компании. Нам важны ваши оценки, комментарии и отзывыВ благодарность за участие в опросах, оценкивать качество товаров и услуг.</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_6.jpg" alt="Альт картинки"></div>
+          </div>
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Подарки стали вкуснее</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Большая часть подарков в нашем каталоге – это подарки с мёдом. Несколько лет мы развивали это направление и заботились о пчёлах на наших пасеках. В этом году пчёлы стали счастливее, что отразилось на вкусе нашего мёда.</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_1.jpg" alt="Альт картинки"></div>
+            <form action="/" method="post">
+              <div class="options3">
+                <p class="options3__title">Вы уже попробовали?</p>
+                <div class="options3__list options3__list--type_2">
+                  <div class="options3__list-item">
+                    <label class="option2" for="opt_1">
+                      <input id="opt_1" type="radio" name="q1" value="1" checked>
+                      <span class="option2__text option2__text--type_4">Да</span>
+                    </label>
+                  </div>
+                  <div class="options3__list-item">
+                    <label class="option2" for="opt_2">
+                      <input id="opt_2" type="radio" name="q1" value="2">
+                      <span class="option2__text option2__text--type_4">Нет</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="options3">
+                <p class="options3__title">На сколько вы оцениваете вкус мёда?</p>
+                <div class="options3__list">
+                  <label class="option2 " for="opt_1_1">
+                    <input id="opt_1_1" type="radio" name="q2" value="1" checked>
+                    <span class="option2__text">1</span>
+                  </label>
+                  <label class="option2" for="opt_1_2">
+                    <input id="opt_1_2" type="radio" name="q2" value="2">
+                    <span class="option2__text">2</span>
+                  </label>
+                  <label class="option2" for="opt_1_3">
+                    <input id="opt_1_3" type="radio" name="q2" value="3">
+                    <span class="option2__text">3</span>
+                  </label>
+                  <label class="option2" for="opt_1_4">
+                    <input id="opt_1_4" type="radio" name="q2" value="4">
+                    <span class="option2__text">4</span>
+                  </label>
+                  <label class="option2" for="opt_1_5">
+                    <input id="opt_1_5" type="radio" name="q2" value="5">
+                    <span class="option2__text">5</span>
+                  </label>
+                  <label class="option2" for="opt_1_6">
+                    <input id="opt_1_6" type="radio" name="q2" value="6">
+                    <span class="option2__text">6</span>
+                  </label>
+                  <label class="option2" for="opt_1_7">
+                    <input id="opt_1_7" type="radio" name="q2" value="7">
+                    <span class="option2__text">7</span>
+                  </label>
+                  <label class="option2" for="opt_1_8">
+                    <input id="opt_1_8" type="radio" name="q2" value="8">
+                    <span class="option2__text">8</span>
+                  </label>
+                  <label class="option2" for="opt_1_9">
+                    <input id="opt_1_9" type="radio" name="q2" value="9">
+                    <span class="option2__text">9</span>
+                  </label>
+                  <label class="option2" for="opt_1_10">
+                    <input id="opt_1_10" type="radio" name="q2" value="10">
+                    <span class="option2__text">10</span>
+                  </label>
+                </div>
+              </div>
+              <label class="form-label" for="comment">
+                <span class="form-label__text">Какой мёд предпочитаете в это время года?</span>
+                <span class="form-label__container">
+                  <input id="comment" class="input" name="comment" type="text" value="" placeholder="Напишите комментарий...">
+                  <button class="submit" type="submit" title="Отправить">
+                    <svg class="submit__icon" aria-hidden="true">
+                      <use xlink:href="#submit" />
+                    </svg>
+                  </button>
+                </span>
+              </label>
+            </form>
+          </div>
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Подарки стали вкуснее</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Большая часть подарков в нашем каталоге – это подарки с мёдом. Несколько лет мы развивали это направление и заботились о пчёлах на наших пасеках. В этом году пчёлы стали счастливее, что отразилось на вкусе нашего мёда.</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_1.jpg" alt="Альт картинки"></div>
+            <form action="/" method="post">
+              <div class="options3">
+                <p class="options3__title">На сколько вы оцениваете вкус мёда?</p>
+                <div class="options3__list">
+                  <label class="option2 " for="opt_2_1">
+                    <input id="opt_2_1" type="radio" name="q1" value="1" checked>
+                    <span class="option2__text">1</span>
+                  </label>
+                  <label class="option2" for="opt_2_2">
+                    <input id="opt_2_2" type="radio" name="q1" value="2">
+                    <span class="option2__text">2</span>
+                  </label>
+                  <label class="option2" for="opt_2_3">
+                    <input id="opt_2_3" type="radio" name="q1" value="3">
+                    <span class="option2__text">3</span>
+                  </label>
+                  <label class="option2" for="opt_2_4">
+                    <input id="opt_2_4" type="radio" name="q1" value="4">
+                    <span class="option2__text">4</span>
+                  </label>
+                  <label class="option2" for="opt_2_5">
+                    <input id="opt_2_5" type="radio" name="q1" value="5">
+                    <span class="option2__text">5</span>
+                  </label>
+                  <label class="option2" for="opt_2_6">
+                    <input id="opt_2_6" type="radio" name="q1" value="6">
+                    <span class="option2__text">6</span>
+                  </label>
+                  <label class="option2" for="opt_2_7">
+                    <input id="opt_2_7" type="radio" name="q1" value="7">
+                    <span class="option2__text">7</span>
+                  </label>
+                  <label class="option2" for="opt_2_8">
+                    <input id="opt_2_8" type="radio" name="q1" value="8">
+                    <span class="option2__text">8</span>
+                  </label>
+                  <label class="option2" for="opt_2_9">
+                    <input id="opt_2_9" type="radio" name="q1" value="9">
+                    <span class="option2__text">9</span>
+                  </label>
+                  <label class="option2" for="opt_2_10">
+                    <input id="opt_2_10" type="radio" name="q1" value="10">
+                    <span class="option2__text">10</span>
+                  </label>
+                </div>
+              </div>
+              <div class="options3">
+                <p class="options3__title">Какой мёд предпочитаете в это время года?</p>
+                <div class="options3__list">
+                  <label class="option2" for="opt_3_1">
+                    <input id="opt_3_1" type="checkbox" name="q1" value="1">
+                    <span class="option2__text option2__text--type_3">Светлый</span>
+                  </label>
+                  <label class="option2" for="opt_3_2">
+                    <input id="opt_3_2" type="checkbox" name="q1" value="2" checked>
+                    <span class="option2__text option2__text--type_3">Тёмный</span>
+                  </label>
+                  <label class="option2" for="opt_3_3">
+                    <input id="opt_3_3" type="checkbox" name="q1" value="3">
+                    <span class="option2__text option2__text--type_3">Любой</span>
+                  </label>
+                  <label class="option2" for="opt_3_4">
+                    <input id="opt_3_4" type="checkbox" name="q1" value="4" checked>
+                    <span class="option2__text option2__text--type_3">Густой</span>
+                  </label>
+                  <label class="option2" for="opt_3_5">
+                    <input id="opt_3_5" type="checkbox" name="q1" value="5">
+                    <span class="option2__text option2__text--type_3">У меня аллергия на мёд</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Удобство сайта</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Подарки стали вкуснее</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Большая часть подарков в нашем каталоге – это подарки с мёдом. Несколько лет мы развивали это направление и заботились о пчёлах на наших пасеках. В этом году пчёлы стали счастливее, что отразилось на вкусе нашего мёда.</p>
+            </div>
+            <form action="/" method="post">
+              <div class="options4">
+                <div class="options4__list">
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_1_3">
+                      <input id="opt_4_1_3" type="radio" name="q1_3" value="1" checked>
+                      <span class="option3__image"><img src="images/content/img_2_2.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_2_3">
+                      <input id="opt_4_2_3" type="radio" name="q1_3" value="2">
+                      <span class="option3__image"><img src="images/content/img_2_2.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                </div>
+                <p class="options4__title">Какой мёд вы бы купили по фотографии?</p>
+              </div>
+            </form>
+          </div>
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Удобство сайта</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Подарки стали вкуснее</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Большая часть подарков в нашем каталоге – это подарки с мёдом. Несколько лет мы развивали это направление и заботились о пчёлах на наших пасеках. В этом году пчёлы стали счастливее, что отразилось на вкусе нашего мёда.</p>
+            </div>
+            <form action="/" method="post">
+              <div class="options4">
+                <div class="options4__list">
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_1">
+                      <input id="opt_4_1" type="radio" name="q1" value="1" checked>
+                      <span class="option3__image"><img src="images/content/img_2.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_2">
+                      <input id="opt_4_2" type="radio" name="q1" value="2">
+                      <span class="option3__image"><img src="images/content/img_3.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_3">
+                      <input id="opt_4_3" type="radio" name="q1" value="3">
+                      <span class="option3__image"><img src="images/content/img_4.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_4">
+                      <input id="opt_4_4" type="radio" name="q1" value="4">
+                      <span class="option3__image"><img src="images/content/img_5.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                </div>
+                <p class="options4__title">Какой мёд вы бы купили по фотографии?</p>
+              </div>
+            </form>
+          </div>
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Удобство сайта</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Подарки стали вкуснее</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Большая часть подарков в нашем каталоге – это подарки с мёдом. Несколько лет мы развивали это направление и заботились о пчёлах на наших пасеках. В этом году пчёлы стали счастливее, что отразилось на вкусе нашего мёда.</p>
+            </div>
+            <form action="/" method="post">
+              <div class="options4">
+                <div class="options4__list options4__list--type_2">
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_1_2">
+                      <input id="opt_4_1_2" type="radio" name="q1_2" value="1" checked>
+                      <span class="option3__image"><img src="images/content/img_2_3.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_2_2">
+                      <input id="opt_4_2_2" type="radio" name="q1_2" value="2">
+                      <span class="option3__image"><img src="images/content/img_2_3.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_3_2">
+                      <input id="opt_4_3_2" type="radio" name="q1_2" value="3">
+                      <span class="option3__image"><img src="images/content/img_2_3.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_4_2">
+                      <input id="opt_4_4_2" type="radio" name="q1_2" value="4">
+                      <span class="option3__image"><img src="images/content/img_2_3.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_5_2">
+                      <input id="opt_4_5_2" type="radio" name="q1_2" value="5">
+                      <span class="option3__image"><img src="images/content/img_2_3.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                  <div class="options4__item">
+                    <label class="option3" for="opt_4_6_2">
+                      <input id="opt_4_6_2" type="radio" name="q1_2" value="6">
+                      <span class="option3__image"><img src="images/content/img_2_3.jpg" alt="Альт к картинке"></span>
+                    </label>
+                  </div>
+                </div>
+                <p class="options4__title">Какой мёд вы бы купили по фотографии?</p>
+              </div>
+            </form>
+          </div>
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Качество доставки</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Доставка дронами</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <form action="/" method="post">
+              <div class="options3">
+                <p class="options3__title">Насколько вас вгоняет в ужас подобная перспектива?</p>
+                <div class="options3__list">
+                  <label class="option2" for="opt_5_1">
+                    <input id="opt_5_1" type="radio" name="q1" value="1">
+                    <span class="option2__text option2__text--type_3">Почти не вгоняет</span>
+                  </label>
+                  <label class="option2" for="opt_5_2">
+                    <input id="opt_5_2" type="radio" name="q1" value="2" checked>
+                    <span class="option2__text option2__text--type_3">Слегка вгоняет</span>
+                  </label>
+                  <label class="option2" for="opt_5_3">
+                    <input id="opt_5_3" type="radio" name="q1" value="3">
+                    <span class="option2__text option2__text--type_3">Мне всё равно</span>
+                  </label>
+                </div>
+              </div>
+              <label class="form-label" for="comment_1">
+                <span class="form-label__text">В каком варианте вам понравилась бы данная услуга?</span>
+                <span class="form-label__container">
+                  <div class="stretchy-input" contenteditable="true" placeholder="Напишите комментарий..."></div>
+                  <button class="submit" type="submit" title="Отправить">
+                    <svg class="submit__icon" aria-hidden="true">
+                      <use xlink:href="#submit" />
+                    </svg>
+                  </button>
+                </span>
+              </label>
+            </form>
+          </div>
+          <div class="article">
+            <div class="article__top">
+              <p class="article__theme">Качество доставки</p>
+            </div>
+            <div class="article__title-block">
+              <h2 class="article__title">Доставка дронами</h2>
+              <p class="article__type-label article__type-label--type_4">портрет клиента</p>
+              <div class="article__manage-block">
+                <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                  <svg class="article__manage-button-icon" aria-hidden="true">
+                    <use xlink:href="#kebab" />
+                  </svg>
+                </button>
+                <div class="article__manage-dropdown manage-popover">
+                  <ul class="manage-popover__list">
+                    <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                    <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                    <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <div class="stats">
+              <p class="stats__item">
+                <span class="stats__item-num">120</span>
+                <span class="stats__item-title">Почти не вгоняет</span>
+              </p>
+              <p class="stats__item">
+                <span class="stats__item-num">20</span>
+                <span class="stats__item-title">Слегка вгоняет</span>
+              </p>
+              <p class="stats__item">
+                <span class="stats__item-num">90</span>
+                <span class="stats__item-title">Мне всё равно</span>
+              </p>
+              <p class="stats__item stats__item--comments">
+                <span class="stats__item-num">50</span>
+                <span class="stats__item-title">Комментарии</span>
+              </p>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span class="comment__author">Вектор</span>
+                <span class="comment__date">25 апреля 2020</span>
+              </p>
+              <p class="comment__text">Мне бы понравилось, если бы это был мой личный дрон</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить ещё</button>
+              </div>
+            </div>
+            <div class="comment-answer">
+              <p class="comment-answer__top">
+                <span class="comment-answer__author"><span class="comment-answer__logo"><img src="images/logo.png" alt="Happy Partner"></span>Happy Partner</span>
+                <span class="comment-answer__date">25 апреля 2020</span>
+              </p>
+              <p class="comment-answer__text">Теперь мы может передать подарок с вашим дроном. Для этого вам надо зарегистрировать дрона в нашей системе, заполнив карточку «Личный курьер», и подписать отказ от претензий на случай, если ваш дрон будете перехвачен другими дронами или пострадает в пути. *Обратите внимание на ограничение по весу для доставки дронами.</p>
+              <div class="comment-answer__button-block">
+                <button class="comment-answer__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="form-label answer-form">
+              <span class="form-label__container">
+                <div class="stretchy-input" contenteditable="true" placeholder="Напишите ответ..."></div>
+                <button class="submit" type="submit" title="Отправить">
+                  <svg class="submit__icon" aria-hidden="true">
+                    <use xlink:href="#submit" />
+                  </svg>
+                </button>
+              </span>
+            </div>
+            <div class="comment comment--to_comment">
+              <p class="comment__top">
+                <span class="comment__author">Вектор</span>
+                <span class="comment__date">25 апреля 2020</span>
+              </p>
+              <p class="comment__text">Мне бы понравилось, если бы это был мой личный дрон</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить ещё</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span class="comment__author">Анима</span>
+                <span class="comment__date">25 апреля 2020</span>
+              </p>
+              <p class="comment__text">Это чудовищно! Я не смогу без страха подойти к окну.</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span class="comment__author">Трактор</span>
+                <span class="comment__date">25 апреля 2020</span>
+              </p>
+              <p class="comment__text">Все беды от современных технологий. </p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span class="comment__author">Гигант</span>
+                <span class="comment__date">25 апреля 2020</span>
+              </p>
+              <p class="comment__text">Отличная идея! Жду когда у вас появится опция “доставка роботом-андроидом”.</p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment__top">
+                <span class="comment__author">Друг</span>
+                <span class="comment__date">25 апреля 2020</span>
+              </p>
+              <p class="comment__text">
+                Курьеры не останутся без работы. Человеческий фактор никто не отменял. И пока роботы заменят человека, пройдёт ещё такое количество лет, что наше поколение точно не доживёт...
+                <button class="js-read-more read-more" type="button">Читать дальше</button>
+                <span style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, sint repellat deleniti assumenda veniam ipsum illo iure laboriosam, officia amet cumque rem consectetur ducimus ratione, quidem consequuntur, numquam maxime eos?</span>
+              </p>
+              <div class="comment__button-block">
+                <button class="comment__answer-button" type="button">Ответить</button>
+              </div>
+            </div>
+            <p class="text-center"><button class="show-comments" type="button">Показать ещё 5 комментариев</button></p>
+          </div>
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Качество доставки</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Доставка дронами</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <form action="/" method="post">
+              <div class="options3">
+                <p class="options3__title">Какие подарки вы обычно выбираете?</p>
+                <label class="option2" for="opt_771">
+                  <input id="opt_771" type="radio" name="q1" value="1">
+                  <span class="option2__text option2__text--type_4">Почти не вгоняет</span>
+                </label>
+                <label class="option2" for="opt_772">
+                  <input id="opt_772" type="radio" name="q1" value="2" checked>
+                  <span class="option2__text option2__text--type_4">Слегка вгоняет</span>
+                </label>
+                <label class="option2" for="opt_773">
+                  <input id="opt_773" type="radio" name="q1" value="3">
+                  <span class="option2__text option2__text--type_4">Мне всё равно</span>
+                </label>
+              </div>
+              <label class="form-label" for="comment_1">
+                <span class="form-label__text">В каком варианте вам понравилась бы данная услуга?</span>
+                <span class="form-label__container">
+                  <div class="stretchy-input" contenteditable="true" placeholder="Напишите комментарий..."></div>
+                  <button class="submit" type="submit" title="Отправить">
+                    <svg class="submit__icon" aria-hidden="true">
+                      <use xlink:href="#submit" />
+                    </svg>
+                  </button>
+                </span>
+              </label>
+            </form>
+          </div>
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Качество доставки</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Доставка дронами</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Мы решили, что можно запустить доставку дронами. Как бы вы отнеслись к тому, что летающие роботы будут преследовать вас и стучаться к вам в окна, а курьеры останутся без работы?</p>
+            </div>
+            <div class="article__image"><img src="images/content/img_7.jpg" alt="Альт картинки"></div>
+            <form action="/" method="post">
+              <div class="options3">
+                <div class="options3__title-block">
+                  <p class="options3__title">Какие подарки вы обычно выбираете?</p>
+                  <p class="options3__answers-qnt">Ответов: 250</p>
+                </div>
+                <label class="option2" for="opt_661">
+                  <input id="opt_661" type="radio" name="q1" value="1" disabled>
+                  <span class="option2__text option2__text--type_4">Почти не вгоняет</span>
+                </label>
+                <label class="option2" for="opt_662">
+                  <input id="opt_662" type="radio" name="q1" value="2" checked disabled>
+                  <span class="option2__text option2__text--type_4">Слегка вгоняет</span>
+                </label>
+                <label class="option2" for="opt_663">
+                  <input id="opt_663" type="radio" name="q1" value="3" disabled>
+                  <span class="option2__text option2__text--type_4">Мне всё равно</span>
+                </label>
+              </div>
+              <label class="form-label" for="comment_1">
+                <span class="form-label__text">В каком варианте вам понравилась бы данная услуга?</span>
+                <span class="form-label__container">
+                  <div class="stretchy-input" contenteditable="true" placeholder="Напишите комментарий..."></div>
+                  <button class="submit" type="submit" title="Отправить">
+                    <svg class="submit__icon" aria-hidden="true">
+                      <use xlink:href="#submit" />
+                    </svg>
+                  </button>
+                </span>
+              </label>
+            </form>
+          </div>
+          <div class="article">
+            <div class="article__company-logo"><img src="images/logo.png" alt=""></div>
+            <div class="article__top">
+              <p class="article__theme">Ассортимент товарного каталога</p>
+              <p class="article__company-name">Happy Partner</p>
+            </div>
+            <h2 class="article__title">Весенняя коллекция</h2>
+            <p class="article__date">25.04.2020 19:50</p>
+            <div class="article__preview-text">
+              <p>Наш ассортимент пополнился новыми медовыми подарками. Встречайте сладкую коллекцию этой весны «Янтарь» с богатым вкусом и солнечным светом.</p>
+            </div>
+            <div class="options4">
+              <div class="options4__list">
+                <div class="options4__item">
+                  <div class="option3">
+                    <span class="option3__image"><img src="images/content/img_2.jpg" alt="Альт к картинке"></span>
+                  </div>
+                </div>
+                <div class="options4__item">
+                  <div class="option3">
+                    <span class="option3__image"><img src="images/content/img_3.jpg" alt="Альт к картинке"></span>
+                  </div>
+                </div>
+                <div class="options4__item">
+                  <div class="option3">
+                    <span class="option3__image"><img src="images/content/img_4.jpg" alt="Альт к картинке"></span>
+                  </div>
+                </div>
+                <div class="options4__item">
+                  <div class="option3">
+                    <span class="option3__image"><img src="images/content/img_5.jpg" alt="Альт к картинке"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stats-block">
+              <div class="qt-block">
+                <p class="qt-block__question">Вы уже попробовали?</p>
+                <p class="qt-block__answers">Ответов: 150</p>
+              </div>
+              <div class="stat-bar stat-bar--type_2">
+                <div class="stat-bar__bar-block">
+                  <div class="stat-bar__title-block">
+                    <p class="stat-bar__title">В красивой банке</p>
+                    <p class="stat-bar__qnt stat-bar__qnt--red">80</p>
+                  </div>
+                  <div class="stat-bar__bar">
+                    <div class="horizontal-bar">
+                      <div class="horizontal-bar__value horizontal-bar__value--red"style="width: 89%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-bar__percents stat-bar__percents--red">47%</div>
+              </div>
+              <div class="stat-bar stat-bar--type_2">
+                <div class="stat-bar__bar-block">
+                  <div class="stat-bar__title-block">
+                    <p class="stat-bar__title">В некрасивой банке</p>
+                    <p class="stat-bar__qnt stat-bar__qnt--red">60</p>
+                  </div>
+                  <div class="stat-bar__bar">
+                    <div class="horizontal-bar">
+                      <div class="horizontal-bar__value"style="width: 41%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-bar__percents">33%</div>
+              </div>
+              <div class="stat-bar stat-bar--type_2">
+                <div class="stat-bar__bar-block">
+                  <div class="stat-bar__title-block">
+                    <p class="stat-bar__title">В сотах</p>
+                    <p class="stat-bar__qnt">43</p>
+                  </div>
+                  <div class="stat-bar__bar">
+                    <div class="horizontal-bar">
+                      <div class="horizontal-bar__value"style="width: 20%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-bar__percents">47%</div>
+              </div>
+              <div class="stat-bar stat-bar--type_2">
+                <div class="stat-bar__bar-block">
+                  <div class="stat-bar__title-block">
+                    <p class="stat-bar__title">Липовый</p>
+                    <p class="stat-bar__qnt">0</p>
+                  </div>
+                  <div class="stat-bar__bar">
+                    <div class="horizontal-bar">
+                      <div class="horizontal-bar__value"style="width: 0"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-bar__percents">0%</div>
+              </div>
+            </div>
+            <div class="stats-block">
+              <div class="qt-block">
+                <p class="qt-block__question">На сколько вы оцениваете вкус мёда?</p>
+                <p class="qt-block__answers">Ответов: 90</p>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">10</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_10" style="width: 90%"><div class="stat-bar2__qnt">40</div></div>
+                </div>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">9</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_9" style="width: 35%"><div class="stat-bar2__qnt">18</div></div>
+                </div>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">8</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_8" style="width: 55%"><div class="stat-bar2__qnt">29</div></div>
+                </div>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">7</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_7" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
+                </div>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">6</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_6" style="width: 15%"><div class="stat-bar2__qnt">6</div></div>
+                </div>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">5</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_5" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
+                </div>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">4</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_4" style="width: 5%"><div class="stat-bar2__qnt">2</div></div>
+                </div>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">3</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_3" style="width: 20%"><div class="stat-bar2__qnt">8</div></div>
+                </div>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">2</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_2" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
+                </div>
+              </div>
+              <div class="stat-bar2">
+                <div class="stat-bar2__num">1</div>
+                <div class="stat-bar2__bar-block">
+                  <div class="stat-bar2__bar stat-bar2__bar--type_1" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="articles__filter">
+        <div class="js-sticky-block2">
+          <div class="filter">
+            <form action="">
+              <p class="filter__title">Опросов: 50</p>
+              <ol class="worth-list worth-list--decorated">
+                <li class="worth-list__item">
+                  <label class="checkbox-label checkbox-label--dark" for="op_1">
+                    <input id="op_1" name="op_1" type="checkbox" checked>
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Непройденные</span>
+                  </label>
+                </li>
+                <li class="worth-list__item">
+                  <label class="checkbox-label checkbox-label--dark" for="op_2">
+                    <input id="op_2" name="op_2" type="checkbox" checked>
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Только подписки</span>
+                  </label>
+                </li>
+              </ol>
+              <p class="filter__title">Компаний: 5</p>
+              <div class="companies-list">
+                <div class="companies-list__list">
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_1">
+                      <input id="f_1" name="f_1" type="checkbox" value="1">
+                      <span class="filter-item__image"><img src="images/content/img_9.jpg" alt="Happy Partner"></span>
+                      <span class="filter-item__text">Happy Partner</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_2">
+                      <input id="f_2" name="f_2" type="checkbox" value="2">
+                      <span class="filter-item__image"><img src="images/content/img_10.jpg" alt="LEROY MERLIN"></span>
+                      <span class="filter-item__text">LEROY MERLIN</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_3">
+                      <input id="f_3" name="f_3" type="checkbox" value="3">
+                      <span class="filter-item__image"><img src="images/content/img_11.jpg" alt="М.видео"></span>
+                      <span class="filter-item__text">М.видео</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_4">
+                      <input id="f_4" name="f_4" type="checkbox" value="4">
+                      <span class="filter-item__image"><img src="images/content/img_12.jpg" alt="ЯММПИЦЦА"></span>
+                      <span class="filter-item__text">ЯММПИЦЦА</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <label class="filter-item" for="f_5">
+                      <input id="f_5" name="f_5" type="checkbox" value="5">
+                      <span class="filter-item__image"><img src="images/content/img_13.jpg" alt="МИФ"></span>
+                      <span class="filter-item__text">МИФ</span>
+                    </label>
+                  </div>
+                  <div class="companies-list__item">
+                    <button class="add-company" type="button" title="Добавить">
+                      <svg class="add-company__icon" aria-hidden="true">
+                        <use xlink:href="#plus" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p class="filter__title">Ценностей: 3</p>
+              <ol class="worth-list">
+                <li class="worth-list__item">
+                  <label class="checkbox-label checkbox-label--dark" for="w_1">
+                    <input id="w_1" name="w_1" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Качество доставки</span>
+                  </label>
+                </li>
+                <li class="worth-list__item">
+                  <label class="checkbox-label checkbox-label--dark" for="w_2">
+                    <input id="w_2" name="w_2" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Ассортимент товарного каталога</span>
+                  </label>
+                </li>
+                <li class="worth-list__item">
+                  <label class="checkbox-label checkbox-label--dark" for="w_3">
+                    <input id="w_3" name="w_3" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Удобство сайта</span>
+                  </label>
+                </li>
+              </ol>
+            </form>
+            <div class="client-card">
+              <p class="client-card__title">Happy Partner</p>
+              <p class="client-card__subtitle">Корпоративные подарки</p>
+              <p class="client-card__address">Санкт-Петербург, ул. Уличная, д. 1<br> Бизнес-центр “Партнёр”<br> 5 этаж, офис 777</p>
+              <p class="client-card__address">+7 900 588 88 99</p>
+              <button class="button button--wide" type="button">Связаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/bodyScrollLock.min.js"></script>
+</body>
+
+</html>

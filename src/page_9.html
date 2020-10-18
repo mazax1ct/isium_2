@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Нет ни одной публикации</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--no_header page--center_content">
+  //= template/sprite.html
+
+  <div class="head">
+    <div class="head__inner">
+      <button class="js-sidebar-toggler head__logo-block" type="button">
+        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
+      </button>
+      <div class="head__right">
+        <div class="head__partner-info">
+          <p class="head__partner-name">Самое длинное название которое я смогла придумать</p>
+          <p class="head__partner-id">Ваш ID: 26656559</p>
+        </div>
+        <div class="head__buttons">
+          <button class="js-filter-toggler head__button head__button--filter" type="button">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#filter" />
+            </svg>
+            <span class="head__button-text">Фильтр</span>
+          </button>
+          <a class="head__button" href="page_7.html">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#profile_edit" />
+            </svg>
+            <span class="head__button-text">Профиль</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="no-publish">
+      <p class="no-publish__title">У вас пока нет ни одной публикации</p>
+      <p class="no-publish__image"><img src="images/icons/no-publish.svg" alt=""></p>
+      <button class="button button--wide" type="button" data-fancybox="add_article" data-src="#add_article">Создать публикацию</button>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+</body>
+
+</html>

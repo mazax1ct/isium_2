@@ -1,0 +1,186 @@
+.fancybox-active
+  .table-responsive
+    position: relative
+    z-index: 1
+
+.table-responsive
+  min-height: 200px
+  overflow-x: auto
+
+.table
+  border-collapse: collapse
+  max-width: 100%
+  text-align: left
+  width: 100%
+
+  &--double_border_top
+    th
+      border-top: 2px solid #D6D6D6
+
+  tr
+    &:hover
+      td
+        background-color: #fff
+
+  th
+    border-bottom: 2px solid #D6D6D6
+    color: $secondary-color
+    font-size: 12px
+    font-weight: 400
+    padding: 10px
+    vertical-align: middle
+
+    &.js-sorting
+      cursor: pointer
+
+    img
+      vertical-align: middle
+
+  td
+    background-color: transparent
+    border: none
+    font-size: 14px
+    height: 44px
+    padding: 10px
+    transition: background-color 0.3s
+    vertical-align: top
+
+  .grey
+    color: #8E8C96
+
+  .green
+    color: $main-color
+
+  .red
+    color: #FB5B5B
+
+  .blue
+    color: $secondary-color
+
+  .point
+    border-radius: 50%
+    height: 10px
+    margin-left: auto
+    margin-right: auto
+    width: 10px
+
+    &--red
+      background-color: #FB5B5B
+
+    &--green
+      background-color: $main-color
+
+    &--grey
+      background-color: #ccc
+
+.drop-opener
+  color: $secondary-color
+  cursor: pointer
+  display: inline-block
+  min-height: 16px
+  padding-left: 25px
+  position: relative
+  white-space: nowrap
+  z-index: 2
+
+  &::before
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3 17C1.89543 17 1 16.1046 1 15V3C1 1.89543 1.89543 1 3 1H15C16.1046 1 17 1.89543 17 3V15C17 16.1046 16.1046 17 15 17H3Z' stroke='%2304405A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0667 6.33332L9 9.39998L5.93333 6.33332L5 7.26665L9 11.2667L13 7.26665L12.0667 6.33332Z' fill='%2304405A'/%3E%3C/g%3E%3C/svg%3E%0A")
+    background-color: #EFEEEE
+    background-size: 16px 16px
+    background-repeat: no-repeat
+    content: ''
+    height: 16px
+    left: 0
+    position: absolute
+    top: 2px
+    width: 16px
+    z-index: 2
+
+  &.is-open
+    &::before
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 16C0.895431 16 0 15.1046 0 14V2C0 0.895431 0.895431 0 2 0H14C15.1046 0 16 0.895431 16 2V14C16 15.1046 15.1046 16 14 16H2Z' fill='%2300BBD3'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.0667 10.2667L8 7.20002L4.93333 10.2667L4 9.33335L8 5.33335L12 9.33335L11.0667 10.2667Z' fill='white'/%3E%3C/svg%3E%0A")
+
+.drop
+  display: none
+
+  &.is-active
+    display: table-row
+
+.drop-element
+  align-items: center
+  color: $secondary-color
+  display: flex
+  padding-left: 33px
+  position: relative
+  white-space: nowrap
+  z-index: 1
+
+  &::before
+    background-color: $text-color
+    content: ''
+    height: 1px
+    left: 8px
+    position: absolute
+    top: 50%
+    width: 18px
+    z-index: 1
+
+  &::after
+    background-color: $text-color
+    content: ''
+    height: 44px
+    left: 8px
+    position: absolute
+    top: -32px
+    width: 1px
+    z-index: 1
+
+  &__theme
+    border-radius: 8px
+    color: #fff
+    font-size: 9px
+    height: 24px
+    line-height: 16px
+    margin-left: 10px
+    min-width: 72px
+    padding: 4px 5px
+    position: relative
+    text-align: center
+    text-transform: uppercase
+
+    &--type_1
+      background-color: #F2C94C
+
+    &--type_2
+      background-color: #E36F72
+
+    &--type_3
+      background-color: #39A8BB
+
+    &--type_4
+      background-color: #B4C25C
+
+.search-bar
+  .input
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.5' fill-rule='evenodd' clip-rule='evenodd' d='M11.7541 10.0571H11.0104L10.7315 9.78286C11.6612 8.77714 12.2189 7.40571 12.2189 5.94286C12.2189 2.65143 9.52301 0 6.17636 0C2.8297 0 0.133789 2.65143 0.133789 5.94286C0.133789 9.23429 2.8297 11.8857 6.17636 11.8857C7.66376 11.8857 9.0582 11.3371 10.0808 10.4229L10.3597 10.6971V11.4286L15.0078 16L16.4022 14.6286L11.7541 10.0571ZM6.17635 10.0571C3.85229 10.0571 1.99303 8.22856 1.99303 5.94284C1.99303 3.65713 3.85229 1.82856 6.17635 1.82856C8.50042 1.82856 10.3597 3.65713 10.3597 5.94284C10.3597 8.22856 8.50042 10.0571 6.17635 10.0571Z' fill='%2304405A'/%3E%3C/svg%3E%0A")
+    background-position: 8px 50%
+    background-repeat: no-repeat
+    background-color: rgba(#fff, 0.5)
+    border-color: transparent
+    font-size: 12px
+    padding-left: 32px
+    width: 310px
+
+    @media(min-width: 1200px)
+      font-size: 14px
+
+    &:focus
+      border-color: darken(#EFEEEE, 5%)
+
+.table-label
+  color: #8E8C96
+
+  &__num
+    display: block
+    font-size: 24px
+    line-height: 1

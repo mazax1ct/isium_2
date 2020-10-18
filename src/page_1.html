@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Попапы</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--no_header">
+  //= template/sprite.html
+
+  <div class="head">
+    <div class="head__inner">
+      <button class="js-sidebar-toggler head__logo-block" type="button">
+        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
+      </button>
+      <div class="head__right">
+        <div class="head__partner-info">
+          <p class="head__partner-name">Самое длинное название которое я смогла придумать</p>
+          <p class="head__partner-id">Ваш ID: 26656559</p>
+        </div>
+        <div class="head__buttons">
+          <button class="js-filter-toggler head__button head__button--filter" type="button">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#filter" />
+            </svg>
+            <span class="head__button-text">Фильтр</span>
+          </button>
+          <a class="head__button" href="page_7.html">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#profile_edit" />
+            </svg>
+            <span class="head__button-text">Профиль</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <button class="button" type="button" data-fancybox="new_client" data-src="#new_client">Новый клиент</button><br><br>
+
+    <button class="button" type="button" data-fancybox="add_article" data-src="#add_article">Добавить публикацию</button><br><br>
+
+    <h2>Состояния блока выбора/создания тега публикации</h2><br><br>
+
+    <div class="tag-block" style="max-width: 210px">
+      <button class="js-tag-block-toggle tag-block__toggler" type="button">Добавить тег публикации</button>
+      <div class="tag-block__dropdown">
+        <button class="tag-block__add" type="button">Создать новый тег</button>
+        <div class="tag-block__list">
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-1" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-2" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-3" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-4" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-5" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-6" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-7" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-8" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-9" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+          <div class="tag-block__list-item">
+            <button class="tag-block__tag tag-color-10" type="button">фотоопрос</button>
+            <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+            <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+
+    <div class="tag-block" style="max-width: 210px">
+      <button class="js-tag-block-toggle tag-block__toggler" type="button">Добавить тег публикации</button>
+      <div class="tag-block__dropdown">
+        <input class="tag-block__input" type="text" placeholder="Введите название">
+        <div class="tag-block__colors">
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="1">
+              <span class="tag-block__color tag-color-1"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="2">
+              <span class="tag-block__color tag-color-2"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="3">
+              <span class="tag-block__color tag-color-3"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="4">
+              <span class="tag-block__color tag-color-4"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="5">
+              <span class="tag-block__color tag-color-5"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="6">
+              <span class="tag-block__color tag-color-6"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="7">
+              <span class="tag-block__color tag-color-7"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="8">
+              <span class="tag-block__color tag-color-8"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="9">
+              <span class="tag-block__color tag-color-9"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="10">
+              <span class="tag-block__color tag-color-10"></span>
+            </label>
+          </div>
+        </div>
+        <button class="tag-block__finish" type="button">Создать</button>
+      </div>
+    </div><br><br>
+
+    <div class="tag-block" style="max-width: 210px">
+      <button class="js-tag-block-toggle tag-block__toggler tag-color-7" type="button"><svg class="tag-block__toggler-icon" aria-hidden="true"><use xlink:href="#edit" /></svg>ФОТООПРОС</button>
+      <div class="tag-block__dropdown">
+        <input class="tag-block__input" type="text" placeholder="Введите название" value="Фоотопрос">
+        <div class="tag-block__colors">
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="1">
+              <span class="tag-block__color tag-color-1"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="2">
+              <span class="tag-block__color tag-color-2"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="3">
+              <span class="tag-block__color tag-color-3"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="4">
+              <span class="tag-block__color tag-color-4"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="5">
+              <span class="tag-block__color tag-color-5"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="6">
+              <span class="tag-block__color tag-color-6"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="7" checked>
+              <span class="tag-block__color tag-color-7"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="8">
+              <span class="tag-block__color tag-color-8"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="9">
+              <span class="tag-block__color tag-color-9"></span>
+            </label>
+          </div>
+          <div class="tag-block__colors-item">
+            <label class="tag-block__color-block">
+              <input type="radio" name="color" value="10">
+              <span class="tag-block__color tag-color-10"></span>
+            </label>
+          </div>
+        </div>
+        <button class="tag-block__finish" type="button">Сохранить изменения</button>
+      </div>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+</body>
+
+</html>

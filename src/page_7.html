@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Редактирование профиля</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--no_header">
+  //= template/sprite.html
+
+  <div class="head">
+    <div class="head__inner">
+      <button class="js-sidebar-toggler head__logo-block" type="button">
+        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
+      </button>
+      <div class="head__right">
+        <div class="head__partner-info">
+          <p class="head__partner-name">Самое длинное название которое я смогла придумать</p>
+          <p class="head__partner-id">Ваш ID: 26656559</p>
+        </div>
+        <div class="head__buttons">
+          <button class="js-filter-toggler head__button head__button--filter" type="button">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#filter" />
+            </svg>
+            <span class="head__button-text">Фильтр</span>
+          </button>
+          <a class="head__button" href="page_7.html">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#profile_edit" />
+            </svg>
+            <span class="head__button-text">Профиль</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="popup popup--form">
+      <p class="popup__title popup__title--big">Редактировать профиль</p>
+      <form action="">
+        <div class="profile-section">
+          <label class="form-label" for="inp_1">
+            <span class="form-label__text">Название компании</span>
+            <input id="inp_1" class="input" name="inp_1" type="text" value="">
+          </label>
+          <label class="form-label" for="inp_2">
+            <span class="form-label__text">Чем занимается компания</span>
+            <input id="inp_2" class="input" name="inp_2" type="text" value="">
+          </label>
+          <div class="form-row">
+            <div class="form-row__item">
+              <label class="form-label" for="em">
+                <span class="form-label__text">E-mail</span>
+                <input id="em" class="input" name="em" type="text" value="">
+              </label>
+            </div>
+            <div class="form-row__item">
+              <label class="form-label" for="ph">
+                <span class="form-label__text">Телефон</span>
+                <input id="ph" class="input" name="ph" type="text" value="">
+              </label>
+            </div>
+          </div>
+          <div class="form-row form-row--type_2">
+            <div class="form-row__item form-row__item--type_2">
+              <label class="form-label" for="inp_667">
+                <span class="form-label__text">Адрес</span>
+                <textarea id="inp_667" class="textarea textarea--small" name="name"></textarea>
+              </label>
+            </div>
+            <div class="form-row__item form-row__item--type_3">
+              <label class="form-label photo-container" for="logo">
+                <input id="logo" type="file" name="logo" accept="image/*">
+                <span class="form-label__text">Логотип</span>
+                <div class="foto-upload"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="profile-contact">
+          <div class="form-row form-row--cols_3">
+            <div class="form-row__item">
+              <label class="form-label" for="inp_2">
+                <span class="form-label__text">Контактное лицо 1</span>
+                <input id="inp_2" class="input" name="inp_2" type="text" value="">
+              </label>
+            </div>
+            <div class="form-row__item">
+              <label class="form-label" for="inp_3">
+                <span class="form-label__text">E-mail</span>
+                <input id="inp_3" class="input" name="inp_3" type="text" value="">
+              </label>
+            </div>
+            <div class="form-row__item">
+              <label class="form-label" for="inp_3">
+                <span class="form-label__text">Телефон</span>
+                <input id="inp_3" class="input" name="inp_3" type="text" value="">
+              </label>
+            </div>
+          </div>
+          <button class="profile-contact__delete" type="button" title="Удалить">
+            <svg class="profile-contact__delete-icon" aria-hidden="true">
+              <use xlink:href="#close" />
+            </svg>
+          </button>
+        </div>
+        <div class="profile-contact">
+          <div class="form-row form-row--cols_3">
+            <div class="form-row__item">
+              <label class="form-label" for="inp_2">
+                <span class="form-label__text">Контактное лицо 1</span>
+                <input id="inp_2" class="input" name="inp_2" type="text" value="">
+              </label>
+            </div>
+            <div class="form-row__item">
+              <label class="form-label" for="inp_3">
+                <span class="form-label__text">E-mail</span>
+                <input id="inp_3" class="input" name="inp_3" type="text" value="">
+              </label>
+            </div>
+            <div class="form-row__item">
+              <label class="form-label" for="inp_3">
+                <span class="form-label__text">Телефон</span>
+                <input id="inp_3" class="input" name="inp_3" type="text" value="">
+              </label>
+            </div>
+          </div>
+          <button class="profile-contact__delete" type="button" title="Удалить">
+            <svg class="profile-contact__delete-icon" aria-hidden="true">
+              <use xlink:href="#close" />
+            </svg>
+          </button>
+        </div>
+        <div class="profile-contact">
+          <div class="form-row form-row--cols_3">
+            <div class="form-row__item">
+              <label class="form-label" for="inp_2">
+                <span class="form-label__text">Контактное лицо 1</span>
+                <input id="inp_2" class="input" name="inp_2" type="text" value="">
+              </label>
+            </div>
+            <div class="form-row__item">
+              <label class="form-label" for="inp_3">
+                <span class="form-label__text">E-mail</span>
+                <input id="inp_3" class="input" name="inp_3" type="text" value="">
+              </label>
+            </div>
+            <div class="form-row__item">
+              <label class="form-label" for="inp_3">
+                <span class="form-label__text">Телефон</span>
+                <input id="inp_3" class="input" name="inp_3" type="text" value="">
+              </label>
+            </div>
+          </div>
+          <button class="profile-contact__delete" type="button" title="Удалить">
+            <svg class="profile-contact__delete-icon" aria-hidden="true">
+              <use xlink:href="#close" />
+            </svg>
+          </button>
+        </div>
+        <p><a href="javascript:void(0)">Добавить ещё</a></p>
+        <div class="popup__button-block">
+          <button class="button button--wide" type="button">Сохранить профиль</button>
+          <button class="button button--wide button--transparent" type="button">Выйти</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+</body>
+
+</html>

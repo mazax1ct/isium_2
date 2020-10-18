@@ -1,0 +1,68 @@
+.client-info
+  padding-bottom: 15px
+  padding-top: 15px
+  position: relative
+
+  &::after
+    background-color: #D6D6D6
+    box-shadow: 0 1px 1px 0 #fff
+    bottom: 0
+    content: ''
+    height: 2px
+    display: block
+    left: 0
+    position: absolute
+    top: auto
+    width: 100%
+
+  &__title-block
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 15px
+
+  &__title
+    color: $secondary-color
+    display: inline-block
+    font-size: 22px
+    line-height: 1.2
+    position: relative
+    padding-right: 30px
+
+  &__last-online
+    font-size: 12px
+
+  &__edit
+    background-color: transparent
+    border: none
+    cursor: pointer
+    left: auto
+    padding: 0
+    position: absolute
+    top: 4px
+    right: 0
+    z-index: 1
+
+  &__edit-icon
+    fill: #6F7075
+    height: 20px
+    width: 20px
+
+  &__bottom
+    align-items: flex-end
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__contacts
+    color: $secondary-color
+    font-size: 14px
+
+    p
+      &:not(:last-child)
+        margin-bottom: 5px
+
+  &__buttons
+    .button
+      margin-top: 5px

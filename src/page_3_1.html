@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Карточка клиента с аналитикой</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page">
+  //= template/sprite.html
+
+  <div class="head">
+    <div class="head__inner">
+      <button class="js-sidebar-toggler head__logo-block" type="button">
+        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
+      </button>
+      <div class="head__right">
+        <div class="head__partner-info">
+          <p class="head__partner-name">Самое длинное название которое я смогла придумать</p>
+          <p class="head__partner-id">Ваш ID: 26656559</p>
+        </div>
+        <div class="head__buttons">
+          <button class="js-filter-toggler head__button head__button--filter" type="button">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#filter" />
+            </svg>
+            <span class="head__button-text">Фильтр</span>
+          </button>
+          <a class="head__button" href="page_7.html">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#profile_edit" />
+            </svg>
+            <span class="head__button-text">Профиль</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header__inner header__inner--two_columns">
+      <div class="header__left">
+        <h1 class="header__title">Мои клиенты</h1>
+        <div class="header__info">
+          <p class="header__info-title">У вас 150 клиентов</p>
+          <label class="checkbox-label checkbox-label--dark" for="active_pref">
+            <input id="active_pref" name="active_pref" type="checkbox" checked>
+            <span class="checkbox-label__icon"></span>
+            <span class="checkbox-label__text">Только активные</span>
+          </label>
+        </div>
+      </div>
+      <div class="header__right">
+        <button class="header__manage-button header__add-button button" type="button" data-fancybox="new_client" data-src="#new_client">Добавить клиента</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="client-info">
+      <div class="client-info__title-block">
+        <p class="client-info__title">Самое длинное название которое я могла придумать <button class="client-info__edit" type="button" title="Изменить" data-fancybox="edit_client" data-src="#edit_client"><svg class="client-info__edit-icon" aria-hidden="true"><use xlink:href="#profile_edit" /></svg></button></p>
+        <p class="client-info__last-online">Был активен последний раз 29 июн в 12:30</p>
+      </div>
+      <div class="client-info__bottom">
+        <div class="client-info__contacts">
+          <p>Владислав Григорьевич</p>
+          <p>customer@mail.ru</p>
+          <p>+7 900 2000000</p>
+        </div>
+        <div class="client-info__buttons">
+          <a class="button button--transparent" href="#">Скопировать ссылку на приглашение</a>
+          <button class="button" type="button">Выслать приглашение повторно</button>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table">
+        <colgroup>
+          <col>
+          <col width="190px">
+          <col width="165px">
+          <col width="165px">
+          <col width="165px">
+          <col width="165px">
+          <col width="165px">
+        </colgroup>
+        <tr>
+          <th>
+            <label class="checkbox-label checkbox-label--dark" for="w">
+              <input id="w" name="w" type="checkbox" checked>
+              <span class="checkbox-label__icon"></span>
+              <span class="checkbox-label__text">Пройденные&nbsp;ценности</span>
+            </label>
+          </th>
+          <th class="text-center">Дата&nbsp;последней&nbsp;активности</th>
+          <th class="text-center">Всего&nbsp;опросов</th>
+          <th class="text-center">Реакции</th>
+          <th class="text-center">Значимость</th>
+          <th class="text-center">Средняя&nbsp;оценка</th>
+          <th class="text-center">Ответы</th>
+        </tr>
+        <tr>
+          <td><span class="js-drop-toggler drop-opener" data-target="1">Качество доставки</span></td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="1">
+          <td>
+            <span class="drop-element">Новые цвета сайта <span class="drop-element__theme tag-color-1">фотоопрос</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="1">
+          <td>
+            <span class="drop-element">Мобильное приложение <span class="drop-element__theme tag-color-2">Опрос</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="1">
+          <td>
+            <span class="drop-element">Работа сотрудников в чате <span class="drop-element__theme tag-color-3">Отзыв</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="1">
+          <td>
+            <span class="drop-element">Компьютер, смартфон или планшет <span class="drop-element__theme tag-color-4">портрет</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr>
+          <td><span class="js-drop-toggler drop-opener" data-target="2">Ассортимент товарного каталога</span></td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="2">
+          <td>
+            <span class="drop-element">Новые цвета сайта <span class="drop-element__theme tag-color-1">фотоопрос</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="2">
+          <td>
+            <span class="drop-element">Мобильное приложение <span class="drop-element__theme tag-color-2">Опрос</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="2">
+          <td>
+            <span class="drop-element">Работа сотрудников в чате <span class="drop-element__theme tag-color-3">Отзыв</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="2">
+          <td>
+            <span class="drop-element">Компьютер, смартфон или планшет <span class="drop-element__theme tag-color-4">портрет</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr>
+          <td><span class="js-drop-toggler drop-opener" data-target="3">Удобство сайта</span></td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="3">
+          <td>
+            <span class="drop-element">Новые цвета сайта <span class="drop-element__theme tag-color-1">фотоопрос</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="3">
+          <td>
+            <span class="drop-element">Мобильное приложение <span class="drop-element__theme tag-color-2">Опрос</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="3">
+          <td>
+            <span class="drop-element">Работа сотрудников в чате <span class="drop-element__theme tag-color-3">Отзыв</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr class="drop" data-target="3">
+          <td>
+            <span class="drop-element">Компьютер, смартфон или планшет <span class="drop-element__theme tag-color-4">портрет</span></span>
+          </td>
+          <td class="text-center"><span class="grey">12.06.2020&nbsp;в&nbsp;12:45</span></td>
+          <td class="text-center">30</td>
+          <td class="text-center">120</td>
+          <td class="text-center"><span class="red">40%</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center">120</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/bodyScrollLock.min.js"></script>
+</body>
+
+</html>

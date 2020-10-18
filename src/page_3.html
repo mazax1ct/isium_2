@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Мои клиенты</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page">
+  //= template/sprite.html
+
+  <div class="head">
+    <div class="head__inner">
+      <button class="js-sidebar-toggler head__logo-block" type="button">
+        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
+      </button>
+      <div class="head__right">
+        <div class="head__partner-info">
+          <p class="head__partner-name">Самое длинное название которое я смогла придумать</p>
+          <p class="head__partner-id">Ваш ID: 26656559</p>
+        </div>
+        <div class="head__buttons">
+          <button class="js-filter-toggler head__button head__button--filter" type="button">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#filter" />
+            </svg>
+            <span class="head__button-text">Фильтр</span>
+          </button>
+          <a class="head__button" href="page_7.html">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#profile_edit" />
+            </svg>
+            <span class="head__button-text">Профиль</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header__inner header__inner--two_columns">
+      <div class="header__left">
+        <h1 class="header__title">Мои клиенты</h1>
+        <div class="header__info">
+          <p class="header__info-title">У вас 150 клиентов</p>
+          <label class="checkbox-label checkbox-label--dark" for="active_pref">
+            <input id="active_pref" name="active_pref" type="checkbox" checked>
+            <span class="checkbox-label__icon"></span>
+            <span class="checkbox-label__text">Только активные</span>
+          </label>
+        </div>
+      </div>
+      <div class="header__right">
+        <button class="header__manage-button header__add-button button" type="button" data-fancybox="new_client" data-src="#new_client">Добавить клиента</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="table-responsive">
+      <table class="table">
+        <colgroup>
+          <col>
+          <col width="165px">
+          <col width="165px">
+          <col width="165px">
+          <col width="165px">
+          <col width="165px">
+          <col width="165px">
+        </colgroup>
+        <tr>
+          <th>
+            <label class="search-bar" for="search">
+              <input id="search" class="input" name="search" type="text" value="">
+              <span class="search-bar__suggest-block">
+                <span class="search-bar__suggest">Удобство сайта</span>
+                <span class="search-bar__suggest">Качество доставки</span>
+                <span class="search-bar__suggest">Ассортимент товарного каталога</span>
+                <span class="search-bar__suggest">Удобство сайта</span>
+                <span class="search-bar__suggest">Качество доставки</span>
+                <span class="search-bar__suggest">Ассортимент товарного каталога</span>
+              </span>
+            </label>
+          </th>
+          <th class="js-sorting text-center">Дата<br>добавления</th>
+          <th class="js-sorting text-center">Последняя<br>активность</th>
+          <th class="js-sorting text-center">Реакции</th>
+          <th class="js-sorting text-center">Значимых<br>ценностей</th>
+          <th class="js-sorting text-center">Средняя<br>оценка</th>
+          <th class="js-sorting text-center">Ответов</th>
+        </tr>
+        <tr>
+          <td class="blue">Анима</td>
+          <td class="text-center">12.06.2020</td>
+          <td class="text-center">12.06.2020</td>
+          <td class="text-center"><span class="green">8</span></td>
+          <td class="text-center"><span class="green">71</span></td>
+          <td class="text-center"><span class="green">8.5</span></td>
+          <td class="text-center"><span class="green">7</span></td>
+        </tr>
+        <tr>
+          <td class="blue">Вектор</td>
+          <td class="text-center">07.05.2020</td>
+          <td class="text-center">07.05.2020</td>
+          <td class="text-center">-</td>
+          <td class="text-center">-</td>
+          <td class="text-center">-</td>
+          <td class="text-center">-</td>
+        </tr>
+        <tr>
+          <td class="blue">Гигант</td>
+          <td class="text-center">10.05.2020</td>
+          <td class="text-center">10.05.2020</td>
+          <td class="text-center"><span class="green">5</span></td>
+          <td class="text-center"><span class="green">2</span></td>
+          <td class="text-center"><span class="red">3.2</span></td>
+          <td class="text-center"><span class="green">2</span></td>
+        </tr>
+        <tr>
+          <td class="blue">Лакмус</td>
+          <td class="text-center">10.05.2020</td>
+          <td class="text-center">10.05.2020</td>
+          <td class="text-center"><span class="green">2</span></td>
+          <td class="text-center"><span class="green">1</span></td>
+          <td class="text-center">5.3</td>
+          <td class="text-center"><span class="green">1</span></td>
+        </tr>
+        <tr>
+          <td class="blue">ООО “Комплексные интернет-решения в эпоху чего то там“</td>
+          <td class="text-center">10.05.2020</td>
+          <td class="text-center">10.05.2020</td>
+          <td class="text-center"><span class="green">2</span></td>
+          <td class="text-center"><span class="green">1</span></td>
+          <td class="text-center">5.3</td>
+          <td class="text-center"><span class="green">1</span></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/bodyScrollLock.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+.popup
+  background-color: #EFEEEE
+  border: 1px solid rgba(#fff,0.2)
+  box-shadow: -6px -6px 16px 0 rgba(#fff, 0.5), 6px 6px 16px 0 rgba(#D1CDC7, 0.5)
+  border-radius: 16px
+  display: none
+  margin-left: auto
+  margin-right: auto
+  max-width: 695px
+  padding: 30px 15px
+  position: relative
+  width: 100%
+  z-index: 1
+
+  @media(min-width: 768px)
+    padding-top: 35px
+    padding-bottom: 35px
+
+  @media(min-width: 1200px)
+    padding-left: 40px
+    padding-right: 40px
+
+  &.fancybox-content
+    box-shadow: none
+
+  &--crop
+    background-color: #EFEEEE
+
+    .form-title
+      margin-bottom: 25px
+      text-align: center
+
+    .buttons-block
+      display: flex
+      justify-content: center
+      margin-top: 25px
+      text-align: center
+
+      .button
+        min-width: 115px
+        margin-left: 5px
+        margin-right: 5px
+
+  &--auth
+    box-shadow: none
+    display: block
+    max-width: 450px
+
+    @media(min-width: 768px)
+      padding: 25px 35px 35px
+
+    .popup__title
+      margin-bottom: 20px
+      text-align: center
+
+    .popup__remember-block
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+      .checkbox-label
+        margin-bottom: 0
+
+    .popup__button-block
+      margin-top: 20px
+
+      .button
+        min-width: 115px
+
+  &--forgot
+    min-height: 180px
+    max-width: 450px
+
+    @media(min-width: 768px)
+      padding: 25px 35px 35px
+
+    .popup__title
+      margin-top: 17px
+      margin-bottom: 20px
+      text-align: center
+
+    .popup__close
+      right: 10px
+      top: 10px
+
+    .popup__button-block
+      margin-top: 19px
+
+  &--form
+    display: block
+
+  &--no_worth
+    display: block
+    min-height: 180px
+    max-width: 450px
+
+    @media(min-width: 768px)
+      padding: 25px 35px 35px
+
+    .popup__title
+      margin-top: 17px
+      margin-bottom: 20px
+      text-align: center
+
+    .popup__button-block
+      margin-top: 20px
+
+  &--client_added
+    max-width: 590px
+    text-align: center
+
+    .popup__title
+      margin-bottom: 15px
+
+    .popup__text
+      margin-bottom: 15px
+
+    .button
+      max-width: 300px
+      width: 100%
+
+  &--delete
+    min-height: 180px
+    max-width: 450px
+
+    @media(min-width: 768px)
+      padding: 35px
+
+    .popup__button-block
+      display: flex
+
+    .button
+      margin-left: 2px
+      margin-right: 2px
+      width: calc(50% - 4px)
+
+  &--small
+    max-width: 450px
+
+  &__close
+    align-items: center
+    background-color: none
+    border: none
+    cursor: pointer
+    display: flex
+    height: 24px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 20px
+    top: 20px
+    width: 24px
+
+    &:hover,
+    &:focus
+      outline: none
+
+      .popup__close-icon
+        fill: rgba(#6F7075, 1)
+
+  &__close-icon
+    fill: rgba(#6F7075, 0.54)
+    height: 14px
+    transition: fill 0.3s
+    width: 14px
+
+  &__title
+    color: $main-color
+    line-height: 21px
+    margin-bottom: 20px
+
+    &--big
+      font-size: 22px
+
+  &__save-block
+    .button
+      margin-bottom: 10px
+      width: 100%
+
+      &:last-child
+        margin-bottom: 0
+
+  &__publish-block
+    align-items: center
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+    padding-top: 30px
+    position: relative
+
+    &::before
+      background-color: #D6D6D6
+      box-shadow: 0 1px 1px 0 #fff
+      content: ''
+      height: 2px
+      display: block
+      left: 0
+      position: absolute
+      top: 0
+      width: 100%
+
+    .checkbox-label
+      margin-bottom: 0
+
+  &__button-block
+    margin-top: 30px
+
+    .button--wide + .button--wide
+      margin-top: 15px
+
+  .fancybox-close-small
+    display: none
+
+.no-publish
+  max-width: 390px
+
+  &__title
+    color: $main-color
+    font-size: 22px
+    line-height: 21px
+    margin-bottom: 31px
+    text-align: center
+
+  &__image
+    margin-top: 55px
+    margin-bottom: 55px
+    text-align: center

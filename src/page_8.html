@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Нет ни одной ценности</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--no_header page--center_content">
+  //= template/sprite.html
+
+  <div class="head">
+    <div class="head__inner">
+      <button class="js-sidebar-toggler head__logo-block" type="button">
+        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
+      </button>
+      <div class="head__right">
+        <div class="head__partner-info">
+          <p class="head__partner-name">Самое длинное название которое я смогла придумать</p>
+          <p class="head__partner-id">Ваш ID: 26656559</p>
+        </div>
+        <div class="head__buttons">
+          <button class="js-filter-toggler head__button head__button--filter" type="button">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#filter" />
+            </svg>
+            <span class="head__button-text">Фильтр</span>
+          </button>
+          <a class="head__button" href="page_7.html">
+            <svg class="head__button-icon" aria-hidden="true">
+              <use xlink:href="#profile_edit" />
+            </svg>
+            <span class="head__button-text">Профиль</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="popup popup--no_worth">
+      <p class="popup__title popup__title--big">У вас пока нет ни одной ценности</p>
+      <p class="text-center">Для публикации новости, сначала необходимо создать ценность компании</p>
+      <div class="popup__button-block">
+        <button class="button button--wide" type="button" data-fancybox="add_worth" data-src="#add_worth">Добавить ценность</button>
+      </div>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+
+  <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const button = document.querySelector('.js-emoji-caller');
+      const picker = new EmojiButton({
+        emojisPerRow: 6,
+        showSearch: false,
+        showPreview: false,
+        style: 'native'
+      });
+
+      picker.on('emoji', emoji => {
+        document.querySelector('.js-emoji-input').innerHTML += emoji;
+      });
+
+      button.addEventListener('click', () => {
+        picker.togglePicker(button);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
