@@ -6,49 +6,38 @@
   left: 0
   overflow-y: auto
   position: fixed
+  scrollbar-width: thin
+  scrollbar-color: darken(#033A52, 10%) darken(#033A52, 2.5%)
   top: 0
   text-align: center
   transition: left 0.3s
-  width: 136px
+  width: 90px
   z-index: 4
 
   &.is-open
     left: 0
 
-  @media(min-width: 768px)
-    left: 0
-    padding-top: 0
+  @media(min-width: 1400px)
     width: 136px
-    z-index: 4
-
-  @media(min-width: 1200px)
-    scrollbar-width: thin
-    scrollbar-color: darken(#033A52, 10%) darken(#033A52, 2.5%)
 
   &::-webkit-scrollbar
-    @media(min-width: 1200px)
-      height: 4px
-      width: 5px
+    height: 4px
+    width: 5px
 
   &::-webkit-scrollbar-track
-    @media(min-width: 1200px)
-      background: darken(#033A52, 10%)
+    background: darken(#033A52, 10%)
 
   &::-webkit-scrollbar-thumb
-    @media(min-width: 1200px)
-      background: darken(#033A52, 2.5%)
+    background: darken(#033A52, 2.5%)
 
   &::-webkit-scrollbar:horizontal
-    @media(min-width: 1200px)
-      height: 4px
+    height: 4px
 
   &::-webkit-scrollbar-track:horizontal
-    @media(min-width: 1200px)
-      background: darken(#033A52, 10%)
+    background: darken(#033A52, 10%)
 
   &::-webkit-scrollbar-thumb:horizontal
-    @media(min-width: 1200px)
-      background: darken(#033A52, 2.5%)
+    background: darken(#033A52, 2.5%)
 
   &__logo
     align-items: center
@@ -65,7 +54,10 @@
     margin-bottom: 20px
     overflow: hidden
     padding: 0
-    width: 136px
+    width: 90px
+
+    @media(min-width: 1400px)
+      width: 136px
 
     img
       border-radius: 50%

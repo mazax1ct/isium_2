@@ -10,6 +10,7 @@
   font-size: 14px
   font-weight: 500
   height: 32px
+  justify-content: center
   line-height: 21px
   padding: 4px 10px
   text-decoration: none
@@ -40,14 +41,58 @@
 
     &:hover,
     &:active,
-    &:focus
+    &:focus,
+    &.is-active
       background-color: $main-color
       border-color: $main-color
+      color: #fff
+
+      .button__next-arrow
+        fill: #fff
+
+    .button__next-arrow
+      fill: $text-color
+
+  &--blue
+    background-color: $secondary-color
+    border-color: $secondary-color
+    color: #fff
+
+    &:hover,
+    &:active,
+    &:focus
+      background-color: darken($secondary-color, 10%)
+      border-color: darken($secondary-color, 10%)
+      color: #fff
+
+  &--grey
+    background-color: #bfbebe
+    border-color: #bfbebe
+    color: #fff
+
+    &:hover,
+    &:active,
+    &:focus
+      background-color: darken(#bfbebe, 10%)
+      border-color: darken(#bfbebe, 10%)
+      color: #fff
+
+  &--red
+    border-color: #FB5B5B
+    background-color: transparent
+    color: #FB5B5B
+
+    &:hover,
+    &:active,
+    &:focus
+      background-color: #FB5B5B
+      border-color: #FB5B5B
       color: #fff
 
   &--wide
     width: 100%
 
+  &--h_40,
   &--add_article
     height: 40px
 
@@ -55,4 +100,10 @@
     fill: #fff
     height: 19px
     margin-right: 9px
+    width: 17px
+
+  &__next-arrow
+    height: 8px
+    margin-left: 9px
+    transition: fill 0.3s
     width: 17px

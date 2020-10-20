@@ -205,10 +205,10 @@ $(document).on('click', '.js-popup-close', function () {
 });
 
 //открытие сайдбара
-$(document).on('click', '.js-sidebar-toggler', function () {
+/*$(document).on('click', '.js-sidebar-toggler', function () {
 	$('.sidebar').toggleClass('is-open');
 	return false;
-});
+});*/
 
 //открытие меню аккаунта
 $(document).on('click', '.js-head-toggler', function () {

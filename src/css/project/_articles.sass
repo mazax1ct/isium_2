@@ -1,3 +1,94 @@
+.articles-columns
+  display: flex
+  padding-top: 24px
+
+  &__column
+    scrollbar-width: thin
+    scrollbar-color: darken(#bfbebe, 20%) #bfbebe
+
+    &::-webkit-scrollbar
+      border-radius: 4px
+      height: 4px
+      width: 5px
+
+    &::-webkit-scrollbar-track
+      background: #bfbebe
+      border-radius: 4px
+
+    &::-webkit-scrollbar-thumb
+      background: darken(#bfbebe, 20%)
+      border-radius: 4px
+
+    &::-webkit-scrollbar:horizontal
+      height: 4px
+
+    &::-webkit-scrollbar-track:horizontal
+      background: #bfbebe
+
+    &::-webkit-scrollbar-thumb:horizontal
+      background: darken(#bfbebe, 20%)
+
+    &--big
+      overflow-y: auto
+      padding-right: 20px
+      padding-left: 20px
+      width: 720px
+
+      & > .button
+        &:not(:last-child)
+          margin-bottom: 10px
+
+      .button + .popup,
+      .button + .article
+        margin-top: 14px
+
+      .popup,
+      .article
+        margin-top: 24px
+        margin-bottom: 24px
+
+      & > *:last-child
+        margin-bottom: 30px
+
+    &--small
+      overflow-y: auto
+      padding-right: 20px
+      padding-left: 20px
+      width: 480px
+
+      @media(min-width: 1400px)
+        margin-left: 15px
+
+.scenario-stats
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 24px
+
+  &__item
+    &:not(:last-child)
+      margin-right: 10px
+
+      @media(min-width: 1200px)
+        margin-right: 36px
+
+  &__item-title
+    color: $secondary-color
+    font-size: 9px
+    font-weight: 500
+    margin-bottom: 5px
+    text-transform: uppercase
+
+  &__item-value
+    color: $main-color
+    font-size: 36px
+    font-weight: 500
+
+.articles-qnt
+  color: $secondary-color
+  font-size: 16px
+  margin-top: 24px
+  margin-bottom: 12px
+
 .articles
   @media(min-width: 1200px)
     display: flex
@@ -247,16 +338,20 @@
   margin-right: auto
   margin-bottom: 30px
   max-width: 695px
-  padding: 30px 15px
+  padding: 30px 24px 36px
   position: relative
   width: 100%
   z-index: 1
 
-  @media(min-width: 700px)
-    padding: 30px 40px 36px
-
   @media(min-width: 1200px)
     margin-bottom: 48px
+
+  @media(min-width: 1400px)
+    padding-left: 40px
+    padding-right: 40px
+
+  &.choosen
+    border-color: $main-color
 
   &__company-logo
     background-color: #fff
@@ -277,15 +372,11 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    margin-bottom: 5px
     padding-right: 35px
     position: relative
     color: $secondary-color
     line-height: 18px
-
-    @media(min-width: 768px)
-      display: flex
-      justify-content: space-between
-      margin-bottom: 5px
 
   &__company-name
     margin-bottom: 10px
@@ -307,6 +398,8 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    padding-right: 35px
+    position: relative
 
     .article__title
       margin-bottom: 3px
@@ -363,11 +456,11 @@
     right: 0
     top: 50px
 
-    @media(min-width: 768px)
+    //@media(min-width: 768px)
       right: 40px
       top: 0
 
-    @media(min-width: 1440px)
+    //@media(min-width: 1440px)
       left: 100px
       right: auto
 
@@ -375,13 +468,13 @@
       left: auto
       right: 6px
 
-      @media(min-width: 768px)
+      //@media(min-width: 768px)
         left: 100%
         top: 12px
         border-bottom-color: transparent
         border-left-color: #fff
 
-      @media(min-width: 1440px)
+      //@media(min-width: 1440px)
         left: auto
         right: 100%
         top: 12px
@@ -397,14 +490,13 @@
 
   &__date
     font-size: 12px
-    margin-bottom: 15px
+    font-weight: 300
+    margin-bottom: 8px
 
   &__preview-text
     font-size: 13px
+    font-weight: 300
     margin-bottom: 12px
-
-    @media(min-width: 1200px)
-      font-size: 14px
 
     p
       margin-bottom: 15px
@@ -795,6 +887,18 @@
 
     @media(min-width: 1200px)
       font-size: 13px
+
+.scenario-buttons
+  display: flex
+  justify-content: flex-end
+  flex-wrap: wrap
+
+  &:not(:last-child)
+    margin-bottom: 16px
+
+  .button
+    &:not(:last-child)
+      margin-right: 6px
 
 .horizontal-bar
   border-radius: 4px

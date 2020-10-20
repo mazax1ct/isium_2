@@ -6,17 +6,13 @@
   display: none
   margin-left: auto
   margin-right: auto
-  max-width: 695px
-  padding: 30px 15px
+  max-width: 680px
+  padding: 30px 24px 36px
   position: relative
   width: 100%
   z-index: 1
 
-  @media(min-width: 768px)
-    padding-top: 35px
-    padding-bottom: 35px
-
-  @media(min-width: 1200px)
+  @media(min-width: 1400px)
     padding-left: 40px
     padding-right: 40px
 
@@ -45,9 +41,7 @@
     box-shadow: none
     display: block
     max-width: 450px
-
-    @media(min-width: 768px)
-      padding: 25px 35px 35px
+    padding: 25px 35px 35px
 
     .popup__title
       margin-bottom: 20px
@@ -70,9 +64,7 @@
   &--forgot
     min-height: 180px
     max-width: 450px
-
-    @media(min-width: 768px)
-      padding: 25px 35px 35px
+    padding: 25px 35px 35px
 
     .popup__title
       margin-top: 17px
@@ -93,9 +85,7 @@
     display: block
     min-height: 180px
     max-width: 450px
-
-    @media(min-width: 768px)
-      padding: 25px 35px 35px
+    padding: 25px 35px 35px
 
     .popup__title
       margin-top: 17px
@@ -122,9 +112,7 @@
   &--delete
     min-height: 180px
     max-width: 450px
-
-    @media(min-width: 768px)
-      padding: 35px
+    padding: 35px
 
     .popup__button-block
       display: flex
@@ -185,8 +173,8 @@
     align-items: center
     display: flex
     justify-content: space-between
-    margin-top: 30px
-    padding-top: 30px
+    margin-top: 24px
+    padding-top: 24px
     position: relative
 
     &::before
@@ -203,11 +191,24 @@
     .checkbox-label
       margin-bottom: 0
 
+    .button
+      margin-left: auto
+      min-width: 115px
+
   &__button-block
     margin-top: 30px
 
     .button--wide + .button--wide
       margin-top: 15px
+
+  &__delimiter
+    background-color: #D6D6D6
+    border: none
+    border-bottom: 1px solid #fff
+    color: #D6D6D6
+    height: 2px
+    margin-top: 24px
+    margin-bottom: 24px
 
   .fancybox-close-small
     display: none

@@ -29,9 +29,13 @@
     display: flex
     height: 120px
     justify-content: center
-    min-width: 136px
+    min-width: 90px
     padding: 0
-    width: 136px
+    width: 90px
+
+    @media(min-width: 1400px)
+      min-width: 136px
+      width: 136px
 
   &__logo
     background-color: #fff
@@ -229,9 +233,26 @@
     position: relative
     padding-right: 30px
 
+  &__edit
+    background-color: transparent
+    border: none
+    cursor: pointer
+    left: auto
+    padding: 0
+    position: absolute
+    top: 4px
+    right: 0
+    z-index: 1
+
+  &__edit-icon
+    fill: #6F7075
+    height: 20px
+    width: 20px
+
   &__buttons
     display: flex
     flex-wrap: wrap
+    min-height: 40px
 
     .button
       min-width: 180px

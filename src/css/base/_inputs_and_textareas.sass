@@ -17,8 +17,15 @@
     &:focus
       border-color: #ff0000
 
-  &:disabled
-    opacity: 0.5
+  &:disabled,
+  &.disabled
+    background-color: #bfbebe
+    border-color: #bfbebe
+    color: #fff
+    cursor: default
+
+    &:focus
+      outline: none
 
 .input
   height: 36px
@@ -26,6 +33,15 @@
 
   &--type_2
     padding-left: 28px
+
+  &--type_3
+    border-color: rgba(#8E8C96, 0.69)
+    height: 24px
+    padding: 2px 8px
+    width: 60px
+
+    &:focus
+      border-color: darken(#8E8C96, 5%)
 
 .textarea
   height: 110px

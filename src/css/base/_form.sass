@@ -245,11 +245,11 @@
   z-index: 1
 
 .info
-  margin-bottom: 30px
-  padding-bottom: 34px
+  margin-bottom: 10px
+  //padding-bottom: 34px
   position: relative
 
-  &::after
+  //&::after
     background-color: #D6D6D6
     box-shadow: 0 1px 1px 0 #fff
     bottom: 0
@@ -305,10 +305,22 @@
   padding: 0
 
   &__item
-    margin-bottom: 23px
+    margin-bottom: 17px
 
     &:last-child
       margin-bottom: 0
+
+    &--title
+      color: $secondary-color
+
+  &__item-checkboxes
+    display: flex
+
+    .checkbox-label
+      margin-bottom: 8px
+
+      &:not(:last-child)
+        margin-right: 16px
 
 .options2
   margin-top: 20px

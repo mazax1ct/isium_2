@@ -17,7 +17,7 @@
   //= template/style.html
 </head>
 
-<body id="top" class="page">
+<body id="top" class="page page--list">
   //= template/sprite.html
 
   <div class="head">
@@ -45,10 +45,8 @@
   <header class="header">
     <div class="header__inner">
       <div class="editable-title">
-        <h1 class="editable-title__title">Фидбек от ушедших клиентов <button class="client-info__edit" type="button" title="Изменить" data-fancybox="edit_client" data-src="#edit_client"><svg class="client-info__edit-icon" aria-hidden="true"><use xlink:href="#profile_edit" /></svg></button></h1>
-        <div class="editable-title__buttons">
-          <button class="button" type="button"><svg class="button__play-icon" aria-hidden="true"><use xlink:href="#play" /></svg>Пройти сценарий</button>
-        </div>
+        <h1 class="editable-title__title">Фидбек от ушедших клиентов <button class="editable-title__edit" type="button" title="Изменить"><svg class="editable-title__edit-icon" aria-hidden="true"><use xlink:href="#profile_edit" /></svg></button></h1>
+        <div class="editable-title__buttons"></div>
       </div>
       <div class="stats_2">
         <div class="stats_2__item">
@@ -61,7 +59,7 @@
         </div>
       </div>
       <div class="tabs-nav">
-        <button class="tabs-nav__button" type="button">Клиенты</button>
+        <button class="tabs-nav__button" type="button">Контакты</button>
         <button class="tabs-nav__button is-active" type="button">Публикации</button>
       </div>
     </div>
@@ -164,6 +162,208 @@
       </div>
     </div>
 
+    <div class="articles-columns">
+      <div class="articles-columns__column articles-columns__column--big">
+        <button class="button button--wide button--h_40" type="button" disabled>Опубликовать сценарий</button>
+        <div class="popup popup--form">
+          <p class="popup__title popup__title--big">Новая публикация</p>
+          <form action="">
+            <label class="form-label">
+              <span class="form-label__text">К какому сценарию относится публикация*</span>
+              <input class="input" type="text" value="Качество доставки" disabled>
+            </label>
+            <label class="form-label" for="inp_4_1">
+              <span class="form-label__text">Название публикации*</span>
+              <input id="inp_4_1" class="input" name="inp_4_1" type="text" value="">
+            </label>
+            <div class="info">
+              <div class="info__inner">
+                <div class="info__photo">
+                  <label class="form-label photo-container" for="inputImage">
+                    <input id="inputImage" type="file" name="file" accept="image/*">
+                    <span class="form-label__text">Заглавное фото</span>
+                    <div class="foto-upload"></div>
+                  </label>
+                </div>
+                <div class="info__text">
+                  <label class="form-label" for="inp_4_2">
+                    <span class="form-label__text">Анонс к публикации</span>
+                    <div class="stretchy-textarea" contenteditable="true"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <label class="form-label">
+              <span class="form-label__text">Текст публикации</span>
+              <textarea class="js-wysiwyg"></textarea>
+            </label>
+            <hr class="popup__delimiter">
+            <ol class="questions-list">
+              <li class="questions-list__item questions-list__item--title">Вид опроса</li>
+              <li class="questions-list__item">
+                <label class="checkbox-label" for="q_2_0">
+                  <input id="q_2_0" name="article_type" type="radio" value="1" checked>
+                  <span class="checkbox-label__icon"></span>
+                  <span class="checkbox-label__text">Без опроса</span>
+                </label>
+              </li>
+              <li class="questions-list__item">
+                <div class="questions-list__item-checkboxes">
+                  <label class="checkbox-label" for="q_2_1">
+                    <input id="q_2_1" name="article_type" type="radio" value="2">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Закрытый вопрос с вариантами  ДА / НЕТ</span>
+                  </label>
+                  <label class="checkbox-label checkbox-label--dark" for="show_stats">
+                    <input id="show_stats" name="show_stats" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Выводить статистику</span>
+                  </label>
+                </div>
+                <label class="form-label form-label--type_2" for="inp_3_2_">
+                  <input id="inp_3_2_" class="input" name="inp_3_2_" type="text" value="Вы уже попробовали?">
+                </label>
+              </li>
+              <li class="questions-list__item">
+                <label class="checkbox-label" for="q_2_2">
+                  <input id="q_2_2" name="article_type" type="radio" value="3">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="checkbox-label__text">Голосование от 1 до 10</span>
+                </label>
+                <label class="form-label form-label--type_2" for="inp_3_3">
+                  <input id="inp_3_3" class="input" name="inp_3_3" type="text" value="На сколько вы оцениваете вкус мёда?">
+                </label>
+              </li>
+              <li class="questions-list__item">
+                <label class="checkbox-label" for="q_2_2_">
+                  <input id="q_2_2_" name="article_type" type="radio" value="4">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="checkbox-label__text">Открытый вопрос со свободной формой ответа</span>
+                </label>
+                <label class="form-label form-label--type_2" for="inp_3_3_">
+                  <input id="inp_3_3_" class="input" name="inp_3_3" type="text" value="Какой ваш профессиональный праздник?">
+                </label>
+              </li>
+              <li class="questions-list__item">
+                <label class="checkbox-label" for="q_3_4">
+                  <input id="q_3_4" name="article_type" type="radio" value="5">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="checkbox-label__text">Опрос с вариантами ответов</span>
+                </label>
+                <label class="form-label form-label--type_2" for="inp_3_5">
+                  <input id="inp_3_5" class="input" name="inp_3_5" type="text" value="Какие подарки вы обычно выбираете?">
+                </label>
+                <div class="options2">
+                  <p class="options2__title">Варианты ответа</p>
+                  <div class="options2__inner">
+                    <div class="options2__item">
+                      <label class="form-label" for="inp_3_6">
+                        <span class="form-label__container">
+                          <input id="inp_3_6" class="input" name="inp_3_6" type="text" value="Практичные">
+                          <button class="clear" type="button" title="Удалить">
+                            <svg class="clear__icon" aria-hidden="true">
+                              <use xlink:href="#close" />
+                            </svg>
+                          </button>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="options2__item">
+                      <label class="form-label" for="inp_3_7">
+                        <span class="form-label__container">
+                          <input id="inp_3_7" class="input" name="inp_3_7" type="text" value="Красивые">
+                          <button class="clear" type="button" title="Удалить">
+                            <svg class="clear__icon" aria-hidden="true">
+                              <use xlink:href="#close" />
+                            </svg>
+                          </button>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="options2__item">
+                      <label class="form-label" for="inp_3_11">
+                        <input id="inp_3_11" class="input" name="inp_3_11" type="text" value="" placeholder="Добавить вариант...">
+                      </label>
+                    </div>
+                  </div>
+                  <label class="checkbox-label" for="q_3_5">
+                    <input id="q_3_5" name="q_3_5" type="checkbox">
+                    <span class="checkbox-label__icon"></span>
+                    <span class="checkbox-label__text">Выбор нескольких вариантов</span>
+                  </label>
+                </div>
+              </li>
+              <li class="questions-list__item">
+                <label class="checkbox-label" for="q_4_5">
+                  <input id="q_4_5" name="article_type" type="radio" value="7">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="checkbox-label__text">Фотоопрос</span>
+                </label>
+                <label class="form-label" for="inp_4_3">
+                  <input id="inp_4_3" class="input" name="inp_4_3" type="text" value="Какой мёд вы бы купили по фотографии?">
+                </label>
+                <div class="mosaic-types">
+                  <p class="mosaic-types__title">Вид мозаики</p>
+                  <div class="mosaic-types__list">
+                    <div class="mosaic-types__item">
+                      <label class="mosaic-type" for="mosaic_1">
+                        <input id="mosaic_1" type="radio" name="mosaic" value="1">
+                        <svg class="mosaic-type__svg" aria-hidden="true">
+                          <use xlink:href="#mosaic_type_1" />
+                        </svg>
+                        <span class="mosaic-type__title">2 изображения</span>
+                      </label>
+                    </div>
+                    <div class="mosaic-types__item">
+                      <label class="mosaic-type" for="mosaic_2">
+                        <input id="mosaic_2" type="radio" name="mosaic" value="2">
+                        <svg class="mosaic-type__svg" aria-hidden="true">
+                          <use xlink:href="#mosaic_type_2" />
+                        </svg>
+                        <span class="mosaic-type__title">4 изображения</span>
+                      </label>
+                    </div>
+                    <div class="mosaic-types__item">
+                      <label class="mosaic-type" for="mosaic_3">
+                        <input id="mosaic_3" type="radio" name="mosaic" value="3">
+                        <svg class="mosaic-type__svg" aria-hidden="true">
+                          <use xlink:href="#mosaic_type_3" />
+                        </svg>
+                        <span class="mosaic-type__title">6 изображений</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="photos">
+                  <p class="photos__title">Загрузите изображения</p>
+                  <div class="photos__list">
+                    <div class="photos__item"><div class="foto-upload foto-upload--small"></div></div>
+                    <div class="photos__item"><div class="foto-upload foto-upload--small"></div></div>
+                    <div class="photos__item"><div class="foto-upload foto-upload--small"></div></div>
+                    <div class="photos__item"><div class="foto-upload foto-upload--small"></div></div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </form>
+        </div>
+        <button class="button button--wide button--h_40" type="button">Сохранить и добавить еще публикацию</button>
+        <button class="button button--blue button--wide button--h_40" type="button">Сохранить и перейти к созданию связей</button>
+        <button class="button button--grey button--wide button--h_40" type="button">Отмена</button>
+      </div>
+      <div class="articles-columns__column articles-columns__column--small">
+        <div class="scenario-stats">
+          <div class="scenario-stats__item">
+            <p class="scenario-stats__item-title">Мин. длина сценария (Часы)</p>
+            <p class="scenario-stats__item-value">0</p>
+          </div>
+          <div class="scenario-stats__item">
+            <p class="scenario-stats__item-title">Макс. длина сценария (Часы)</p>
+            <p class="scenario-stats__item-value">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   //= template/go-top.html
@@ -173,6 +373,9 @@
   //= template/scripts.html
 
   <script src="js/chartist.min.js"></script>
+  <script src="js/tinymce/tinymce.min.js"></script>
+  <script src="js/tinymce/jquery.tinymce.min.js"></script>
+
   <script>
     new Chartist.Line('#chart1', {
       labels: false,
@@ -198,6 +401,18 @@
       showLabel: true,
       width: '150px',
       height: '150px',
+    });
+
+    $('.js-wysiwyg').tinymce({
+      height: 240,
+      menubar: false,
+      plugins: [
+        'advlist autolink lists link image charmap print preview anchor',
+        'searchreplace visualblocks code fullscreen',
+        'insertdatetime media table paste code help wordcount'
+      ],
+      toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
+      language: 'ru'
     });
   </script>
 

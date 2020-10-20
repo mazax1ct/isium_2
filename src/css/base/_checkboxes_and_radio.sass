@@ -24,7 +24,7 @@
     height: 16px
     left: 0
     position: absolute
-    top: 0
+    top: 1px
     text-align: center
     width: 16px
 
@@ -40,7 +40,8 @@
       box-shadow: 0 0 5px 0 rgba($main-color, 0.5)
       background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.5' d='M14.2222 0H1.77778C0.8 0 0 0.8 0 1.77778V14.2222C0 15.2 0.8 16 1.77778 16H14.2222C15.2 16 16 15.2 16 14.2222V1.77778C16 0.8 15.2 0 14.2222 0ZM6.22222 12.4444L1.77778 8.17094L3.02222 6.97436L6.22222 10.0513L12.9778 3.55556L14.2222 4.75214L6.22222 12.4444Z' fill='%2300BBD3'/%3E%3C/svg%3E%0A")
 
-    input[type="checkbox"]:disabled + .checkbox-label__icon
+    input[type="checkbox"]:disabled + .checkbox-label__icon,
+    input[type="radio"]:disabled + .checkbox-label__icon
       background: none
 
   &__icon
@@ -57,26 +58,41 @@
     .checkbox-label__icon
       border-color: #04405A
 
-    input[type="checkbox"]:checked + .checkbox-label__icon
+    input[type="checkbox"]:checked + .checkbox-label__icon,
+    input[type="radio"]:checked + .checkbox-label__icon
       background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 0H1.77778C0.8 0 0 0.8 0 1.77778V14.2222C0 15.2 0.8 16 1.77778 16H14.2222C15.2 16 16 15.2 16 14.2222V1.77778C16 0.8 15.2 0 14.2222 0ZM6.22222 12.4444L1.77778 8.17094L3.02222 6.97436L6.22222 10.0513L12.9778 3.55556L14.2222 4.75214L6.22222 12.4444Z' fill='%2304405A'/%3E%3C/svg%3E%0A")
+
+  &--not_checked
+    .checkbox-label__icon
+      border-color: #8E8C96
+
+    .checkbox-label__text
+      color: #8E8C96
+
+    &:hover
+      .checkbox-label__icon
+        box-shadow: 0 0 5px 0 rgba(#8E8C96, 0.5)
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.5' d='M14.2222 0H1.77778C0.8 0 0 0.8 0 1.77778V14.2222C0 15.2 0.8 16 1.77778 16H14.2222C15.2 16 16 15.2 16 14.2222V1.77778C16 0.8 15.2 0 14.2222 0ZM6.22222 12.4444L1.77778 8.17094L3.02222 6.97436L6.22222 10.0513L12.9778 3.55556L14.2222 4.75214L6.22222 12.4444Z' fill='%238E8C96'/%3E%3C/svg%3E%0A")
 
 .radio-label
   &__icon
     border-radius: 50%
+    border-color: #04405A
 
-input[type="checkbox"]:checked + .checkbox-label__icon
+input[type="checkbox"]:checked + .checkbox-label__icon,
+input[type="radio"]:checked + .checkbox-label__icon
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 0H1.77778C0.8 0 0 0.8 0 1.77778V14.2222C0 15.2 0.8 16 1.77778 16H14.2222C15.2 16 16 15.2 16 14.2222V1.77778C16 0.8 15.2 0 14.2222 0ZM6.22222 12.4444L1.77778 8.17094L3.02222 6.97436L6.22222 10.0513L12.9778 3.55556L14.2222 4.75214L6.22222 12.4444Z' fill='%2300BBD3'/%3E%3C/svg%3E%0A")
 
 input[type="radio"]:checked + .radio-label__icon::before
-  background-color: #000
+  background-color: #04405A
   border-radius: 50%
-  content: ""
-  height: 14px
+  content: ''
+  height: 8px
   left: 50%
   position: absolute
   top: 50%
   transform: translate(-50%, -50%)
-  width: 14px
+  width: 8px
 
 input[type="checkbox"]:disabled + .checkbox-label__icon,
 input[type="checkbox"].disabled + .checkbox-label__icon
