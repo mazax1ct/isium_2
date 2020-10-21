@@ -47,6 +47,9 @@
         margin-top: 24px
         margin-bottom: 24px
 
+        &:first-child
+          margin-top: 0
+
       & > *:last-child
         margin-bottom: 30px
 
@@ -185,12 +188,12 @@
       transform: translateX(-97px)
 
 .filter
-  max-width: 256px
-  margin-left: auto
-  margin-right: auto
+  //max-width: 256px
+  //margin-left: auto
+  //margin-right: auto
   padding-bottom: 5px
 
-  @media(min-width: 1200px)
+  //@media(min-width: 1200px)
     min-width: 256px
 
   &__title
@@ -402,12 +405,12 @@
     position: relative
 
     .article__title
-      margin-bottom: 3px
+      margin-bottom: 8px
 
   &__draft
     color: $secondary-color
     font-size: 11px
-    padding-right: 35px
+    margin-bottom: 8px
 
   &__type-label
     border-radius: 4px
@@ -424,6 +427,7 @@
     position: absolute
     top: 0
     right: 0
+    z-index: 1
 
     .article__title
       padding-right: 20px
@@ -826,7 +830,7 @@
 
 .stats-block
   &:not(:last-child)
-    margin-bottom: 40px
+    margin-bottom: 20px
 
 .stat-bar
   align-items: flex-end
@@ -897,8 +901,40 @@
     margin-bottom: 16px
 
   .button
+    font-size: 10px
+    height: 28px
+
     &:not(:last-child)
       margin-right: 6px
+
+.range-title
+  font-size: 12px
+  margin-top: -14px
+  text-align: right
+
+  span
+    display: inline-block
+    min-width: 163px
+    text-align: left
+
+.range-clear
+  align-items: center
+  background-color: transparent
+  border: none
+  color: #FB5B5B
+  cursor: pointer
+  display: inline-flex
+  font-size: 10px
+  padding: 5px 0
+
+  &__icon
+    fill: #FB5B5B
+    height: 9px
+    margin-right: 3px
+    width: 9px
+
+  &__text
+    text-decoration: underline
 
 .horizontal-bar
   border-radius: 4px
@@ -923,7 +959,7 @@
   flex-wrap: wrap
   justify-content: space-between
   margin-bottom: 20px
-  margin-top: 30px
+  margin-top: 15px
 
 .stat-bar2
   align-items: center

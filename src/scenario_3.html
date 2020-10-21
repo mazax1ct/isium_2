@@ -20,27 +20,7 @@
 <body id="top" class="page page--center_content">
   //= template/sprite.html
 
-  <div class="head">
-    <div class="head__inner">
-      <button class="js-sidebar-toggler head__logo-block" type="button">
-        <div class="head__logo"><img src="images/logo.png" alt="Happy Partner"></div>
-      </button>
-      <div class="head__right">
-        <div class="head__partner-info">
-          <p class="head__partner-name">Самое длинное название которое я смогла придумать</p>
-          <p class="head__partner-id">Ваш ID: 26656559</p>
-        </div>
-        <div class="head__buttons">
-          <a class="head__button" href="page_7.html">
-            <svg class="head__button-icon" aria-hidden="true">
-              <use xlink:href="#profile_edit" />
-            </svg>
-            <span class="head__button-text">Профиль</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  //= template/head.html
 
   <header class="header">
     <div class="header__inner header__inner--two_columns">
@@ -51,7 +31,9 @@
         </div>
       </div>
       <div class="header__right">
-        <a class="header__manage-button header__add-button button" href="scenario_1.html">Добавить сценарий</a>
+        <div class="header__manage-buttons">
+          <a class="header__manage-button header__add-button button" href="scenario_1.html">Добавить сценарий</a>
+        </div>
       </div>
     </div>
   </header>

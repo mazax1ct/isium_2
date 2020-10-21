@@ -152,6 +152,8 @@ $(document).ready(function () {
 		closeExisting: true,
 		hash: false,
 		autoFocus: false,
+		backFocus: false,
+		trapFocus: false,
 		touch: false
 	});
 });

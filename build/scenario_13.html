@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Нет ни одной ценности</title>
+  <title>Создание сценария на примере одного поста</title>
 
   <meta name="description" content="">
 
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body id="top" class="page page--no_header page--center_content">
+<body id="top" class="page page--center_content">
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="logout" viewBox="0 0 24 24">
       <g>
@@ -142,6 +142,11 @@
     <symbol id="arrow_to_right">
       <path d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM0 4.5L16 4.5V3.5L0 3.5L0 4.5Z"/>
     </symbol>
+    <symbol id="stats" viewBox="0 0 24 19">
+      <path d="M3.91695 7H1.30565C0.58456 7 0 7.55964 0 8.25V17.75C0 18.4403 0.58456 19 1.30565 19H3.91695C4.63804 19 5.2226 18.4403 5.2226 17.75V8.25C5.2226 7.55964 4.63804 7 3.91695 7Z"/>
+      <path d="M13.3193 4H10.708C9.9869 4 9.40234 4.55964 9.40234 5.25V17.75C9.40234 18.4403 9.9869 19 10.708 19H13.3193C14.0404 19 14.6249 18.4403 14.6249 17.75V5.25C14.6249 4.55964 14.0404 4 13.3193 4Z"/>
+      <path d="M22.6943 0H20.083C19.3619 0 18.7773 0.559643 18.7773 1.25V17.75C18.7773 18.4403 19.3619 19 20.083 19H22.6943C23.4154 19 23.9999 18.4403 23.9999 17.75V1.25C23.9999 0.559643 23.4154 0 22.6943 0Z"/>
+    </symbol>
   </svg>
 
   <div class="head">
@@ -155,12 +160,6 @@
           <p class="head__partner-id">Ваш ID: 26656559</p>
         </div>
         <div class="head__buttons">
-          <button class="js-filter-toggler head__button head__button--filter" type="button">
-            <svg class="head__button-icon" aria-hidden="true">
-              <use xlink:href="#filter" />
-            </svg>
-            <span class="head__button-text">Фильтр</span>
-          </button>
           <a class="head__button" href="page_7.html">
             <svg class="head__button-icon" aria-hidden="true">
               <use xlink:href="#profile_edit" />
@@ -230,12 +229,10 @@
       </nav>
     </div>
 
-    <div class="popup popup--no_worth">
-      <p class="popup__title popup__title--big">У вас пока нет ни одной ценности</p>
-      <p class="text-center">Для публикации новости, сначала необходимо создать ценность компании</p>
-      <div class="popup__button-block">
-        <button class="button button--wide" type="button" data-fancybox="add_worth" data-src="#add_worth">Добавить ценность</button>
-      </div>
+    <div class="no-publish">
+      <p class="no-publish__title">У вас пока нет ни одной публикации</p>
+      <p class="no-publish__image"><img src="images/icons/no-publish.svg" alt=""></p>
+      <button class="button button--wide button--h_40" type="button">Перейти к выбору сценария</button>
     </div>
   </div>
 
@@ -660,6 +657,19 @@
       <button class="button" type="button">Нет</button>
     </div>
   </div>
+  
+  <div id="clear_range" class="popup popup--delete">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть">
+      <svg class="popup__close-icon" aria-hidden="true">
+        <use xlink:href="#close" />
+      </svg>
+    </button>
+    <p class="text-center">Вы действи тельно хотите снять диапазон?<br> В этом случае, настроенная связь — пропадет</p>
+    <div class="popup__button-block">
+      <button class="button button--transparent" type="button">Да</button>
+      <button class="button" type="button">Нет</button>
+    </div>
+  </div>
 
   <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="js/select2.full.min.js"></script>
@@ -667,27 +677,6 @@
   <script type="text/javascript" src="js/cropper.min.js"></script>
   <script type="text/javascript" src="js/cropper-init.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const button = document.querySelector('.js-emoji-caller');
-      const picker = new EmojiButton({
-        emojisPerRow: 6,
-        showSearch: false,
-        showPreview: false,
-        style: 'native'
-      });
-
-      picker.on('emoji', emoji => {
-        document.querySelector('.js-emoji-input').innerHTML += emoji;
-      });
-
-      button.addEventListener('click', () => {
-        picker.togglePicker(button);
-      });
-    });
-  </script>
 
 </body>
 

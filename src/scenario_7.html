@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title></title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--list">
+  //= template/sprite.html
+
+  //= template/head.html
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="editable-title">
+        <h1 class="editable-title__title">Фидбек от ушедших клиентов <button class="editable-title__edit" type="button" title="Изменить"><svg class="editable-title__edit-icon" aria-hidden="true"><use xlink:href="#profile_edit" /></svg></button></h1>
+        <div class="editable-title__buttons">
+          <button class="button button--transparent" type="button">Дублировать сценарий</button>
+          <button class="button" type="button"><svg class="button__play-icon" aria-hidden="true"><use xlink:href="#play" /></svg>Пройти сценарий</button>
+        </div>
+      </div>
+      <div class="stats_2">
+        <div class="stats_2__item">
+          <p class="stats_2__item-title">Просмотров</p>
+          <p class="stats_2__item-value">1969</p>
+        </div>
+        <div class="stats_2__item">
+          <p class="stats_2__item-title">Ответов</p>
+          <p class="stats_2__item-value">66</p>
+        </div>
+      </div>
+      <div class="tabs-nav">
+        <button class="tabs-nav__button" type="button">Контакты</button>
+        <button class="tabs-nav__button is-active" type="button">Публикации</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    //= template/statistic.html
+
+    <div class="articles-columns">
+      <div class="articles-columns__column articles-columns__column--big">
+        <div class="article choosen">
+          <div class="article__title-block">
+            <h2 class="article__title">Какая мы киса</h2>
+            <div class="article__manage-block">
+              <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                <svg class="article__manage-button-icon" aria-hidden="true">
+                  <use xlink:href="#kebab"></use>
+                </svg>
+              </button>
+              <div class="article__manage-dropdown manage-popover">
+                <ul class="manage-popover__list">
+                  <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                  <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                  <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="article__date">25.04.2020 19:50</p>
+          <div class="article__preview-text">
+            <p>Наш ассортимент пополнился новыми медовыми подарками. Встречайте сладкую коллекцию этой весны «Янтарь» с богатым вкусом и солнечным светом.</p>
+          </div>
+          <div class="article__image"><img src="images/content/img_15.jpg" alt="Альт картинки"></div>
+          <p class="question-title">
+            <span class="secondary-color">Какой мёд вы бы купили по фотографии?</span>
+            <span>Ответов: 150</span>
+          </p>
+          <div class="stat-bar">
+            <div class="stat-bar__bar-block">
+              <div class="stat-bar__title-block">
+                <p class="stat-bar__title">В красивой банке</p>
+                <p class="stat-bar__qnt">80</p>
+              </div>
+              <div class="stat-bar__bar">
+                <div class="horizontal-bar">
+                  <div class="horizontal-bar__value" style="width: 89%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-bar__percents">47%</div>
+          </div>
+          <div class="scenario-buttons">
+            <button class="button button--red" type="button">Завершить сценарий</button>
+            <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-bar__bar-block">
+              <div class="stat-bar__title-block">
+                <p class="stat-bar__title">В некрасивой банке</p>
+                <p class="stat-bar__qnt">60</p>
+              </div>
+              <div class="stat-bar__bar">
+                <div class="horizontal-bar">
+                  <div class="horizontal-bar__value" style="width: 41%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-bar__percents">33%</div>
+          </div>
+          <div class="scenario-buttons">
+            <button class="button button--red" type="button">Завершить сценарий</button>
+            <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-bar__bar-block">
+              <div class="stat-bar__title-block">
+                <p class="stat-bar__title">В сотах</p>
+                <p class="stat-bar__qnt">43</p>
+              </div>
+              <div class="stat-bar__bar">
+                <div class="horizontal-bar">
+                  <div class="horizontal-bar__value" style="width: 20%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-bar__percents">20%</div>
+          </div>
+          <div class="scenario-buttons">
+            <button class="button button--red" type="button">Завершить сценарий</button>
+            <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-bar__bar-block">
+              <div class="stat-bar__title-block">
+                <p class="stat-bar__title">Липовый</p>
+                <p class="stat-bar__qnt">0</p>
+              </div>
+              <div class="stat-bar__bar">
+                <div class="horizontal-bar">
+                  <div class="horizontal-bar__value" style="width: 0"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-bar__percents">0%</div>
+          </div>
+          <div class="scenario-buttons">
+            <button class="button button--red is-active" type="button">Завершить сценарий</button>
+            <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+          </div>
+        </div>
+
+        <div class="article">
+          <div class="article__title-block">
+            <h2 class="article__title">Весенняя коллекция</h2>
+            <p class="article__draft">Черновик</p>
+            <div class="article__manage-block">
+              <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                <svg class="article__manage-button-icon" aria-hidden="true">
+                  <use xlink:href="#kebab"></use>
+                </svg>
+              </button>
+              <div class="article__manage-dropdown manage-popover">
+                <ul class="manage-popover__list">
+                  <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                  <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                  <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="article__date">25.04.2020 19:50</p>
+          <div class="article__preview-text">
+            <p>Наш ассортимент пополнился новыми медовыми подарками. Встречайте сладкую коллекцию этой весны «Янтарь» с богатым вкусом и солнечным светом.</p>
+          </div>
+          <div class="options4">
+            <div class="options4__list">
+              <div class="options4__item">
+                <p class="options4__item-title">В красивой банке</p>
+                <div class="option3">
+                  <span class="option3__image"><img src="images/content/img_2.jpg" alt="Альт к картинке"></span>
+                </div>
+              </div>
+              <div class="options4__item">
+                <p class="options4__item-title">В некрасивой банке</p>
+                <div class="option3">
+                  <span class="option3__image"><img src="images/content/img_3.jpg" alt="Альт к картинке"></span>
+                </div>
+              </div>
+              <div class="options4__item">
+                <p class="options4__item-title">В сотах</p>
+                <div class="option3">
+                  <span class="option3__image"><img src="images/content/img_4.jpg" alt="Альт к картинке"></span>
+                </div>
+              </div>
+              <div class="options4__item">
+                <p class="options4__item-title">Липовый</p>
+                <div class="option3">
+                  <span class="option3__image"><img src="images/content/img_5.jpg" alt="Альт к картинке"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="question-title">
+            <span class="secondary-color">Какой мёд вы бы купили по фотографии?</span>
+            <span>Ответов: 150</span>
+          </p>
+          <div class="stat-bar">
+            <div class="stat-bar__bar-block">
+              <div class="stat-bar__title-block">
+                <p class="stat-bar__title">В красивой банке</p>
+                <p class="stat-bar__qnt">80</p>
+              </div>
+              <div class="stat-bar__bar">
+                <div class="horizontal-bar">
+                  <div class="horizontal-bar__value" style="width: 89%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-bar__percents">47%</div>
+          </div>
+          <div class="scenario-buttons">
+            <button class="button button--red" type="button">Завершить сценарий</button>
+            <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-bar__bar-block">
+              <div class="stat-bar__title-block">
+                <p class="stat-bar__title">В некрасивой банке</p>
+                <p class="stat-bar__qnt">60</p>
+              </div>
+              <div class="stat-bar__bar">
+                <div class="horizontal-bar">
+                  <div class="horizontal-bar__value" style="width: 41%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-bar__percents">33%</div>
+          </div>
+          <div class="scenario-buttons">
+            <button class="button button--red" type="button">Завершить сценарий</button>
+            <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-bar__bar-block">
+              <div class="stat-bar__title-block">
+                <p class="stat-bar__title">В сотах</p>
+                <p class="stat-bar__qnt">43</p>
+              </div>
+              <div class="stat-bar__bar">
+                <div class="horizontal-bar">
+                  <div class="horizontal-bar__value" style="width: 20%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-bar__percents">20%</div>
+          </div>
+          <div class="scenario-buttons">
+            <button class="button button--red" type="button">Завершить сценарий</button>
+            <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-bar__bar-block">
+              <div class="stat-bar__title-block">
+                <p class="stat-bar__title">Липовый</p>
+                <p class="stat-bar__qnt">0</p>
+              </div>
+              <div class="stat-bar__bar">
+                <div class="horizontal-bar">
+                  <div class="horizontal-bar__value" style="width: 0"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-bar__percents">0%</div>
+          </div>
+          <div class="scenario-buttons">
+            <button class="button button--red is-active" type="button">Завершить сценарий</button>
+            <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+          </div>
+        </div>
+
+        <div class="article">
+          <div class="article__title-block">
+            <h2 class="article__title">Праздник каждый день</h2>
+            <div class="article__manage-block">
+              <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                <svg class="article__manage-button-icon" aria-hidden="true">
+                  <use xlink:href="#kebab"></use>
+                </svg>
+              </button>
+              <div class="article__manage-dropdown manage-popover">
+                <ul class="manage-popover__list">
+                  <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                  <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                  <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="article__date">23 дек 2019</p>
+          <div class="article__preview-text">
+            <p>Наша команда каждый день работает над созданием новых подарков. В году столько необычных праздников. Мы бы хотели знать подробнее обо всех.</p>
+          </div>
+          <div class="article__image"><img src="images/content/img_15.jpg" alt="Альт картинки"></div>
+          <p class="question-title">
+            <span class="secondary-color">Какой ваш профессиональный праздник?</span>
+            <span>Ответов: 150</span>
+          </p>
+          <div class="scenario-buttons">
+            <button class="button button--red is-active" type="button">Завершить сценарий</button>
+            <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+          </div>
+        </div>
+
+        <div class="article">
+          <div class="article__title-block">
+            <h2 class="article__title">Качество нового мёда</h2>
+            <label class="checkbox-label checkbox-label--dark" for="show_stats">
+              <input id="show_stats" name="show_stats" type="checkbox" checked>
+              <span class="checkbox-label__icon"></span>
+              <span class="checkbox-label__text">Выводить статистику</span>
+            </label>
+            <div class="article__manage-block">
+              <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
+                <svg class="article__manage-button-icon" aria-hidden="true">
+                  <use xlink:href="#kebab"></use>
+                </svg>
+              </button>
+              <div class="article__manage-dropdown manage-popover">
+                <ul class="manage-popover__list">
+                  <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
+                  <li><a class="manage-popover__button" href="#">Редактировать</a></li>
+                  <li><a class="manage-popover__button" href="#">Удалить</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="article__date">25.04.2020 19:50</p>
+          <div class="article__preview-text">
+            <p>Большая часть подарков в нашем каталоге – это подарки с мёдом. Несколько лет мы развивали это направление и заботились о пчёлах на наших пасеках. В этом году пчёлы стали счастливее, что отразилось на вкусе нашего мёда.</p>
+          </div>
+          <div class="article__image"><img src="images/content/img_1.jpg" alt="Альт картинки"></div>
+          <p class="question-title">
+            <span class="secondary-color">Вы уже попробовали?</span>
+            <span>Ответов: 150</span>
+          </p>
+          <div class="stats-block">
+            <div class="stat-bar stat-bar--type_2">
+              <div class="stat-bar__bar-block">
+                <div class="stat-bar__title-block">
+                  <p class="stat-bar__title">Да</p>
+                  <p class="stat-bar__qnt">90</p>
+                </div>
+                <div class="stat-bar__bar">
+                  <div class="horizontal-bar">
+                    <div class="horizontal-bar__value" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="stat-bar__percents">70%</div>
+            </div>
+            <div class="scenario-buttons">
+              <button class="button button--red" type="button">Завершить сценарий</button>
+              <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+            </div>
+            <div class="stat-bar stat-bar--type_2">
+              <div class="stat-bar__bar-block">
+                <div class="stat-bar__title-block">
+                  <p class="stat-bar__title">Нет</p>
+                  <p class="stat-bar__qnt stat-bar__qnt--red">60</p>
+                </div>
+                <div class="stat-bar__bar">
+                  <div class="horizontal-bar">
+                    <div class="horizontal-bar__value horizontal-bar__value--red" style="width: 30%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="stat-bar__percents stat-bar__percents--red">30%</div>
+            </div>
+            <div class="scenario-buttons">
+              <button class="button button--red" type="button">Завершить сценарий</button>
+              <button class="button button--transparent" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right" /></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="articles-columns__column articles-columns__column--small">
+        <div class="scenario-stats">
+          <div class="scenario-stats__item">
+            <p class="scenario-stats__item-title">Мин. длина сценария (Часы)</p>
+            <p class="scenario-stats__item-value">5</p>
+          </div>
+          <div class="scenario-stats__item">
+            <p class="scenario-stats__item-title">Макс. длина сценария (Часы)</p>
+            <p class="scenario-stats__item-value">120</p>
+          </div>
+        </div>
+        <button class="button button--wide button--h_40" type="button">Добавить публикацию</button>
+        <p class="articles-qnt">Публикаций всего: 5</p>
+      </div>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+
+  <script src="js/chartist.min.js"></script>
+  <script src="js/tinymce/tinymce.min.js"></script>
+  <script src="js/tinymce/jquery.tinymce.min.js"></script>
+
+  <script>
+    new Chartist.Line('#chart1', {
+      labels: false,
+      series: [
+        [1, 5, 6, 7, 7, 8, 8, 9, 9, 10, 10 ,10]
+      ]
+      }, {
+        width: '300px',
+        height: '230px',
+        low: 1,
+        high: 10,
+        fullWidth: true,
+        showArea: true
+    });
+
+    new Chartist.Pie('#chart2', {
+      series: [10, 120]
+    }, {
+      donut: true,
+      donutWidth: 40,
+      donutSolid: true,
+      startAngle: 270,
+      showLabel: true,
+      width: '150px',
+      height: '150px',
+    });
+
+    $('.js-wysiwyg').tinymce({
+      height: 240,
+      menubar: false,
+      plugins: [
+        'advlist autolink lists link image charmap print preview anchor',
+        'searchreplace visualblocks code fullscreen',
+        'insertdatetime media table paste code help wordcount'
+      ],
+      toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
+      language: 'ru'
+    });
+  </script>
+
+</body>
+
+</html>

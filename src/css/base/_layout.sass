@@ -23,24 +23,22 @@ body
 
   &--fixed_header
     .header
-      @media(min-width: 768px)
-        background-color: #EFEEEE
-        left: 0
-        margin-bottom: 0
-        position: fixed
-        padding-left: 136px
-        right: 0
-        top: 0
-        z-index: 3
+      background-color: #EFEEEE
+      left: 0
+      margin-bottom: 0
+      position: fixed
+      padding-left: 136px
+      right: 0
+      top: 0
+      z-index: 3
 
       @media(min-width: 1200px)
         padding-left: 136px
         padding-right: 0
 
     .header__inner
-      @media(min-width: 768px)
-        padding-left: 10px
-        padding-right: 10px
+      padding-left: 12px
+      padding-right: 12px
 
       @media(min-width: 1200px)
         padding-left: 30px
@@ -51,9 +49,8 @@ body
         padding-right: 60px
 
     .header__inner::after
-      @media(min-width: 768px)
-        left: 10px
-        width: calc(100% - 20px)
+      left: 12px
+      width: calc(100% - 24px)
 
       @media(min-width: 1200px)
         left: 30px
@@ -64,14 +61,11 @@ body
         width: calc(100% - 120px)
 
     .page__inner
-      @media(min-width: 768px)
-        padding-top: 185px
+      padding-top: 185px
 
   &--auth
     background: url('../images/bg/auth_bg.jpg') no-repeat 50% 50% / cover #033A52
-
-    @media(min-width: 768px)
-      padding-left: 0
+    padding-left: 0
 
   &--no_header
     .page__inner
@@ -116,18 +110,18 @@ body
   &--articles_list
     .page__inner
       min-height: 100%
-      padding-top: 80px
-
-      @media(min-width: 768px)
-        padding-top: 115px
+      padding-top: 115px
 
       @media(min-width: 1200px)
         padding-top: 130px
 
+  &--tarifs
+    padding-top: 85px
+
   &__inner
     overflow-x: hidden
-    padding-left: 10px
-    padding-right: 10px
+    padding-left: 12px
+    padding-right: 12px
     padding-bottom: 30px
 
     @media(min-width: 1200px)

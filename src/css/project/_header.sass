@@ -124,6 +124,7 @@
     position: relative
 
     &--two_columns
+      align-items: flex-start
       display: flex
       justify-content: space-between
 
@@ -163,10 +164,12 @@
     margin-right: 24px
 
   &__right
+
+  &__manage-buttons
     align-items: center
-    align-self: flex-end
     display: flex
     flex-wrap: wrap
+    margin-top: 35px
 
   &__add-button
     min-width: 115px
@@ -180,6 +183,17 @@
 
       @media(min-width: 992px)
         margin-left: 25px
+
+  &__categories
+    &:not(:last-child)
+      margin-bottom: 50px
+
+    .tag-block
+      width: 200px
+
+  &__categories-title
+    color: $secondary-color
+    margin-bottom: 15px
 
 .manage-button
   align-items: center
@@ -221,7 +235,9 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  margin-bottom: 15px
+
+  &:not(:last-child)
+    margin-bottom: 15px
 
   &__title
     color: $secondary-color

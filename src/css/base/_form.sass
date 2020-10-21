@@ -7,8 +7,7 @@
 
   &--cols_3
     .form-row__item
-      @media(min-width: 768px)
-        width: 33.33333%
+      width: 33.33333%
 
   &__item
     padding-left: 7px
@@ -28,10 +27,6 @@
       padding-right: 7px
       width: auto
 
-      @media(min-width: 768px)
-        flex-grow: 1
-        width: auto
-
       .textarea--small
         height: 64px
 
@@ -41,23 +36,15 @@
       padding-right: 7px
       width: 78px
 
-      @media(min-width: 768px)
-        width: 78px
-
       .foto-upload
         height: 64px
 
     &--type_4
       align-items: flex-end
       display: flex
-      margin-top: 10px
       padding-left: 7px
       padding-right: 7px
       min-width: 224px
-
-      @media(min-width: 768px)
-        margin-top: 0
-        width: 224px
 
 .form-label
   display: block
@@ -324,9 +311,7 @@
 
 .options2
   margin-top: 20px
-
-  @media(min-width: 768px)
-    padding-left: 28px
+  padding-left: 28px
 
   &__title
     color: $secondary-color
@@ -339,9 +324,7 @@
 .mosaic-types
   margin-top: 20px
   margin-bottom: 20px
-
-  @media(min-width: 768px)
-    padding-left: 28px
+  padding-left: 28px
 
   &__title
     color: $secondary-color
@@ -400,8 +383,7 @@
     text-align: center
 
 .photos
-  @media(min-width: 768px)
-    padding-left: 28px
+  padding-left: 28px
 
   &__title
     color: $secondary-color
@@ -428,49 +410,44 @@
 
   &__title-block
     margin-bottom: 10px
-
-    @media(min-width: 768px)
-      display: flex
-      justify-content: space-between
+    display: flex
+    justify-content: space-between
 
     .options3__title
-      @media(min-width: 768px)
-        margin-bottom: 0
-        padding-right: 20px
+      margin-bottom: 0
+      padding-right: 20px
 
   &__title
-    color: $secondary-color
     line-height: 18px
     margin-bottom: 10px
 
   &__answers-qnt
     color: #FB5B5B
     line-height: 18px
-    margin-bottom: 10px
     white-space: nowrap
-
-    @media(min-width: 768px)
-      margin-bottom: 0
 
   &__list
     display: flex
     flex-wrap: wrap
 
     &--type_2
-      @media(min-width: 768px)
-        margin-left: -5px
-        margin-right: -5px
+      margin-left: -5px
+      margin-right: -5px
 
     .option2
       margin-right: 8px
 
   &__list-item
-    width: 100%
+    padding-left: 5px
+    padding-right: 5px
+    width: 50%
 
-    @media(min-width: 768px)
-      padding-left: 5px
-      padding-right: 5px
-      width: 50%
+  &__list-range
+    display: flex
+    margin-right: 12px
+
+    .option2
+      margin-right: 0
 
 .option2
   cursor: pointer
@@ -499,6 +476,21 @@
       background-color: #EEEEEE
       border-color: #EEEEEE
       cursor: default
+
+  &--dark
+    input[type="checkbox"],
+    input[type="radio"]
+
+      &:checked + .option2__text,
+      &:checked:disabled + .option2__text
+        background-color: $text-color
+        border-color: $text-color
+        color: #fff
+
+      &:disabled + .option2__text
+        background-color: $text-color
+        border-color: $text-color
+        cursor: default
 
   &__text
     align-items: center
@@ -558,6 +550,10 @@
     padding-left: 4px
     padding-right: 4px
     width: 50%
+
+  &__item-title
+    color: $secondary-color
+    font-size: 11px
 
   &__title
     color: $secondary-color
@@ -719,7 +715,7 @@ div.option3
     font-weight: 400
     height: 36px
     line-height: 16px
-    padding: 4px 30px 4px 6px
+    padding: 4px 30px 4px 10px
     position: relative
     text-decoration: none
     text-align: left
@@ -849,7 +845,7 @@ div.option3
     cursor: pointer
     display: inline-block
     font-family: 'Roboto', Arial, sans-serif
-    font-size: 12px
+    font-size: 11px
     font-weight: 400
     height: 25px
     line-height: 16px
