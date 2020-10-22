@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Контакты</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page">
+  //= template/sprite.html
+
+  //= template/head.html
+
+  <header class="header">
+    <div class="header__inner header__inner--two_columns">
+      <div class="header__left">
+        <h1 class="header__title">Мои контакты</h1>
+        <div class="header__info">
+          <p class="header__info-title">У вас 3 контакта</p>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__manage-buttons">
+          <button class="button button--transparent" type="button">Загрузить XLS-файл</button>
+          <button class="button" type="button">Добавить контакт</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="categories-block">
+      <p class="categories-block__title">Показать категорию</p>
+      <div class="tag-block">
+        <button class="js-tag-block-toggle tag-block__toggler" type="button">Все категории</button>
+        <div class="tag-block__dropdown">
+          <div class="tag-block__list tag-block__list--2">
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-1 is-active" type="button">Клиенты</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-2 is-active" type="button">HR</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-3" type="button">Спам</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-4" type="button">Продажи</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-5" type="button">Сотрудники</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-6" type="button">Категория</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-7" type="button">Категория</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-8" type="button">Категория</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-9" type="button">Категория</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-10" type="button">Категория</button>
+            </div>
+          </div>
+          <button class="tag-block__pick" type="button">Выбрать</button>
+        </div>
+      </div>
+    </div>
+
+    <table class="table">
+      <tr>
+        <th>
+          <label class="search-bar" for="search">
+            <input id="search" class="input" name="search" type="text" value="">
+            <span class="search-bar__suggest-block">
+              <span class="search-bar__suggest">Иван Иванов Александрович</span>
+            </span>
+          </label>
+        </th>
+        <th class="text-center">Компания</th>
+        <th class="text-center">Категории контакта</th>
+        <th class="text-center">Участвует&nbsp;в<br> сценариях</th>
+        <th class="text-center">Всего<br> ответов</th>
+        <th class="text-center">Дата<br> добавления</th>
+        <th class="text-center">Последняя<br> активность</th>
+      </tr>
+      <tr>
+        <td>
+          <button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_1" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          <a href="#">Иван Иванов Александрович</a>
+        </td>
+        <td class="text-center">ООО “Вектор”</td>
+        <td class="text-center">
+          <div class="categories categories--center">
+            <div class="category"><span class="category__title tag-color-7">Продажи</span></div>
+            <div class="category"><span class="category__title tag-color-1">Клиенты</span></div>
+            <div class="category"><span class="category__title tag-color-3">HR</span></div>
+            <div class="category"><span class="category__title tag-color-9">Сотрудники</span></div>
+          </div>
+        </td>
+        <td class="text-center">20</td>
+        <td class="text-center">20</td>
+        <td class="text-center">18:43 23.03.2019</td>
+        <td class="text-center">18:43 23.03.2019</td>
+      </tr>
+      <tr>
+        <td>
+          <button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_2" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          <a href="#">Клавдия Петрова</a>
+        </td>
+        <td class="text-center">ООО “Вектор”</td>
+        <td class="text-center">
+          <div class="categories categories--center">
+            <div class="category"><span class="category__title tag-color-7">Продажи</span></div>
+            <div class="category"><span class="category__title tag-color-1">Клиенты</span></div>
+            <div class="category"><span class="category__title tag-color-3">HR</span></div>
+            <div class="category"><span class="category__title tag-color-9">Сотрудники</span></div>
+          </div>
+        </td>
+        <td class="text-center">20</td>
+        <td class="text-center">20</td>
+        <td class="text-center">18:43 23.03.2019</td>
+        <td class="text-center">18:43 23.03.2019</td>
+      </tr>
+      <tr>
+        <td>
+          <button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_3" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          <a href="#">Гавриил Иванов</a>
+        </td>
+        <td class="text-center">ООО “Вектор”</td>
+        <td class="text-center">
+          <div class="categories categories--center">
+            <div class="category"><span class="category__title tag-color-7">Продажи</span></div>
+            <div class="category"><span class="category__title tag-color-1">Клиенты</span></div>
+            <div class="category"><span class="category__title tag-color-3">HR</span></div>
+            <div class="category"><span class="category__title tag-color-9">Сотрудники</span></div>
+          </div>
+        </td>
+        <td class="text-center">20</td>
+        <td class="text-center">20</td>
+        <td class="text-center">18:43 23.03.2019</td>
+        <td class="text-center">18:43 23.03.2019</td>
+      </tr>
+    </table>
+
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+
+</body>
+
+</html>

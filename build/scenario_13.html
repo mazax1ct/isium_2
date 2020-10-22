@@ -242,364 +242,16 @@
     </svg>
   </a>
 
-  <div id="new_client" class="popup">
-    <button class="js-popup-close popup__close" type="button" title="Закрыть">
-      <svg class="popup__close-icon" aria-hidden="true">
-        <use xlink:href="#close" />
-      </svg>
-    </button>
-    <p class="popup__title popup__title--big">Новый клиент</p>
-    <form action="">
-      <label class="form-label" for="inp_1">
-        <span class="form-label__text">Название компании </span>
-        <input id="inp_1" class="input" name="inp_1" type="text" value="">
-      </label>
-      <div class="form-row form-row--cols_3">
-        <div class="form-row__item">
-          <label class="form-label" for="inp_2">
-            <span class="form-label__text">Контактное лицо</span>
-            <input id="inp_2" class="input" name="inp_2" type="text" value="">
-          </label>
-        </div>
-        <div class="form-row__item">
-          <label class="form-label" for="inp_3">
-            <span class="form-label__text">E-mail</span>
-            <input id="inp_3" class="input" name="inp_3" type="text" value="">
-          </label>
-        </div>
-        <div class="form-row__item">
-          <label class="form-label" for="inp_3">
-            <span class="form-label__text">Телефон</span>
-            <input id="inp_3" class="input" name="inp_3" type="text" value="">
-          </label>
-        </div>
-      </div>
-      <div class="popup__save-block">
-        <button class="button button--transparent" type="button" data-fancybox="client_added" data-src="#client_added">Сохранить и пригласить</button>
-      </div>
-    </form>
-  </div>
-  
-  <div id="edit_client" class="popup">
-    <button class="js-popup-close popup__close" type="button" title="Закрыть">
-      <svg class="popup__close-icon" aria-hidden="true">
-        <use xlink:href="#close" />
-      </svg>
-    </button>
-    <p class="popup__title popup__title--big"> ООО «Вектор»</p>
-    <form action="">
-      <label class="form-label" for="inp_1">
-        <span class="form-label__text">Название компании</span>
-        <input id="inp_1" class="input" name="inp_1" type="text" value='ООО "Вектор"'>
-      </label>
-      <div class="form-row form-row--cols_3">
-        <div class="form-row__item">
-          <label class="form-label" for="inp_2">
-            <span class="form-label__text">Контактное лицо</span>
-            <input id="inp_2" class="input" name="inp_2" type="text" value="Владислав">
-          </label>
-        </div>
-        <div class="form-row__item">
-          <label class="form-label" for="inp_3">
-            <span class="form-label__text">E-mail</span>
-            <input id="inp_3" class="input" name="inp_3" type="text" value="customer@mail.ru">
-          </label>
-        </div>
-        <div class="form-row__item">
-          <label class="form-label" for="inp_3">
-            <span class="form-label__text">Телефон</span>
-            <input id="inp_3" class="input" name="inp_3" type="text" value="+7 900 2000000">
-          </label>
-        </div>
-      </div>
-      <div class="popup__save-block">
-        <button class="button" type="button">Изменить и сохранить</button>
-      </div>
-    </form>
-  </div>
-  
   <div id="client_added" class="popup popup--client_added">
     <button class="js-popup-close popup__close" type="button" title="Закрыть">
       <svg class="popup__close-icon" aria-hidden="true">
         <use xlink:href="#close" />
       </svg>
     </button>
-    <p class="popup__title popup__title--big">Новый клиент успешно создан!</p>
-    <p class="popup__text">Вы можете отправить повторную ссылку на приглашение в ISIUM с его страницы в разделе “Клиенты”</p>
+    <p class="popup__title popup__title--big">Контакт успешно создан!</p>
+    <p class="popup__text">Вы можете отправить повторную ссылку на приглашение в ISIUM с его страницы в разделе "Контакты"</p>
     <p class="popup__text"><a class="main-color no-decorate" href="#">Скопировать ссылку</a></p>
-    <a class="button" href="page_3.html">Пейрейти в раздел</a>
-  </div>
-  
-  <div id="add_worth" class="popup">
-    <button class="js-popup-close popup__close" type="button" title="Закрыть">
-      <svg class="popup__close-icon" aria-hidden="true">
-        <use xlink:href="#close" />
-      </svg>
-    </button>
-    <p class="popup__title popup__title--big">Добавление ценностей компании</p>
-    <form action="">
-      <div class="form-label">
-        <span class="form-label__text">Ценность 1</span>
-        <div class="js-emoji-container emoji-container">
-          <button class="js-emoji-caller emoji-caller" type="button" title="Emoji">
-            <svg class="head__button-icon" aria-hidden="true">
-              <use xlink:href="#emoji" />
-            </svg>
-          </button>
-          <div class="js-emoji-input input" contenteditable="true"></div>
-        </div>
-      </div>
-      <button class="add-field" type="button">Добавить ещё</button>
-      <div class="popup__save-block">
-        <button class="button button--wide" type="button">Сохранить</button>
-      </div>
-    </form>
-  </div>
-  
-  <div id="add_article" class="popup">
-    <button class="js-popup-close popup__close" type="button" title="Закрыть">
-      <svg class="popup__close-icon" aria-hidden="true">
-        <use xlink:href="#close" />
-      </svg>
-    </button>
-    <p class="popup__title popup__title--big">Новая публикация</p>
-    <form action="">
-      <label class="form-label">
-        <span class="form-label__text">К какой ценности относится *</span>
-        <span class="select-wrapper">
-          <select class="js-select" style="width: 100%">
-            <option>Ассортимент товарного каталога</option>
-            <option>Качество доставки</option>
-            <option>Удобство сайта</option>
-          </select>
-        </span>
-      </label>
-      <div class="form-row form-row--type_2">
-        <div class="form-row__item form-row__item--type_2">
-          <label class="form-label" for="inp_4_1">
-            <span class="form-label__text">Название публикации *</span>
-            <input id="inp_4_1" class="input" name="inp_4_1" type="text" value="Весенняя коллекция">
-          </label>
-        </div>
-        <div class="form-row__item form-row__item--type_4">
-          <div class="tag-block">
-            <button class="js-tag-block-toggle tag-block__toggler" type="button">Добавить тег публикации</button>
-            <div class="tag-block__dropdown">
-              <button class="tag-block__add" type="button">Создать новый тег</button>
-              <div class="tag-block__list">
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-1">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-2">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-3">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-4">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-5">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-6">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-7">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-8">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-9">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-                <div class="tag-block__list-item">
-                  <div class="tag-block__tag tag-color-10">фотоопрос</div>
-                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
-                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="info">
-        <div class="info__inner">
-          <div class="info__text">
-            <label class="form-label" for="inp_4_2">
-              <span class="form-label__text">Описание</span>
-              <div class="stretchy-textarea" contenteditable="true">Большая часть подарков в нашем каталоге – это подарки с мёдом. Несколько лет мы развивали это направление и заботились о пчёлах на наших пасеках. В этом году пчёлы стали счастливее, что отразилось на вкусе нашего мёда.</div>
-            </label>
-          </div>
-          <div class="info__photo">
-            <label class="form-label photo-container" for="inputImage">
-              <input id="inputImage" type="file" name="file" accept="image/*">
-              <span class="form-label__text">Фотография</span>
-              <div class="foto-upload"></div>
-            </label>
-          </div>
-        </div>
-      </div>
-      <ol class="questions-list">
-        <li class="questions-list__item">
-          <label class="checkbox-label" for="q_2_1">
-            <input id="q_2_1" name="q_2_1" type="checkbox" checked>
-            <span class="checkbox-label__icon"></span>
-            <span class="checkbox-label__text">Закрытый вопрос с вариантами  ДА / НЕТ</span>
-          </label>
-          <label class="form-label form-label--type_2" for="inp_3_2_">
-            <input id="inp_3_2_" class="input" name="inp_3_2_" type="text" value="Вы уже попробовали?">
-          </label>
-        </li>
-        <li class="questions-list__item">
-          <label class="checkbox-label" for="q_2_2">
-            <input id="q_2_2" name="q_2_2" type="checkbox" checked>
-            <span class="checkbox-label__icon"></span>
-            <span class="checkbox-label__text">Голосование от 1 до 10</span>
-          </label>
-          <label class="form-label form-label--type_2" for="inp_3_3">
-            <input id="inp_3_3" class="input" name="inp_3_3" type="text" value="На сколько вы оцениваете вкус мёда?">
-          </label>
-        </li>
-        <li class="questions-list__item">
-          <label class="checkbox-label" for="q_2_2_">
-            <input id="q_2_2_" name="q_2_2_" type="checkbox" checked>
-            <span class="checkbox-label__icon"></span>
-            <span class="checkbox-label__text">Открытый вопрос со свободной формой ответа</span>
-          </label>
-          <label class="form-label form-label--type_2" for="inp_3_3_">
-            <input id="inp_3_3_" class="input" name="inp_3_3" type="text" value="Какой ваш профессиональный праздник?">
-          </label>
-        </li>
-        <li class="questions-list__item">
-          <label class="checkbox-label" for="q_3_4">
-            <input id="q_3_4" name="q_3_4" type="checkbox" checked>
-            <span class="checkbox-label__icon"></span>
-            <span class="checkbox-label__text">Опрос с вариантами ответов</span>
-          </label>
-          <label class="form-label form-label--type_2" for="inp_3_5">
-            <input id="inp_3_5" class="input" name="inp_3_5" type="text" value="Какие подарки вы обычно выбираете?">
-          </label>
-          <div class="options2">
-            <p class="options2__title">Варианты ответа</p>
-            <div class="options2__inner">
-              <div class="options2__item">
-                <label class="form-label" for="inp_3_6">
-                  <span class="form-label__container">
-                    <input id="inp_3_6" class="input" name="inp_3_6" type="text" value="Практичные">
-                    <button class="clear" type="button" title="Удалить">
-                      <svg class="clear__icon" aria-hidden="true">
-                        <use xlink:href="#close" />
-                      </svg>
-                    </button>
-                  </span>
-                </label>
-              </div>
-              <div class="options2__item">
-                <label class="form-label" for="inp_3_7">
-                  <span class="form-label__container">
-                    <input id="inp_3_7" class="input" name="inp_3_7" type="text" value="Красивые">
-                    <button class="clear" type="button" title="Удалить">
-                      <svg class="clear__icon" aria-hidden="true">
-                        <use xlink:href="#close" />
-                      </svg>
-                    </button>
-                  </span>
-                </label>
-              </div>
-              <div class="options2__item">
-                <label class="form-label" for="inp_3_11">
-                  <input id="inp_3_11" class="input" name="inp_3_11" type="text" value="" placeholder="Добавить вариант...">
-                </label>
-              </div>
-            </div>
-            <label class="checkbox-label" for="q_3_5">
-              <input id="q_3_5" name="q_3_5" type="checkbox">
-              <span class="checkbox-label__icon"></span>
-              <span class="checkbox-label__text">Выбор нескольких вариантов</span>
-            </label>
-          </div>
-        </li>
-        <li class="questions-list__item">
-          <label class="checkbox-label" for="q_4_5">
-            <input id="q_4_5" name="q_4_5" type="checkbox" checked>
-            <span class="checkbox-label__icon"></span>
-            <span class="checkbox-label__text">Фотоопрос</span>
-          </label>
-          <label class="form-label" for="inp_4_3">
-            <input id="inp_4_3" class="input" name="inp_4_3" type="text" value="Какой мёд вы бы купили по фотографии?">
-          </label>
-          <div class="mosaic-types">
-            <p class="mosaic-types__title">Вид мозаики</p>
-            <div class="mosaic-types__list">
-              <div class="mosaic-types__item">
-                <label class="mosaic-type" for="mosaic_1">
-                  <input id="mosaic_1" type="radio" name="mosaic" value="1">
-                  <svg class="mosaic-type__svg" aria-hidden="true">
-                    <use xlink:href="#mosaic_type_1" />
-                  </svg>
-                  <span class="mosaic-type__title">2 изображения</span>
-                </label>
-              </div>
-              <div class="mosaic-types__item">
-                <label class="mosaic-type" for="mosaic_2">
-                  <input id="mosaic_2" type="radio" name="mosaic" value="2">
-                  <svg class="mosaic-type__svg" aria-hidden="true">
-                    <use xlink:href="#mosaic_type_2" />
-                  </svg>
-                  <span class="mosaic-type__title">4 изображения</span>
-                </label>
-              </div>
-              <div class="mosaic-types__item">
-                <label class="mosaic-type" for="mosaic_3">
-                  <input id="mosaic_3" type="radio" name="mosaic" value="3">
-                  <svg class="mosaic-type__svg" aria-hidden="true">
-                    <use xlink:href="#mosaic_type_3" />
-                  </svg>
-                  <span class="mosaic-type__title">6 изображений</span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="photos">
-            <p class="photos__title">Загрузите изображения</p>
-            <div class="photos__list">
-              <div class="photos__item"><div class="foto-upload foto-upload--small"></div></div>
-              <div class="photos__item"><div class="foto-upload foto-upload--small"></div></div>
-              <div class="photos__item"><div class="foto-upload foto-upload--small"></div></div>
-              <div class="photos__item"><div class="foto-upload foto-upload--small"></div></div>
-            </div>
-          </div>
-        </li>
-      </ol>
-      <div class="popup__publish-block">
-        <label class="checkbox-label" for="draft_2">
-          <input id="draft_2" name="draft_2" type="checkbox" checked>
-          <span class="checkbox-label__icon"></span>
-          <span class="checkbox-label__text">Черновик</span>
-        </label>
-        <button class="button" type="button">Опубликовать</button>
-      </div>
-    </form>
+    <a class="button" href="#">Пейрейти в раздел</a>
   </div>
   
   <div id="crop-popup" class="popup popup--crop">
@@ -665,6 +317,32 @@
       </svg>
     </button>
     <p class="text-center">Вы действи тельно хотите снять диапазон?<br> В этом случае, настроенная связь — пропадет</p>
+    <div class="popup__button-block">
+      <button class="button button--transparent" type="button">Да</button>
+      <button class="button" type="button">Нет</button>
+    </div>
+  </div>
+  
+  <div id="file_process" class="popup popup--delete">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть">
+      <svg class="popup__close-icon" aria-hidden="true">
+        <use xlink:href="#close" />
+      </svg>
+    </button>
+    <p class="text-center">Пользователи с незаполненными полями будут<br> удалены, вы готовы продолжить?</p>
+    <div class="popup__button-block">
+      <button class="button button--transparent" type="button">Продолжить</button>
+      <button class="button" type="button">Вернуться и заполнить</button>
+    </div>
+  </div>
+  
+  <div id="delete_contact" class="popup popup--delete">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть">
+      <svg class="popup__close-icon" aria-hidden="true">
+        <use xlink:href="#close" />
+      </svg>
+    </button>
+    <p class="text-center">Вы действительно хотите удалить<br> Гавриила Иванова?</p>
     <div class="popup__button-block">
       <button class="button button--transparent" type="button">Да</button>
       <button class="button" type="button">Нет</button>

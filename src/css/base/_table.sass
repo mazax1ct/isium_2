@@ -22,6 +22,15 @@
       td
         background-color: #fff
 
+        .input
+          border-color: #EFEEEE
+
+          &:focus
+            border-color: darken(#EFEEEE, 10%)
+
+        .tag-block__toggler
+          background-color: #EFEEEE
+
   th
     border-bottom: 2px solid #D6D6D6
     color: $secondary-color
@@ -48,6 +57,19 @@
     .button
       min-width: 160px
       margin: 2px
+
+    .input
+      &::-webkit-input-placeholder
+        color: #FB5B5B
+        opacity: 1
+
+      &::-moz-placeholder
+        color: #FB5B5B
+        opacity: 1
+
+      &:-ms-input-placeholder
+        color: #FB5B5B
+        opacity: 1
 
   .grey
     color: #8E8C96

@@ -1,0 +1,105 @@
+.head
+  background-color: #fff
+  left: -750px
+  position: fixed
+  right: 0
+  top: 0
+  transition: left 0.3s
+  width: 750px
+  z-index: 4
+
+  @media(min-width: 1200px)
+    box-shadow: none
+    left: -840px
+    transition: left 0.3s
+    width: 840px
+
+  &.is-open
+    left: 0
+
+  &__inner
+    display: flex
+    padding-right: 20px
+
+  &__logo-block
+    align-items: center
+    background-color: #033A52
+    border: none
+    cursor: pointer
+    display: flex
+    height: 120px
+    justify-content: center
+    min-width: 90px
+    padding: 0
+    width: 90px
+
+    @media(min-width: 1400px)
+      min-width: 136px
+      width: 136px
+
+  &__logo
+    background-color: #fff
+    border-radius: 50%
+    height: 48px
+    overflow: hidden
+    width: 48px
+
+  &__right
+    align-items: center
+    display: flex
+    flex-grow: 1
+
+  &__partner-info
+    padding-left: 20px
+
+  &__partner-name
+    color: $main-color
+    font-size: 18px
+    line-height: 28px
+    max-width: 570px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+    @media(min-width: 1200px)
+      font-size: 22px
+
+  &__partner-id
+    color: $secondary-color
+    line-height: 18px
+
+  &__buttons
+    align-items: center
+    display: flex
+    margin-left: auto
+
+  &__button
+    align-items: center
+    background-color: transparent
+    border: none
+    color: $text-color
+    cursor: pointer
+    display: flex
+    font-size: 12px
+    flex-direction: column
+    line-height: 18px
+    min-height: 40px
+    min-width: 40px
+    justify-content: center
+    padding: 0
+    text-decoration: none
+
+    &--filter
+      @media(min-width: 768px)
+        display: none
+
+    &:not(:last-child)
+      margin-right: 28px
+
+  &__button-icon
+    fill: $text-color
+    height: 24px
+    width: 24px
+
+  &__button-text
+    margin-top: 6px

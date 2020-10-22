@@ -831,7 +831,7 @@ div.option3
     padding: 12px
     top: 100%
     width: 100%
-    z-index: 2
+    z-index: 4
 
     &.is-open
       display: block
@@ -872,24 +872,38 @@ div.option3
     scrollbar-width: thin
     scrollbar-color: darken(#EEE, 10%) darken(#EEE, 2.5%)
 
-  &::-webkit-scrollbar
-    height: 4px
-    width: 5px
+    &::-webkit-scrollbar
+      height: 4px
+      width: 5px
 
-  &::-webkit-scrollbar-track
-    background: darken(#EEE, 10%)
+    &::-webkit-scrollbar-track
+      background: darken(#EEE, 10%)
 
-  &::-webkit-scrollbar-thumb
-    background: darken(#EEE, 2.5%)
+    &::-webkit-scrollbar-thumb
+      background: darken(#EEE, 2.5%)
 
-  &::-webkit-scrollbar:horizontal
-    height: 4px
+    &::-webkit-scrollbar:horizontal
+      height: 4px
 
-  &::-webkit-scrollbar-track:horizontal
-    background: darken(#EEE, 10%)
+    &::-webkit-scrollbar-track:horizontal
+      background: darken(#EEE, 10%)
 
-  &::-webkit-scrollbar-thumb:horizontal
-    background: darken(#EEE, 2.5%)
+    &::-webkit-scrollbar-thumb:horizontal
+      background: darken(#EEE, 2.5%)
+
+    &--2
+      display: flex
+      flex-wrap: wrap
+      margin-left: -3px
+      margin-right: -3px
+
+      .tag-block__list-item
+        padding-left: 3px
+        padding-right: 3px
+        width: 50%
+
+        &:last-child
+          margin-bottom: 6px
 
   &__list-item
     align-items: center
@@ -1002,29 +1016,54 @@ div.option3
 .categories
   display: flex
   flex-wrap: wrap
-  margin-bottom: 12px
+  margin-bottom: -8px
+
+  &:not(:last-child)
+    margin-bottom: 12px
+
+  &--center
+    justify-content: center
 
 .category
   align-items: center
   background-color: transparent
   border: none
-  cursor: pointer
   display: flex
-  margin-right: 16px
+  margin-right: 8px
   margin-bottom: 8px
   padding: 0
 
   &__title
     border-radius: 8px
     font-size: 9px
-    margin-right: 4px
-    padding: 6px 8px
+    height: 21px
+    padding-left: 8px
+    padding-right: 8px
     text-transform: uppercase
+
+    &:not(:last-child)
+      margin-right: 4px
 
   &__manage-icon
     fill: rgba($text-color, 0.6)
     height: 10px
     width: 10px
+
+button.category
+  cursor: pointer
+  margin-right: 16px
+
+.contact-categories
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 8px
+
+  .tag-block
+    min-width: 190px
+    margin-right: 16px
+    margin-bottom: 8px
+    width: 190px
 
 .tag-color-1
   background-color: $tag-color-1

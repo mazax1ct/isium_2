@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Добавление сценария</title>
+  <title>Добавление контакта</title>
 
   <meta name="description" content="">
 
@@ -17,7 +17,7 @@
   //= template/style.html
 </head>
 
-<body id="top" class="page page--center_content">
+<body id="top" class="page">
   //= template/sprite.html
 
   //= template/head.html
@@ -25,14 +25,15 @@
   <header class="header">
     <div class="header__inner header__inner--two_columns">
       <div class="header__left">
-        <h1 class="header__title">Мои сценарии</h1>
+        <h1 class="header__title">Мои контакты</h1>
         <div class="header__info">
-          <p class="header__info-title">У вас 1 сценарий</p>
+          <p class="header__info-title">У вас 0 контактов</p>
         </div>
       </div>
       <div class="header__right">
         <div class="header__manage-buttons">
-          <a class="button" href="scenario_1.html">Добавить сценарий</a>
+          <button class="button button--transparent" type="button">Загрузить XLS-файл</button>
+          <button class="button" type="button">Добавить контакт</a>
         </div>
       </div>
     </div>
@@ -42,16 +43,11 @@
 
     //= template/sidebar.html
 
-    <div class="popup popup--form popup--small">
-      <form action="">
-        <p class="text-center">Сценарий “Качество доставки” создан!<br> Хотите сразу привязать к нему публикации?</p>
-        <br>
-        <div class="popup__save-block form-row">
-          <div class="form-row__item"><button class="button button--transparent" type="button">Остаться в разделе</button></div>
-          <div class="form-row__item"><button class="button" type="button">Да</button></div>
-        </div>
-      </form>
+    <div class="xls-upload">
+      <p class="xls-upload__file"><span class="xls-upload__file-title">XLS-файл</span> <a href="#">Список моих клиентов за 2020 год.xlsx</a> <button class="xls-upload__file-delete" type="button" title="Удалить"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></p>
+      <button class="xls-upload__process button button--transparent" type="button">Обработать XLS</button>
     </div>
+
   </div>
 
   //= template/go-top.html

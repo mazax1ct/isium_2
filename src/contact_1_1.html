@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Добавление контакта</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--center_content">
+  //= template/sprite.html
+
+  //= template/head.html
+
+  <header class="header">
+    <div class="header__inner header__inner--two_columns">
+      <div class="header__left">
+        <h1 class="header__title">Мои контакты</h1>
+        <div class="header__info">
+          <p class="header__info-title">У вас 0 контактов</p>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__manage-buttons">
+          <button class="button button--transparent" type="button">Загрузить XLS-файл</button>
+          <button class="button" type="button">Добавить контакт</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="popup popup--form">
+      <p class="popup__title popup__title--big">Новый контакт</p>
+      <form action="">
+        <label class="form-label" for="inp_1">
+          <span class="form-label__text">Имя пользователя*</span>
+          <input id="inp_1" class="input" name="inp_1" type="text" value="">
+        </label>
+        <div class="form-row form-row--cols_3">
+          <div class="form-row__item">
+            <label class="form-label" for="inp_2">
+              <span class="form-label__text">Компания*</span>
+              <input id="inp_2" class="input" name="inp_2" type="text" value="">
+            </label>
+          </div>
+          <div class="form-row__item">
+            <label class="form-label" for="inp_3">
+              <span class="form-label__text">E-mail*</span>
+              <input id="inp_3" class="input" name="inp_3" type="text" value="">
+            </label>
+          </div>
+          <div class="form-row__item">
+            <label class="form-label" for="inp_3">
+              <span class="form-label__text">Телефон*</span>
+              <input id="inp_3" class="input" name="inp_3" type="text" value="">
+            </label>
+          </div>
+        </div>
+        <label class="form-label" style="margin-bottom: 0;">
+          <span class="form-label__text">Категория пользователя*</span>
+        </label>
+        <div class="contact-categories">
+          <div class="tag-block">
+            <button class="js-tag-block-toggle tag-block__toggler" type="button">Выберите категорию</button>
+            <div class="tag-block__dropdown">
+              <button class="tag-block__add" type="button">Создать новую категорию</button>
+              <div class="tag-block__list">
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-1 is-active" type="button">Клиенты</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-2 is-active" type="button">HR</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-3" type="button">Спам</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-4" type="button">Продажи</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-5" type="button">Сотрудники</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-6" type="button">Категория</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-7" type="button">Категория</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-8" type="button">Категория</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-9" type="button">Категория</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+                <div class="tag-block__list-item">
+                  <button class="tag-block__tag tag-color-10" type="button">Категория</button>
+                  <button class="tag-block__manage" type="button" title="Изменить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#edit" /></svg></button>
+                  <button class="tag-block__manage" type="button" title="Удалить"><svg class="tag-block__manage-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+                </div>
+              </div>
+              <button class="tag-block__pick" type="button">Выбрать</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup__save-block">
+          <button class="button" type="button" data-fancybox="client_added" data-src="#client_added" disabled>Сохранить и пригласить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+
+</body>
+
+</html>

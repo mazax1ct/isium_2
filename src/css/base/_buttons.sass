@@ -29,7 +29,15 @@
   &.disabled
     background-color: #bfbebe
     border-color: #bfbebe
+    color: #fff
     cursor: default
+
+    &:hover,
+    &:active,
+    &:focus
+      background-color: #bfbebe
+      border-color: #bfbebe
+      color: #fff
 
     &:focus
       outline: none
@@ -43,8 +51,8 @@
     &:active,
     &:focus,
     &.is-active
-      background-color: $main-color
-      border-color: $main-color
+      background-color: $text-color
+      border-color: $text-color
       color: #fff
 
       .button__next-arrow
@@ -52,6 +60,32 @@
 
     .button__next-arrow
       fill: $text-color
+
+  &--transparent_2
+    background-color: transparent
+    border-color: $main-color
+    color: $main-color
+
+    &:disabled,
+    &.disabled
+      background-color: transparent
+      border-color: #bfbebe
+      color: #bfbebe
+
+      &:hover,
+      &:active,
+      &:focus
+        background-color: transparent
+        border-color: #bfbebe
+        color: #bfbebe
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.is-active
+      background-color: $main-color
+      border-color: $main-color
+      color: #fff
 
   &--blue
     background-color: $secondary-color
@@ -114,3 +148,24 @@
     margin-left: 9px
     transition: fill 0.3s
     width: 17px
+
+.delete-button
+  align-items: center
+  background-color: #E36F72
+  border: none
+  border-radius: 8px
+  cursor: pointer
+  display: inline-flex
+  height: 32px
+  justify-content: center
+  padding: 0
+  vertical-align: middle
+  width: 42px
+
+  &:not(:last-child)
+    margin-right: 10px
+
+  svg
+    fill: #F2F2F2
+    height: 16px
+    width: 16px

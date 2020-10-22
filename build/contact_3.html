@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title></title>
+  <title>Контакты</title>
 
   <meta name="description" content="">
 
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body id="top" class="page page--list">
+<body id="top" class="page">
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="logout" viewBox="0 0 24 24">
       <g>
@@ -172,27 +172,18 @@
   </div>
 
   <header class="header">
-    <div class="header__inner">
-      <div class="editable-title">
-        <h1 class="editable-title__title">Фидбек от ушедших клиентов <button class="editable-title__edit" type="button" title="Изменить"><svg class="editable-title__edit-icon" aria-hidden="true"><use xlink:href="#profile_edit" /></svg></button></h1>
-        <div class="editable-title__buttons">
-          <button class="button button--transparent" type="button">Дублировать сценарий</button>
-          <button class="button" type="button"><svg class="button__play-icon" aria-hidden="true"><use xlink:href="#play" /></svg>Пройти сценарий</button>
+    <div class="header__inner header__inner--two_columns">
+      <div class="header__left">
+        <h1 class="header__title">Мои контакты</h1>
+        <div class="header__info">
+          <p class="header__info-title">У вас 3 контакта</p>
         </div>
       </div>
-      <div class="stats_2">
-        <div class="stats_2__item">
-          <p class="stats_2__item-title">Просмотров</p>
-          <p class="stats_2__item-value">1969</p>
+      <div class="header__right">
+        <div class="header__manage-buttons">
+          <button class="button button--transparent" type="button">Загрузить XLS-файл</button>
+          <button class="button" type="button">Добавить контакт</a>
         </div>
-        <div class="stats_2__item">
-          <p class="stats_2__item-title">Ответов</p>
-          <p class="stats_2__item-value">66</p>
-        </div>
-      </div>
-      <div class="tabs-nav">
-        <button class="tabs-nav__button" type="button">Контакты</button>
-        <button class="tabs-nav__button is-active" type="button">Публикации</button>
       </div>
     </div>
   </header>
@@ -255,314 +246,124 @@
       </nav>
     </div>
 
-    <div class="statistic">
-      <button class="js-statistic-toggler statistic__toggler" type="button">Статистика по выбранным публикациям</button>
-      <div class="statistic__dropdown">
-        <div class="statistic__dropdown-inner">
-          <div class="statistic__dropdown-item">
-            <p class="article-link"><a href="#">Какая мы киса</a></p>
-            <div class="bars-chart">
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">10</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_10" style="width: 90%"><div class="stat-bar2__qnt">40</div></div>
-                </div>
-              </div>
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">9</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_9" style="width: 35%"><div class="stat-bar2__qnt">18</div></div>
-                </div>
-              </div>
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">8</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_8" style="width: 55%"><div class="stat-bar2__qnt">29</div></div>
-                </div>
-              </div>
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">7</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_7" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
-                </div>
-              </div>
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">6</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_6" style="width: 15%"><div class="stat-bar2__qnt">6</div></div>
-                </div>
-              </div>
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">5</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_5" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
-                </div>
-              </div>
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">4</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_4" style="width: 5%"><div class="stat-bar2__qnt">2</div></div>
-                </div>
-              </div>
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">3</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_3" style="width: 20%"><div class="stat-bar2__qnt">8</div></div>
-                </div>
-              </div>
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">2</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_2" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
-                </div>
-              </div>
-              <div class="stat-bar2 stat-bar2--small">
-                <div class="stat-bar2__num">1</div>
-                <div class="stat-bar2__bar-block">
-                  <div class="stat-bar2__bar stat-bar2__bar--type_1" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
-                </div>
-              </div>
+    <div class="categories-block">
+      <p class="categories-block__title">Показать категорию</p>
+      <div class="tag-block">
+        <button class="js-tag-block-toggle tag-block__toggler" type="button">Все категории</button>
+        <div class="tag-block__dropdown">
+          <div class="tag-block__list tag-block__list--2">
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-1 is-active" type="button">Клиенты</button>
             </div>
-            <div class="graph-chart">
-              <div class="ct-chart" id="chart1"></div>
-              <div class="chart-x-labels">
-                <div class="chart-x-label">02/2020</div>
-                <div class="chart-x-label">03/2020</div>
-                <div class="chart-x-label">04/2020</div>
-              </div>
-              <p class="chart-title">Динамика средней оценки</p>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-2 is-active" type="button">HR</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-3" type="button">Спам</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-4" type="button">Продажи</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-5" type="button">Сотрудники</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-6" type="button">Категория</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-7" type="button">Категория</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-8" type="button">Категория</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-9" type="button">Категория</button>
+            </div>
+            <div class="tag-block__list-item">
+              <button class="tag-block__tag tag-color-10" type="button">Категория</button>
             </div>
           </div>
-          <div class="statistic__dropdown-item">
-            <p class="article-link"><a href="#">Качество нового мёда</a></p>
-            <div class="donut">
-              <div class="ct-chart" id="chart2"></div>
-              <div class="donut__value">130</div>
-            </div>
-            <div class="donut-legend">
-              <p>Ответило "Да" <span class="main-color">120</span></p><br>
-              <p>Ответило "Нет" <span class="color-red">10</span></p>
-            </div>
-          </div>
+          <button class="tag-block__pick" type="button">Выбрать</button>
         </div>
       </div>
     </div>
 
-    <div class="articles-columns">
-      <div class="articles-columns__column articles-columns__column--big">
-        <div class="article choosen">
-          <div class="article__title-block">
-            <h2 class="article__title">Подарки стали вкуснее</h2>
-            <div class="article__manage-block">
-              <button class="js-manage-toggler article__manage-button" type="button" title="Действия">
-                <svg class="article__manage-button-icon" aria-hidden="true">
-                  <use xlink:href="#kebab"></use>
-                </svg>
-              </button>
-              <div class="article__manage-dropdown manage-popover">
-                <ul class="manage-popover__list">
-                  <li><a class="manage-popover__button" href="#">Перейти в подробную аналитику</a></li>
-                  <li><a class="manage-popover__button" href="#">Редактировать</a></li>
-                  <li><a class="manage-popover__button" href="#">Удалить</a></li>
-                </ul>
-              </div>
-            </div>
+    <table class="table">
+      <tr>
+        <th>
+          <label class="search-bar" for="search">
+            <input id="search" class="input" name="search" type="text" value="">
+            <span class="search-bar__suggest-block">
+              <span class="search-bar__suggest">Иван Иванов Александрович</span>
+            </span>
+          </label>
+        </th>
+        <th class="text-center">Компания</th>
+        <th class="text-center">Категории контакта</th>
+        <th class="text-center">Участвует&nbsp;в<br> сценариях</th>
+        <th class="text-center">Всего<br> ответов</th>
+        <th class="text-center">Дата<br> добавления</th>
+        <th class="text-center">Последняя<br> активность</th>
+      </tr>
+      <tr>
+        <td>
+          <button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_1" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          <a href="#">Иван Иванов Александрович</a>
+        </td>
+        <td class="text-center">ООО “Вектор”</td>
+        <td class="text-center">
+          <div class="categories categories--center">
+            <div class="category"><span class="category__title tag-color-7">Продажи</span></div>
+            <div class="category"><span class="category__title tag-color-1">Клиенты</span></div>
+            <div class="category"><span class="category__title tag-color-3">HR</span></div>
+            <div class="category"><span class="category__title tag-color-9">Сотрудники</span></div>
           </div>
-          <p class="article__date">25.04.2020 19:50</p>
-          <div class="article__preview-text">
-            <p>Более 300 наших подарков - это что-нибудь вкусненькое. Мы тщательно отслеживаем качество и свежесть продуктов. Мы заботимся о том, чтобы съедобные подарки оставались съедобными как можно дольше.</p>
+        </td>
+        <td class="text-center">20</td>
+        <td class="text-center">20</td>
+        <td class="text-center">18:43 23.03.2019</td>
+        <td class="text-center">18:43 23.03.2019</td>
+      </tr>
+      <tr>
+        <td>
+          <button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_2" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          <a href="#">Клавдия Петрова</a>
+        </td>
+        <td class="text-center">ООО “Вектор”</td>
+        <td class="text-center">
+          <div class="categories categories--center">
+            <div class="category"><span class="category__title tag-color-7">Продажи</span></div>
+            <div class="category"><span class="category__title tag-color-1">Клиенты</span></div>
+            <div class="category"><span class="category__title tag-color-3">HR</span></div>
+            <div class="category"><span class="category__title tag-color-9">Сотрудники</span></div>
           </div>
-          <div class="article__image"><img src="images/content/img_4.jpg" alt="Альт картинки"></div>
-          <p class="question-title">
-            <span class="secondary-color">Оцените, пожалуйста, качество и свежесть продуктов.</span>
-            <span>Ответов: 150</span>
-          </p>
-          <div class="stats-block">
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">10</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_10" style="width: 90%"><div class="stat-bar2__qnt">40</div></div>
-              </div>
-            </div>
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">9</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_9" style="width: 35%"><div class="stat-bar2__qnt">18</div></div>
-              </div>
-            </div>
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">8</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_8" style="width: 55%"><div class="stat-bar2__qnt">29</div></div>
-              </div>
-            </div>
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">7</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_7" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
-              </div>
-            </div>
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">6</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_6" style="width: 15%"><div class="stat-bar2__qnt">6</div></div>
-              </div>
-            </div>
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">5</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_5" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
-              </div>
-            </div>
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">4</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_4" style="width: 5%"><div class="stat-bar2__qnt">2</div></div>
-              </div>
-            </div>
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">3</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_3" style="width: 20%"><div class="stat-bar2__qnt">8</div></div>
-              </div>
-            </div>
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">2</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_2" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
-              </div>
-            </div>
-            <div class="stat-bar2">
-              <div class="stat-bar2__num">1</div>
-              <div class="stat-bar2__bar-block">
-                <div class="stat-bar2__bar stat-bar2__bar--type_1" style="width: 10%"><div class="stat-bar2__qnt">4</div></div>
-              </div>
-            </div>
+        </td>
+        <td class="text-center">20</td>
+        <td class="text-center">20</td>
+        <td class="text-center">18:43 23.03.2019</td>
+        <td class="text-center">18:43 23.03.2019</td>
+      </tr>
+      <tr>
+        <td>
+          <button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_3" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button>
+          <a href="#">Гавриил Иванов</a>
+        </td>
+        <td class="text-center">ООО “Вектор”</td>
+        <td class="text-center">
+          <div class="categories categories--center">
+            <div class="category"><span class="category__title tag-color-7">Продажи</span></div>
+            <div class="category"><span class="category__title tag-color-1">Клиенты</span></div>
+            <div class="category"><span class="category__title tag-color-3">HR</span></div>
+            <div class="category"><span class="category__title tag-color-9">Сотрудники</span></div>
           </div>
-          <div class="options3">
-            <p class="options3__title">Укажите диапазон ответов для продолжения сценария</p>
-            <div class="options3__list">
-              <div class="options3__list-range">
-                <label class="option2 option2--dark" for="opt_1_1">
-                  <input id="opt_1_1" type="checkbox" value="1" checked disabled>
-                  <span class="option2__text">1</span>
-                </label>
-                <label class="option2 option2--dark" for="opt_1_2">
-                  <input id="opt_1_2" type="checkbox" value="2" checked disabled>
-                  <span class="option2__text">2</span>
-                </label>
-                <label class="option2 option2--dark" for="opt_1_3">
-                  <input id="opt_1_3" type="checkbox" value="3" checked disabled>
-                  <span class="option2__text">3</span>
-                </label>
-              </div>
-              <label class="option2 option2--dark" for="opt_1_4">
-                <input id="opt_1_4" type="checkbox" value="4">
-                <span class="option2__text">4</span>
-              </label>
-              <label class="option2 option2--dark" for="opt_1_5">
-                <input id="opt_1_5" type="checkbox" value="5">
-                <span class="option2__text">5</span>
-              </label>
-              <label class="option2 option2--dark" for="opt_1_6">
-                <input id="opt_1_6" type="checkbox" value="6">
-                <span class="option2__text">6</span>
-              </label>
-              <label class="option2 option2--dark" for="opt_1_7">
-                <input id="opt_1_7" type="checkbox" value="7">
-                <span class="option2__text">7</span>
-              </label>
-              <label class="option2 option2--dark" for="opt_1_8">
-                <input id="opt_1_8" type="checkbox" value="8">
-                <span class="option2__text">8</span>
-              </label>
-              <label class="option2 option2--dark" for="opt_1_9">
-                <input id="opt_1_9" type="checkbox" value="9">
-                <span class="option2__text">9</span>
-              </label>
-              <label class="option2 option2--dark" for="opt_1_10">
-                <input id="opt_1_10" type="checkbox" value="10">
-                <span class="option2__text">10</span>
-              </label>
-            </div>
-            <p><button class="range-clear" type="button" data-fancybox="clear_range" data-src="#clear_range"><svg class="range-clear__icon" aria-hidden="true"><use xlink:href="#close"></use></svg><span class="range-clear__text">Очистить диапазон</span></button></p>
-            <div class="scenario-buttons">
-              <button class="button button--red" type="button">Завершить сценарий</button>
-              <button class="button button--transparent is-active" type="button">Следующая публикация <svg class="button__next-arrow" aria-hidden="true"><use xlink:href="#arrow_to_right"></use></svg></button>
-            </div>
-            <p class="range-title"><span>Для вариантов с 1го по 3й</span></p>
-          </div>
-        </div>
-        <button class="button button--wide button--h_40" type="button" disabled>Сохранить</button>
-      </div>
-      <div class="articles-columns__column articles-columns__column--small">
-        <div class="scenario-stats">
-          <div class="scenario-stats__item">
-            <p class="scenario-stats__item-title">Мин. длина сценария (Часы)</p>
-            <p class="scenario-stats__item-value">5</p>
-          </div>
-          <div class="scenario-stats__item">
-            <p class="scenario-stats__item-title">Макс. длина сценария (Часы)</p>
-            <p class="scenario-stats__item-value">120</p>
-          </div>
-        </div>
-        <button class="button button--wide button--h_40" type="button">Добавить публикацию</button>
-        <p class="articles-qnt">Публикаций всего: 5</p>
-        <div class="small-article choosen">
-          <h2 class="small-article__title">Какая мы киса</h2>
-          <p class="small-article__date">25.04.2020 19:50</p>
-          <div class="small-article__preview-text">
-            <p>Наш ассортимент пополнился новыми медовыми подарками. Встречайте сладкую коллекцию этой весны «Янтарь» с богатым вкусом и солнечным светом.</p>
-          </div>
-          <p class="small-article__form-title">Укажите, через какое время показывать след. публикацию</p>
-          <form class="small-article__form" action="">
-            <div>
-              <label class="radio-label" for="show_1">
-                <input id="show_1" name="show_" type="radio" value="1" checked>
-                <span class="radio-label__icon"></span>
-                <span class="radio-label__text">Показывать сразу</span>
-              </label>
-            </div>
-            <div>
-              <label class="radio-label" for="show_2">
-                <input id="show_2" name="show_" type="radio" value="2">
-                <span class="radio-label__icon"></span>
-                <span class="radio-label__text">Показывать через <input class="input input--type_3" type="text" name="days" value="5"> дней</span>
-              </label>
-            </div>
-            <button class="button button--wide" type="button">Сохранить</button>
-          </form>
-        </div>
-        <div class="small-article">
-          <h2 class="small-article__title">Какая мы киса</h2>
-          <p class="small-article__date">25.04.2020 19:50</p>
-          <div class="small-article__preview-text">
-            <p>Наш ассортимент пополнился новыми медовыми подарками. Встречайте сладкую коллекцию этой весны «Янтарь» с богатым вкусом и солнечным светом.</p>
-          </div>
-        </div>
-        <div class="small-article">
-          <h2 class="small-article__title">Какая мы киса</h2>
-          <p class="small-article__date">25.04.2020 19:50</p>
-          <div class="small-article__preview-text">
-            <p>Наш ассортимент пополнился новыми медовыми подарками. Встречайте сладкую коллекцию этой весны «Янтарь» с богатым вкусом и солнечным светом.</p>
-          </div>
-        </div>
-        <div class="small-article">
-          <h2 class="small-article__title">Какая мы киса</h2>
-          <p class="small-article__date">25.04.2020 19:50</p>
-          <div class="small-article__preview-text">
-            <p>Наш ассортимент пополнился новыми медовыми подарками. Встречайте сладкую коллекцию этой весны «Янтарь» с богатым вкусом и солнечным светом.</p>
-          </div>
-        </div>
-        <div class="small-article">
-          <h2 class="small-article__title">Какая мы киса</h2>
-          <p class="small-article__date">25.04.2020 19:50</p>
-          <div class="small-article__preview-text">
-            <p>Наш ассортимент пополнился новыми медовыми подарками. Встречайте сладкую коллекцию этой весны «Янтарь» с богатым вкусом и солнечным светом.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        </td>
+        <td class="text-center">20</td>
+        <td class="text-center">20</td>
+        <td class="text-center">18:43 23.03.2019</td>
+        <td class="text-center">18:43 23.03.2019</td>
+      </tr>
+    </table>
+
   </div>
 
   <a id="go-top" class="go-top" href="#top" title="Наверх">
@@ -684,50 +485,6 @@
   <script type="text/javascript" src="js/cropper.min.js"></script>
   <script type="text/javascript" src="js/cropper-init.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-
-  <script src="js/chartist.min.js"></script>
-  <script src="js/tinymce/tinymce.min.js"></script>
-  <script src="js/tinymce/jquery.tinymce.min.js"></script>
-
-  <script>
-    new Chartist.Line('#chart1', {
-      labels: false,
-      series: [
-        [1, 5, 6, 7, 7, 8, 8, 9, 9, 10, 10 ,10]
-      ]
-      }, {
-        width: '300px',
-        height: '230px',
-        low: 1,
-        high: 10,
-        fullWidth: true,
-        showArea: true
-    });
-
-    new Chartist.Pie('#chart2', {
-      series: [10, 120]
-    }, {
-      donut: true,
-      donutWidth: 40,
-      donutSolid: true,
-      startAngle: 270,
-      showLabel: true,
-      width: '150px',
-      height: '150px',
-    });
-
-    $('.js-wysiwyg').tinymce({
-      height: 240,
-      menubar: false,
-      plugins: [
-        'advlist autolink lists link image charmap print preview anchor',
-        'searchreplace visualblocks code fullscreen',
-        'insertdatetime media table paste code help wordcount'
-      ],
-      toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
-      language: 'ru'
-    });
-  </script>
 
 </body>
 
