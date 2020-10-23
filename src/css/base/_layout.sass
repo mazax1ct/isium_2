@@ -21,59 +21,9 @@ body
   @media(min-width: 1400px)
     padding-left: 136px
 
-  &--fixed_header
-    .header
-      background-color: #EFEEEE
-      left: 0
-      margin-bottom: 0
-      position: fixed
-      padding-left: 136px
-      right: 0
-      top: 0
-      z-index: 3
-
-      @media(min-width: 1200px)
-        padding-left: 136px
-        padding-right: 0
-
-    .header__inner
-      padding-left: 12px
-      padding-right: 12px
-
-      @media(min-width: 1200px)
-        padding-left: 30px
-        padding-right: 30px
-
-      @media(min-width: 1400px)
-        padding-left: 60px
-        padding-right: 60px
-
-    .header__inner::after
-      left: 12px
-      width: calc(100% - 24px)
-
-      @media(min-width: 1200px)
-        left: 30px
-        width: calc(100% - 60px)
-
-      @media(min-width: 1440px)
-        left: 60px
-        width: calc(100% - 120px)
-
-    .page__inner
-      padding-top: 185px
-
   &--auth
     background: url('../images/bg/auth_bg.jpg') no-repeat 50% 50% / cover #033A52
-    padding-left: 0
-
-  &--no_header
-    .page__inner
-      min-height: 100%
-      padding-top: 30px
-
-      @media(min-width: 1200px)
-        padding-top: 50px
+    padding-left: 0 !important
 
   &--center_content
     display: flex
@@ -128,6 +78,6 @@ body
       padding-left: 30px
       padding-right: 30px
 
-    @media(min-width: 1400px)
+    @media(min-width: 1900px)
       padding-left: 60px
       padding-right: 60px

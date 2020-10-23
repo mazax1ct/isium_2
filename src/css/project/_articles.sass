@@ -4,7 +4,7 @@
 
   &__column
     scrollbar-width: thin
-    scrollbar-color: darken(#bfbebe, 20%) #bfbebe
+    scrollbar-color: darken(#d6d6d6, 10%) #d6d6d6
 
     &::-webkit-scrollbar
       border-radius: 4px
@@ -12,21 +12,21 @@
       width: 5px
 
     &::-webkit-scrollbar-track
-      background: #bfbebe
+      background: #d6d6d6
       border-radius: 4px
 
     &::-webkit-scrollbar-thumb
-      background: darken(#bfbebe, 20%)
+      background: darken(#d6d6d6, 10%)
       border-radius: 4px
 
     &::-webkit-scrollbar:horizontal
       height: 4px
 
     &::-webkit-scrollbar-track:horizontal
-      background: #bfbebe
+      background: #d6d6d6
 
     &::-webkit-scrollbar-thumb:horizontal
-      background: darken(#bfbebe, 20%)
+      background: darken(#d6d6d6, 10%)
 
     &--big
       overflow-y: auto
@@ -72,6 +72,9 @@
       margin-right: 10px
 
       @media(min-width: 1200px)
+        margin-right: 24px
+
+      @media(min-width: 1400px)
         margin-right: 36px
 
   &__item-title
@@ -80,6 +83,12 @@
     font-weight: 500
     margin-bottom: 5px
     text-transform: uppercase
+
+    @media(min-width: 1200px)
+      font-size: 11px
+
+    @media(min-width: 1400px)
+      font-size: 12px
 
   &__item-value
     color: $main-color
@@ -92,7 +101,7 @@
   margin-top: 24px
   margin-bottom: 12px
 
-.articles
+//.articles
   @media(min-width: 1200px)
     display: flex
 
@@ -154,7 +163,7 @@
     .js-sticky-block
       z-index: 1
 
-.articles-list
+//.articles-list
   &__add-block
     left: 0
     position: fixed
@@ -187,7 +196,7 @@
     @media(min-width: 1440px)
       transform: translateX(-97px)
 
-.filter
+//.filter
   //max-width: 256px
   //margin-left: auto
   //margin-right: auto
@@ -201,7 +210,7 @@
     font-size: 14px
     margin-bottom: 15px
 
-.filter-item
+//.filter-item
   cursor: pointer
   display: block
 
@@ -235,7 +244,7 @@
     line-height: 18px
     text-align: center
 
-.companies-list
+//.companies-list
   margin-bottom: 30px
   padding-bottom: 34px
   position: relative
@@ -264,7 +273,7 @@
     padding-left: 4px
     padding-right: 4px
 
-.add-company
+//.add-company
   align-items: center
   background-color: #fff
   border: none
@@ -314,7 +323,7 @@
     &:not(:last-child)
       margin-bottom: 15px
 
-.client-card
+//.client-card
   border-radius: 8px
   background-color: #fff
   font-size: 12px

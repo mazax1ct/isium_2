@@ -23,17 +23,19 @@
   //= template/head.html
 
   <header class="header">
-    <div class="header__inner header__inner--two_columns">
-      <div class="header__left">
-        <h1 class="header__title">Мои контакты</h1>
-        <div class="header__info">
-          <p class="header__info-title">У вас 0 контактов</p>
+    <div class="header__inner">
+      <div class="header__columns">
+        <div class="header__left">
+          <h1 class="header__title">Мои контакты</h1>
+          <div class="header__info">
+            <p class="header__info-title">У вас 0 контактов</p>
+          </div>
         </div>
-      </div>
-      <div class="header__right">
-        <div class="header__manage-buttons">
-          <button class="button button--transparent" type="button">Загрузить XLS-файл</button>
-          <button class="button" type="button">Добавить контакт</a>
+        <div class="header__right">
+          <div class="header__manage-buttons">
+            <button class="button button--transparent" type="button">Загрузить XLS-файл</button>
+            <button class="button" type="button" data-fancybox="new_contact" data-src="#new_contact">Добавить контакт</button>
+          </div>
         </div>
       </div>
     </div>
@@ -67,7 +69,7 @@
         <th class="text-center">Категория пользователя</th>
       </tr>
       <tr>
-        <td><button class="delete-button" type="button" title="Удалить"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
+        <td><button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_1" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
         <td class="text-center"><input class="input" type="text" value='Константинопольский Константин Константинович'></td>
         <td class="text-center"><input class="input" type="text" value='ООО "Вектор"'></td>
         <td class="text-center"><input class="input" type="text" value='customer@mail.ru'></td>
@@ -135,7 +137,7 @@
         </td>
       </tr>
       <tr>
-        <td><button class="delete-button" type="button" title="Удалить"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
+        <td><button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_2" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
         <td class="text-center"><input class="input" type="text" value='Константинопольский Константин Константинович'></td>
         <td class="text-center"><input class="input" type="text" value='ООО "Вектор"'></td>
         <td class="text-center"><input class="input" type="text" value='customer@mail.ru'></td>
@@ -203,7 +205,7 @@
         </td>
       </tr>
       <tr>
-        <td><button class="delete-button" type="button" title="Удалить"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
+        <td><button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_3" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
         <td class="text-center"><input class="input" type="text" value='Константинопольский Константин Константинович'></td>
         <td class="text-center"><input class="input" type="text" value='' placeholder="Заполните поле"></td>
         <td class="text-center"><input class="input" type="text" value='customer@mail.ru'></td>
@@ -271,7 +273,7 @@
         </td>
       </tr>
       <tr>
-        <td><button class="delete-button" type="button" title="Удалить"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
+        <td><button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_4" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
         <td class="text-center"><input class="input" type="text" value='Константинопольский Константин Константинович'></td>
         <td class="text-center"><input class="input" type="text" value='ООО "Вектор"'></td>
         <td class="text-center"><input class="input" type="text" value='customer@mail.ru'></td>
@@ -339,7 +341,7 @@
         </td>
       </tr>
       <tr>
-        <td><button class="delete-button" type="button" title="Удалить"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
+        <td><button class="delete-button" type="button" title="Удалить" data-fancybox="delete_contact_5" data-src="#delete_contact"><svg aria-hidden="true"><use xlink:href="#close" /></svg></button></td>
         <td class="text-center"><input class="input" type="text" value='' placeholder="Заполните поле"></td>
         <td class="text-center"><input class="input" type="text" value='' placeholder="Заполните поле"></td>
         <td class="text-center"><input class="input" type="text" value='' placeholder="Заполните поле"></td>

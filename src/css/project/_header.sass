@@ -6,7 +6,7 @@
     padding-left: 30px
     padding-right: 30px
 
-  @media(min-width: 1400px)
+  @media(min-width: 1900px)
     padding-left: 60px
     padding-right: 60px
 
@@ -16,11 +16,6 @@
     padding-top: 28px
     padding-bottom: 28px
     position: relative
-
-    &--two_columns
-      align-items: flex-start
-      display: flex
-      justify-content: space-between
 
     &::after
       background-color: #D6D6D6
@@ -33,6 +28,14 @@
       position: absolute
       top: auto
       width: 100%
+
+  &__columns
+    align-items: flex-start
+    display: flex
+    justify-content: space-between
+
+    &:not(:last-child)
+      margin-bottom: 24px
 
   &__left
     margin-bottom: 15px
@@ -67,7 +70,7 @@
 
     .button
       min-width: 180px
-      
+
       &:not(:first-child)
         margin-left: 10px
 
@@ -82,7 +85,10 @@
     color: $secondary-color
     margin-bottom: 15px
 
-.manage-button
+  .tag-block
+    max-width: 200px
+
+//.manage-button
   align-items: center
   background-color: transparent
   border: none
@@ -164,6 +170,10 @@
       &:not(:last-child)
         margin-right: 8px
 
+  .checkbox-label
+    margin-left: 24px
+    margin-bottom: 6px
+
 .stats_2
   display: flex
   flex-wrap: wrap
@@ -185,3 +195,18 @@
     color: $main-color
     font-size: 36px
     font-weight: 500
+
+.contact-info
+  color: $secondary-color
+  line-height: 1.785
+
+  &:not(:last-child)
+    margin-bottom: 24px
+
+.contact-activities
+  color: #8E8C96
+  text-align: right
+
+  p
+    &:not(:last-child)
+      margin-bottom: 10px
