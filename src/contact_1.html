@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Добавление контакта</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body id="top" class="page page--center_content">
+  //= template/sprite.html
+
+  //= template/head.html
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__columns">
+        <div class="header__left">
+          <h1 class="header__title">Мои контакты</h1>
+          <div class="header__info">
+            <p class="header__info-title">У вас 0 контактов</p>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="header__manage-buttons">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page__inner">
+
+    //= template/sidebar.html
+
+    <div class="popup popup--form popup--small">
+      <form action="">
+        <p class="text-center">Выберите удобный для вас способ добавления<br> контактов</p>
+        <br>
+        <div class="popup__save-block form-row">
+          <div class="form-row__item"><button class="button button--transparent" type="button">Загрузить XLS-файл</button></div>
+          <div class="form-row__item"><button class="button" type="button">Добавить контакт</button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  //= template/go-top.html
+
+  //= template/popups.html
+
+  //= template/scripts.html
+
+</body>
+
+</html>
